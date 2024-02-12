@@ -3,7 +3,7 @@ import React from "react";
 import { Button, Img, Input, Line, Text } from "components";
 import CartRoadmap from "components/CartRoadmap";
 import ECommerceHomePageTopheader from "components/ECommerceHomePageTopheader";
-import Footer1 from "components/Footer1";
+import Footer from "components/Footer";
 import SignUpHeader from "components/SignUpHeader";
 
 const ContactPage = () => {
@@ -173,7 +173,7 @@ const ContactPage = () => {
               </div>
             </div>
           </div>
-          <Footer1 className="bg-black-900 flex font-poppins items-center justify-center mt-[140px] md:px-5 w-full" />
+          <Footer className="bg-black-900 flex font-poppins items-center justify-center mt-[140px] md:px-5 w-full" />
         </div>
       </div>
     </>

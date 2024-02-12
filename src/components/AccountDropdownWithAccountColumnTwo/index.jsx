@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import { Img, Text } from "components";
 
 const AccountDropdownWithAccountColumnTwo = (props) => {
@@ -18,7 +20,8 @@ const AccountDropdownWithAccountColumnTwo = (props) => {
                 className="text-center text-gray-50 text-sm w-auto"
                 size="txtPoppinsRegular14"
               >
-                {props?.managemyaccountOne}
+                {/* {props?.managemyaccountOne} */}
+                <Link to="/account">Account</Link>
               </Text>
             </div>
             <div className="flex flex-row gap-4 items-center justify-start w-auto">

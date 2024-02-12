@@ -111,6 +111,7 @@ ul li a{
   display: flex;
 }
 @media only screen and (min-width: 200px) and (max-width: 550px)  {
+ 
   .mobile-menu {
     display: block;
   }

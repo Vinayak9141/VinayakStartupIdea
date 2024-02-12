@@ -1,6 +1,7 @@
 import React from "react";
 
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { Button, Img, Input, Line, List, Text } from "components";
 import ECommerceHomePageCart from "components/ECommerceHomePageCart";
@@ -14,7 +15,8 @@ import ECommerceHomePageFlashselltimer2 from "components/ECommerceHomePageFlashs
 import ECommerceHomePageFlashselltimer3 from "components/ECommerceHomePageFlashselltimer3";
 import ECommerceHomePageListicondelivery from "components/ECommerceHomePageListicondelivery";
 import ECommerceHomePageTopheader from "components/ECommerceHomePageTopheader";
-import Footer2 from "components/Footer2";
+// import Footer2 from "components/Footer2";
+import Footer from "components/Footer";
 
 const SERVICEThreePage = () => {
   const navigate = useNavigate();
@@ -24,7 +26,7 @@ const SERVICEThreePage = () => {
       <div className="bg-white-A700 flex flex-col font-poppins items-center justify-end mx-auto w-full">
         <ECommerceHomePageTopheader className="bg-black-900 flex flex-col items-end justify-start p-3 w-full" />
         <div className="flex md:flex-col flex-row font-inter md:gap-10 gap-[148px] items-center justify-start max-w-[1179px] mt-10 mx-auto md:px-5 w-full">
-          <div className="flex md:flex-1 sm:flex-col flex-row sm:gap-10 gap-[190px] items-start justify-between w-auto md:w-full">
+          <div className="flex md:flex-1 sm:flex-col flex-row sm:gap-10 gap-[80px] items-start justify-between w-auto md:w-full">
             <div className="flex flex-col items-center justify-start">
               <Text
                 className="text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.72px]"
@@ -39,18 +41,19 @@ const SERVICEThreePage = () => {
                   className="text-base text-black-900 text-center w-auto"
                   size="txtPoppinsRegular16"
                 >
-                  Home
+                  <Link to="/ecommercehomepage"> Home</Link>
                 </Text>
-                <Img
+                {/* <Img
                   className="h-px w-12"
                   src="images/img_underline.svg"
                   alt="underline"
-                />
+                /> */}
               </div>
               <div className="flex flex-col items-center justify-start">
                 <Text
                   className="text-base text-black-900 text-center"
                   size="txtPoppinsRegular16"
+                  onClick={() => navigate("/service")}
                 >
                   Services
                 </Text>
@@ -59,6 +62,7 @@ const SERVICEThreePage = () => {
                 <Text
                   className="text-base text-black-900 text-center"
                   size="txtPoppinsRegular16"
+                  onClick={() => navigate("/about")}
                 >
                   About
                 </Text>
@@ -79,6 +83,7 @@ const SERVICEThreePage = () => {
                 className="h-8 w-8"
                 src="images/img_wishlist.svg"
                 alt="wishlist"
+                onClick={() => navigate("/wishlist")}
               />
               <div className="flex flex-col h-8 items-center justify-start w-8">
                 <Img
@@ -643,7 +648,7 @@ const SERVICEThreePage = () => {
           moneybacktext="VERIFIED PROFESSIONALS "
           moneybacksubtext="We reurn money within 30 days"
         />
-        <Footer2 className="bg-black-900 flex font-poppins items-center justify-center mt-[50px] md:px-5 w-full" />
+        {/* <Footer2 className="bg-black-900 flex font-poppins items-center justify-center mt-[50px] md:px-5 w-full" />
         <div className="flex flex-col font-poppins md:gap-10 gap-[355px] items-end mt-[1118px] md:px-10 sm:px-5 px-[89px] w-full">
           <Button
             className="flex h-[46px] items-center justify-center rotate-[90deg] w-[46px]"
@@ -664,6 +669,10 @@ const SERVICEThreePage = () => {
           >
             Become a Seller{" "}
           </Text>
+        </div> */}
+        {/* New added */}
+        <div className="flex flex-col items-center mt-[140px] w-full">
+          <Footer className="bg-black-900 flex items-center justify-center md:px-5 w-full" />
         </div>
       </div>
     </>

@@ -7,7 +7,7 @@ import ECommerceHomePageColumn from "components/ECommerceHomePageColumn";
 import ECommerceHomePageColumn1 from "components/ECommerceHomePageColumn1";
 import ECommerceHomePageColumnOne from "components/ECommerceHomePageColumnOne";
 import ECommerceHomePageTopheader from "components/ECommerceHomePageTopheader";
-import Footer1 from "components/Footer1";
+import Footer from "components/Footer";
 import SignUpHeader from "components/SignUpHeader";
 
 const ProductDetailspagePage = () => {
@@ -327,7 +327,7 @@ const ProductDetailspagePage = () => {
               />
             </div>
           </div>
-          <Footer1 className="bg-black-900 flex font-poppins items-center justify-center mt-[140px] md:px-5 w-full" />
+          <Footer className="bg-black-900 flex font-poppins items-center justify-center mt-[140px] md:px-5 w-full" />
         </div>
       </div>
     </>

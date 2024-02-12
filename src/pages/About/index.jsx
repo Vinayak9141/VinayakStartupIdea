@@ -7,7 +7,7 @@ import AboutColumniconshoppingbag from "components/AboutColumniconshoppingbag";
 import CartRoadmap from "components/CartRoadmap";
 import ECommerceHomePageListicondelivery from "components/ECommerceHomePageListicondelivery";
 import ECommerceHomePageTopheader from "components/ECommerceHomePageTopheader";
-import Footer1 from "components/Footer1";
+import Footer from "components/Footer";
 import SignUpHeader from "components/SignUpHeader";
 
 const AboutPage = () => {
@@ -231,7 +231,7 @@ const AboutPage = () => {
             alt="frame883"
           />
           <ECommerceHomePageListicondelivery className="sm:flex-col flex-row font-poppins md:gap-10 gap-[88px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center max-w-[943px] mt-[140px] mx-auto md:px-5 w-full" />
-          <Footer1 className="bg-black-900 flex font-poppins items-center justify-center mt-[139px] md:px-5 w-full" />
+          <Footer className="bg-black-900 flex font-poppins items-center justify-center mt-[139px] md:px-5 w-full" />
         </div>
       </div>
     </>

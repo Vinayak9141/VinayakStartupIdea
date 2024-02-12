@@ -100,6 +100,8 @@ ECommerceHomePageListicondelivery.defaultProps = {
   deliverysubtext: "Free delivery for all orders over $140",
   customerservicetext: "24/7 CUSTOMER SERVICE",
   customerservicesubtext: "Friendly 24/7 customer support",
+  moneybacktext: "MONEY BACK GURANTEE",
+  moneybacksubtext: "You return money 30 days",
 };
 
 export default ECommerceHomePageListicondelivery;

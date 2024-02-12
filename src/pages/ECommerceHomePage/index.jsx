@@ -26,6 +26,7 @@ import ECommerceHomePageFlashselltimer3 from "components/ECommerceHomePageFlashs
 import ECommerceHomePageListicondelivery from "components/ECommerceHomePageListicondelivery";
 import ECommerceHomePageRowdays from "components/ECommerceHomePageRowdays";
 import ECommerceHomePageTopheader from "components/ECommerceHomePageTopheader";
+import Footer from "components/Footer";
 
 const ECommerceHomePagePage = () => {
   const navigate = useNavigate();
@@ -50,20 +51,21 @@ const ECommerceHomePagePage = () => {
                   className="text-base text-black-900 text-center w-auto"
                   size="txtPoppinsRegular16"
                 >
-                  Home
+                  <a href="">Home</a>
                 </Text>
-                <Img
+                {/* <Img
                   className="h-px w-12"
                   src="images/img_underline.svg"
                   alt="underline"
-                />
+                /> */}
               </div>
               <div className="flex flex-col items-center justify-start">
                 <Text
                   className="text-base text-black-900 text-center"
+                  onClick={() => navigate("/servicethree")}
                   size="txtPoppinsRegular16"
                 >
-                  Services
+                  <a href="">Services</a>
                 </Text>
               </div>
               <div className="flex flex-col items-center justify-start">
@@ -72,7 +74,7 @@ const ECommerceHomePagePage = () => {
                   onClick={() => navigate("/about")}
                   size="txtPoppinsRegular16"
                 >
-                  About
+                  <a href="">About</a>
                 </Text>
               </div>
               <Button
@@ -85,12 +87,13 @@ const ECommerceHomePagePage = () => {
             </div>
           </div>
           <div className="flex flex-row font-poppins gap-6 items-center justify-start w-auto">
-            <ECommerceHomePageColumnwhatareyoulookiOne className="bg-gray-100 flex flex-col gap-2.5 items-center justify-center pl-5 pr-3 py-[7px] rounded w-auto" />
+            <ECommerceHomePageColumnwhatareyoulookiOne className="bg-gray-100 flex flex-col gap-2.5 items-center justify-center pl-0 pr-0 py-[0px] rounded w-auto" />
             <div className="flex flex-row gap-4 items-center justify-center w-auto">
               <Img
                 className="h-8 w-8"
                 src="images/img_wishlist.svg"
                 alt="wishlist"
+                onClick={() => navigate("/wishlist")}
               />
               <div className="flex flex-col h-8 items-center justify-start w-8">
                 <Img
@@ -805,7 +808,7 @@ const ECommerceHomePagePage = () => {
           moneybacksubtext="We reurn money within 30 days"
         />
         <div className="flex flex-col items-end mt-[61px] md:px-5 px-[514px] w-full">
-          <Button
+          {/* <Button
             className="flex h-[46px] items-center justify-center rotate-[90deg] w-[46px]"
             shape="circle"
             color="gray_100"
@@ -817,9 +820,9 @@ const ECommerceHomePagePage = () => {
               src="images/img_arrowright.svg"
               alt="arrowright_Four"
             />
-          </Button>
+          </Button> */}
         </div>
-        <footer className="bg-black-900 flex font-poppins items-center justify-center mt-8 md:px-5 w-full">
+        {/* <footer className="bg-black-900 flex font-poppins items-center justify-center mt-8 md:px-5 w-full">
           <div className="flex flex-col items-center justify-center mb-[23px] mt-[79px] w-full">
             <div className="flex md:flex-col flex-row md:gap-10 gap-[87px] items-start justify-center w-auto md:w-full">
               <div className="flex flex-col gap-4 items-start justify-start w-auto">
@@ -1079,7 +1082,8 @@ const ECommerceHomePagePage = () => {
               </div>
             </div>
           </div>
-        </footer>
+        </footer> */}
+        <Footer className="bg-black-900 flex font-poppins items-center justify-center mt-[140px] md:px-5 w-full" />
       </div>
     </>
   );

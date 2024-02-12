@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Img, List, Text } from "components";
+import { Img, List, Text, Input } from "components";
 
 const SignUpHeader = (props) => {
   return (
@@ -60,8 +60,8 @@ const SignUpHeader = (props) => {
         </div>
         <div className="flex sm:flex-col flex-row gap-6 items-center justify-start w-auto sm:w-full">
           <div className="bg-gray-100 flex flex-col items-center justify-center pl-5 pr-3 py-[7px] rounded w-auto">
-            <div className="flex flex-row gap-[34px] items-center justify-center w-auto">
-              <Text
+            {/* <div className="flex flex-row gap-[34px] items-center justify-center w-auto"> */}
+            {/* <Text
                 className="text-black-900_87 text-xs w-auto"
                 size="txtPoppinsRegular12"
               >
@@ -71,8 +71,18 @@ const SignUpHeader = (props) => {
                 className="h-6 w-6"
                 src="images/img_search.svg"
                 alt="search"
-              />
-            </div>
+              /> */}
+            <Input
+              name="placeboxinfo"
+              placeholder="What are you looking for?"
+              className="p-0 placeholder:text-black-900_87 text-base text-left w-full"
+              wrapClassName="h-[8px],w-[200px]"
+              shape="round"
+              color="gray_100"
+              size="sm"
+              variant="fill"
+            ></Input>
+            {/* </div> */}
           </div>
           <div className="flex flex-row gap-4 items-center justify-center w-auto">
             <List

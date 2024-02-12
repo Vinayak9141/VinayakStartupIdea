@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import { Button, Img, Input, Text } from "components";
 import ECommerceHomePageTopheader from "components/ECommerceHomePageTopheader";
 import Footer from "components/Footer";
@@ -76,7 +78,10 @@ const LogInPage = () => {
                   size="lg"
                   variant="fill"
                 >
-                  Log In
+                  {/* Log In */}
+                  <Link to="/accountdropdownwithaccount">
+                    Log In{/* AccountDropdownWithaccount */}
+                  </Link>
                 </Button>
               </div>
               <Text

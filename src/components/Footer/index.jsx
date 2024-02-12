@@ -1,8 +1,12 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
+
 import { Img, Input, Text } from "components";
 
 const Footer = (props) => {
+  const navigate = useNavigate();
+
   return (
     <>
       <footer className={props.className}>
@@ -91,14 +95,16 @@ const Footer = (props) => {
                   <Text
                     className="text-base text-gray-50"
                     size="txtPoppinsRegular16Gray50"
+                    onClick={() => navigate("/account")}
                   >
-                    My Account
+                    <a href="">My Account</a>
                   </Text>
                 </li>
                 <li>
                   <Text
                     className="text-base text-gray-50"
                     size="txtPoppinsRegular16Gray50"
+                    onClick={() => navigate("/login")}
                   >
                     Login / Register
                   </Text>
@@ -107,6 +113,7 @@ const Footer = (props) => {
                   <Text
                     className="text-base text-gray-50"
                     size="txtPoppinsRegular16Gray50"
+                    onClick={() => navigate("/cart")}
                   >
                     Cart
                   </Text>
@@ -115,6 +122,7 @@ const Footer = (props) => {
                   <Text
                     className="text-base text-gray-50"
                     size="txtPoppinsRegular16Gray50"
+                    onClick={() => navigate("/wishlist")}
                   >
                     Wishlist
                   </Text>
@@ -165,6 +173,7 @@ const Footer = (props) => {
                   <Text
                     className="text-base text-gray-50"
                     size="txtPoppinsRegular16Gray50"
+                    onClick={() => navigate("/contact")}
                   >
                     Contact
                   </Text>

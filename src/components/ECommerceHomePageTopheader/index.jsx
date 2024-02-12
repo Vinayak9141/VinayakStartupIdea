@@ -9,7 +9,7 @@ const ECommerceHomePageTopheader = (props) => {
         <div className="flex md:flex-col flex-row md:gap-10 gap-[231px] items-start justify-between mr-[130px] w-auto md:w-full">
           <div className="flex sm:flex-col flex-row gap-2 items-center justify-start w-auto sm:w-full">
             <Text
-              className="text-gray-50 text-sm w-[472px]"
+              className="text-gray-50 text-sm w-[492px]"
               size="txtPoppinsRegular14"
             >
               {props?.offer}

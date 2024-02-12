@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import { Button, Img, Text } from "components";
 
 const CartColumncarttotal = (props) => {
@@ -71,7 +73,8 @@ const CartColumncarttotal = (props) => {
           size="lg"
           variant="fill"
         >
-          {props?.proceesToCheckout}
+          {/* {props?.proceesToCheckout} */}
+          <Link to="/checkout">Process To Checkout</Link>
         </Button>
       </div>
     </>
