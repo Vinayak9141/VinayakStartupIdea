@@ -1,8 +1,11 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
 import { Img, List, Text, Input } from "components";
 
 const SignUpHeader = (props) => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className={props.className}>
@@ -17,40 +20,44 @@ const SignUpHeader = (props) => {
               </Text>
             ) : null}
           </div>
-          <div className="flex flex-row gap-12 items-start justify-start w-auto">
-            <div className="flex flex-col items-center justify-start">
+          <div className="sm:hidden flex flex-row gap-8 items-start justify-start w-auto">
+            <div className="hover:underline flex flex-col items-center justify-start">
               {!!props?.hometext ? (
                 <Text
                   className="text-base text-black-900 text-center"
+                  onClick={() => navigate("/accountdropdownwithaccount")}
                   size="txtPoppinsRegular16"
                 >
                   {props?.hometext}
                 </Text>
               ) : null}
             </div>
-            <div className="flex flex-col items-center justify-start">
+            <div className="hover:underline flex flex-col items-center justify-start">
               {!!props?.servicestext ? (
                 <Text
                   className="text-base text-black-900 text-center"
+                  onClick={() => navigate("/servicethree")}
                   size="txtPoppinsRegular16"
                 >
                   {props?.servicestext}
                 </Text>
               ) : null}
             </div>
-            <div className="flex flex-col items-center justify-start">
+            <div className="hover:underline flex flex-col items-center justify-start">
               {!!props?.abouttext ? (
                 <Text
                   className="text-base text-black-900 text-center"
+                  onClick={() => navigate("/about")}
                   size="txtPoppinsRegular16"
                 >
                   {props?.abouttext}
                 </Text>
               ) : null}
             </div>
-            <div className="flex flex-col items-center justify-start pt-0.5">
+            <div className="hover:underline flex flex-col items-center justify-start pt-0.5">
               <Text
                 className="text-base text-black-900 text-center"
+                onClick={() => navigate("/signup")}
                 size="txtPoppinsRegular16"
               >
                 {props?.signuptext}
@@ -58,10 +65,10 @@ const SignUpHeader = (props) => {
             </div>
           </div>
         </div>
-        <div className="flex sm:flex-col flex-row gap-6 items-center justify-start w-auto sm:w-full">
-          <div className="bg-gray-100 flex flex-col items-center justify-center pl-5 pr-3 py-[7px] rounded w-auto">
-            {/* <div className="flex flex-row gap-[34px] items-center justify-center w-auto"> */}
-            {/* <Text
+        <div className="sm:hidden flex sm:flex-col flex-row gap-6 items-center justify-start w-auto sm:w-full">
+          {/* <div className="bg-gray-100 flex flex-col items-center justify-center pl-5 pr-3 py-[7px] rounded w-auto"> */}
+          {/* <div className="flex flex-row gap-[34px] items-center justify-center w-auto"> */}
+          {/* <Text
                 className="text-black-900_87 text-xs w-auto"
                 size="txtPoppinsRegular12"
               >
@@ -72,18 +79,18 @@ const SignUpHeader = (props) => {
                 src="images/img_search.svg"
                 alt="search"
               /> */}
-            <Input
-              name="placeboxinfo"
-              placeholder="What are you looking for?"
-              className="p-0 placeholder:text-black-900_87 text-base text-left w-full"
-              wrapClassName="h-[8px],w-[200px]"
-              shape="round"
-              color="gray_100"
-              size="sm"
-              variant="fill"
-            ></Input>
-            {/* </div> */}
-          </div>
+          <Input
+            name="placeboxinfo"
+            placeholder="What are you looking for?"
+            className="p-0 placeholder:text-black-900_87 text-base text-left w-full"
+            wrapClassName="h-[8px],w-[200px]"
+            shape="round"
+            color="gray_100"
+            size="sm"
+            variant="fill"
+          ></Input>
+          {/* </div> */}
+          {/* </div> */}
           <div className="flex flex-row gap-4 items-center justify-center w-auto">
             <List
               className="sm:flex-col flex-row gap-4 grid grid-cols-2 w-[63%]"
@@ -114,7 +121,7 @@ const SignUpHeader = (props) => {
               <div className="md:h-6 h-8 relative w-full">
                 {!!props?.cartimage ? (
                   <Img
-                    className="absolute bottom-[0] h-6 left-[0] w-6"
+                    className="common-pointer h-8 w-8"
                     alt="cartOne"
                     src={props?.cartimage}
                   />
@@ -139,6 +146,11 @@ const SignUpHeader = (props) => {
             ) : null}
           </div>
         </div>
+      </div>
+      <div className="sm:flex hidden">
+        <a className="text-4xl" href="">
+          &#8801;
+        </a>
       </div>
     </>
   );

@@ -1,8 +1,10 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
 import { Button, Img, Text } from "components";
 
 const ECommerceHomePageCart7 = (props) => {
+  const navigate = useNavigate();
   return (
     <>
       <div className={props.className}>
@@ -48,6 +50,7 @@ const ECommerceHomePageCart7 = (props) => {
               </div>
             </div>
           </div>
+
           <div className="flex flex-col items-center justify-start mb-auto mt-[-53px] mx-auto p-[5px] w-[71%] z-[1]">
             <Img
               className="h-[133px] md:h-auto my-[18px] object-cover w-full"
@@ -55,6 +58,15 @@ const ECommerceHomePageCart7 = (props) => {
               alt="newmercedesbe"
             />
           </div>
+        </div>
+        <div className="bg-black-900 flex flex-col items-center justify-start p-2 rounded-bl rounded-br w-full hover:bg-red-600 border hover:border-0 hover:cursor-pointer">
+          <Text
+            className="text-base text-white-A700"
+            size="txtPoppinsMedium16WhiteA700"
+            onClick={() => navigate("/cart")}
+          >
+            {props?.addtocarttext}
+          </Text>
         </div>
         <div className="flex flex-col gap-2 items-start justify-start w-auto">
           <Text
@@ -98,6 +110,7 @@ const ECommerceHomePageCart7 = (props) => {
 };
 
 ECommerceHomePageCart7.defaultProps = {
+  addtocarttext: "Add To Cart",
   new: "NEW",
   kidselectriccarOne: "Kids Electric Car",
   pricetext: "$960",

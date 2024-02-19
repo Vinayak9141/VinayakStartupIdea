@@ -1,5 +1,7 @@
 import React from "react";
 
+//import { useNavigate } from "react-router-dom";
+
 import { Button, Img, Input, Line, Text } from "components";
 import CartRoadmap from "components/CartRoadmap";
 import ECommerceHomePageTopheader from "components/ECommerceHomePageTopheader";
@@ -7,6 +9,11 @@ import Footer from "components/Footer";
 import SignUpHeader from "components/SignUpHeader";
 
 const ContactPage = () => {
+  //const navigate = useNavigate();
+  const handleClick = () => {
+    alert("Your Message Send Successfully.");
+  };
+
   return (
     <>
       <div className="bg-white-A700 flex flex-col font-poppins items-center justify-start mx-auto w-full">
@@ -123,34 +130,64 @@ const ContactPage = () => {
                     className="bg-gray-100 justify-center pl-4 sm:pr-5 pr-[35px] py-3 rounded text-base text-black-900_87 w-full"
                     size="txtPoppinsRegular16Black90087"
                   >
-                    <span className="text-black-900 font-poppins text-left font-normal">
+                    <Input
+                      name="placeboxinfo"
+                      placeholder="First Name"
+                      className="p-0 placeholder:text-black-900_87 text-base text-left w-full"
+                      wrapClassName="w-full"
+                      shape="round"
+                      color="gray_100"
+                      size="sm"
+                      variant="fill"
+                    ></Input>
+                    {/* <span className="text-black-900 font-poppins text-left font-normal">
                       Your Name{" "}
                     </span>
                     <span className="text-red-600 font-poppins text-left font-normal">
                       *
-                    </span>
+                    </span> */}
                   </Text>
                   <Text
                     className="bg-gray-100 justify-center pl-4 sm:pr-5 pr-[35px] py-3 rounded text-base text-black-900_87 w-full"
                     size="txtPoppinsRegular16Black90087"
                   >
-                    <span className="text-black-900 font-poppins text-left font-normal">
+                    <Input
+                      name="placeboxinfo"
+                      placeholder="Your Email"
+                      className="p-0 placeholder:text-black-900_87 text-base text-left w-full"
+                      wrapClassName="w-full"
+                      shape="round"
+                      color="gray_100"
+                      size="sm"
+                      variant="fill"
+                    ></Input>
+                    {/* <span className="text-black-900 font-poppins text-left font-normal">
                       Your Email{" "}
                     </span>
                     <span className="text-red-600 font-poppins text-left font-normal">
                       *
-                    </span>
+                    </span> */}
                   </Text>
                   <Text
                     className="bg-gray-100 justify-center pl-4 sm:pr-5 pr-[35px] py-3 rounded text-base text-black-900_87 w-full"
                     size="txtPoppinsRegular16Black90087"
                   >
-                    <span className="text-black-900 font-poppins text-left font-normal">
+                    <Input
+                      name="placeboxinfo"
+                      placeholder="Your Phone"
+                      className="p-0 placeholder:text-black-900_87 text-base text-left w-full"
+                      wrapClassName="w-full"
+                      shape="round"
+                      color="gray_100"
+                      size="sm"
+                      variant="fill"
+                    ></Input>
+                    {/* <span className="text-black-900 font-poppins text-left font-normal">
                       Your Phone{" "}
                     </span>
                     <span className="text-red-600 font-poppins text-left font-normal">
                       *
-                    </span>
+                    </span> */}
                   </Text>
                 </div>
                 <div className="bg-gray-100 flex flex-col items-start justify-start p-[15px] rounded w-full">
@@ -158,7 +195,16 @@ const ContactPage = () => {
                     className="mb-[151px] text-base text-black-900_87"
                     size="txtPoppinsRegular16Black90087"
                   >
-                    Your Massage
+                    <Input
+                      name="placeboxinfo"
+                      placeholder="Your Message"
+                      className="p-0 placeholder:text-black-900_87 text-base text-left w-full"
+                      wrapClassName="w-full"
+                      shape="round"
+                      color="gray_100"
+                      size="sm"
+                      variant="fill"
+                    ></Input>
                   </Text>
                 </div>
                 <Button
@@ -167,6 +213,8 @@ const ContactPage = () => {
                   color="red_600"
                   size="lg"
                   variant="fill"
+                  // onClick={() => navigate("/error")}
+                  onClick={handleClick}
                 >
                   Send Massage
                 </Button>

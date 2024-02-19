@@ -11,7 +11,7 @@ const Footer = (props) => {
     <>
       <footer className={props.className}>
         <div className="flex flex-col items-center justify-center mb-[23px] mt-[77px] w-full">
-          <div className="flex md:flex-col flex-row md:gap-10 gap-[87px] items-start justify-center w-auto md:w-full">
+          <div className="flex sm:flex-col  flex-row md:gap-10 gap-[87px] items-start justify-center w-auto md:w-full">
             <div className="flex flex-col gap-4 items-start justify-start w-auto">
               <div className="flex flex-col gap-6 items-start justify-start w-auto">
                 <div className="flex flex-col gap-6 items-start justify-start w-auto">
@@ -149,6 +149,7 @@ const Footer = (props) => {
                   <Text
                     className="text-base text-gray-50"
                     size="txtPoppinsRegular16Gray50"
+                    onClick={() => navigate("/error")}
                   >
                     Privacy Policy
                   </Text>
@@ -157,6 +158,7 @@ const Footer = (props) => {
                   <Text
                     className="text-base text-gray-50"
                     size="txtPoppinsRegular16Gray50"
+                    onClick={() => navigate("/error")}
                   >
                     Terms Of Use
                   </Text>
@@ -165,6 +167,7 @@ const Footer = (props) => {
                   <Text
                     className="text-base text-gray-50"
                     size="txtPoppinsRegular16Gray50"
+                    onClick={() => navigate("/error")}
                   >
                     FAQ
                   </Text>
@@ -208,7 +211,7 @@ const Footer = (props) => {
                         <div className="h-[30px] m-auto w-[95%]">
                           <div className="h-[30px] m-auto w-full">
                             <Img
-                              className="h-[30px] m-auto object-cover rounded w-full"
+                              className="h-[30px] m-auto object-cover rounded w-[110px]"
                               src="images/img_pngtransparent.png"
                               alt="pngtransparent"
                             />
@@ -237,7 +240,7 @@ const Footer = (props) => {
                       </div>
                       <div className="bg-black-900 flex flex-col items-center justify-start p-[3px] w-full">
                         <Img
-                          className="h-[34px] md:h-auto object-cover rounded w-full"
+                          className="h-[34px] md:h-auto object-cover rounded w-[110px]"
                           src="images/img_downloadappstore.png"
                           alt="downloadappstor"
                         />
@@ -247,32 +250,44 @@ const Footer = (props) => {
                 </div>
               </div>
               <div className="flex flex-row gap-6 items-start justify-start w-auto">
-                <Img
-                  className="h-6 w-6"
-                  src="images/img_iconfacebook.svg"
-                  alt="iconfacebook"
-                />
-                <Img
-                  className="h-6 w-6"
-                  src="images/img_icontwitter.svg"
-                  alt="icontwitter"
-                />
-                <Img
-                  className="h-6 w-6"
-                  src="images/img_iconinstagram.svg"
-                  alt="iconinstagram"
-                />
-                <Img
-                  className="h-6 w-6"
-                  src="images/img_iconlinkedin.svg"
-                  alt="iconlinkedin"
-                />
+                <a href="https://www.facebook.com/" target="_blank">
+                  <Img
+                    className="h-6 w-6"
+                    src="images/img_iconfacebook.svg"
+                    alt="iconfacebook"
+                  />
+                </a>
+
+                <a href="https://twitter.com/" target="_blank">
+                  <Img
+                    className="h-6 w-6"
+                    src="images/img_icontwitter.svg"
+                    alt="icontwitter"
+                  />
+                </a>
+
+                <a href="https://www.instagram.com/" target="_blank">
+                  <Img
+                    className="h-6 w-6"
+                    src="images/img_iconinstagram.svg"
+                    alt="iconinstagram"
+                  />
+                </a>
+
+                <a href="https://in.linkedin.com/" target="_blank">
+                  <Img
+                    className="h-6 w-6"
+                    src="images/img_iconlinkedin.svg"
+                    alt="iconlinkedin"
+                  />
+                </a>
               </div>
             </div>
           </div>
           <Text
             className="mt-[9px] text-base text-gray-50"
             size="txtPoppinsRegular16Gray50"
+            onClick={() => navigate("/servicefour")}
           >
             Become a Seller{" "}
           </Text>

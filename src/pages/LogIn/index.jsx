@@ -14,7 +14,8 @@ const LogInPage = () => {
         <div className="flex flex-col items-center w-full">
           <ECommerceHomePageTopheader className="bg-black-900 flex flex-col items-end justify-start p-3 w-full" />
           <SignUpHeader
-            className="flex md:flex-col flex-row font-inter md:gap-10 gap-[210px] items-center justify-between max-w-[1170px] mt-[38px] mx-auto md:px-5 w-full"
+            className="flex md:flex-col flex-row font-inter md:gap-10 gap-[150px] items-center justify-between max-w-[1170px] mt-[38px] mx-auto md:px-5 w-full"
+            exclusive="STARTUP IDEA"
             servicestext="Services"
             abouttext="About"
           />

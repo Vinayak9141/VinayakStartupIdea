@@ -1,5 +1,7 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
+
 import { Button, Img, Input, Line, Text } from "components";
 import CartRoadmap from "components/CartRoadmap";
 import ECommerceHomePageTopheader from "components/ECommerceHomePageTopheader";
@@ -7,6 +9,7 @@ import Footer from "components/Footer";
 import SignUpHeader from "components/SignUpHeader";
 
 const ErrorPage = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="bg-white-A700 flex flex-col font-poppins items-center justify-start mx-auto w-full">
@@ -48,6 +51,7 @@ const ErrorPage = () => {
           color="red_600"
           size="lg"
           variant="fill"
+          onClick={() => navigate("/ecommercehomepage")}
         >
           Back to home page
         </Button>

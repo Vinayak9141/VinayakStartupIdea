@@ -71,20 +71,23 @@ const AboutPage = () => {
             className="sm:flex-col flex-row gap-[30px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 justify-start max-w-[1170px] mt-[140px] mx-auto md:px-5 w-full"
             orientation="horizontal"
           >
-            <div className="border hover:border-0 border-black-900_4c border-solid hover:cursor-pointer flex flex-1 flex-col items-center justify-start p-[30px] sm:px-5 rounded hover:shadow-bs2 hover:w-full w-full">
-              <AboutColumnhome className="flex flex-col gap-6 items-center justify-start w-[169px]" />
+            <div className="border hover:border-0 border-black-900_4c border-solid hover:cursor-pointer flex flex-1 flex-col items-center justify-start p-[30px] sm:px-5 rounded hover:shadow-bs2 hover:w-full w-full hover:bg-red-600">
+              <AboutColumnhome className="flex flex-col gap-6 items-center justify-start w-[169px] " />
             </div>
-            <div className="bg-red-600 border hover:border-0 border-black-900_4c border-solid hover:cursor-pointer flex flex-1 flex-col items-center justify-end p-[29px] sm:px-5 rounded hover:shadow-bs2 shadow-bs2 hover:w-full w-full">
+            <div className="border hover:border-0 border-black-900_4c border-solid hover:cursor-pointer flex flex-1 flex-col items-center justify-start p-[30px] sm:px-5 rounded hover:shadow-bs2 hover:w-full w-full hover:bg-red-600">
+              <AboutColumnhome className="flex flex-col gap-6 items-center justify-start w-[169px] " />
+            </div>
+            {/* <div className="border hover:border-0 border-black-900_4c border-solid hover:cursor-pointer flex flex-1 flex-col items-center justify-end p-[29px] sm:px-5 rounded hover:shadow-bs2 shadow-bs2 hover:w-full w-full hover:bg-red-600">
               <AboutColumniconsale
                 className="flex flex-col gap-6 items-center justify-start mt-0.5 w-auto"
                 moneybackguaranteetext="33k"
                 monthlyproductsaletext="Mopnthly Produduct Sale"
               />
-            </div>
-            <div className="border hover:border-0 border-black-900_4c border-solid hover:cursor-pointer flex flex-1 flex-col items-center justify-start p-1 rounded hover:shadow-bs2 hover:w-full w-full">
+            </div> */}
+            <div className="border hover:border-0 border-black-900_4c border-solid hover:cursor-pointer flex flex-1 flex-col items-center justify-start p-1 rounded hover:shadow-bs2 hover:w-full w-full hover:bg-red-600">
               <AboutColumniconshoppingbag className="flex flex-col gap-6 items-center justify-start my-[26px] w-[262px]" />
             </div>
-            <div className="border hover:border-0 border-black-900_4c border-solid hover:cursor-pointer flex flex-1 flex-col items-center justify-start p-1 rounded hover:shadow-bs2 hover:w-full w-full">
+            <div className="border hover:border-0 border-black-900_4c border-solid hover:cursor-pointer flex flex-1 flex-col items-center justify-start p-1 rounded hover:shadow-bs2 hover:w-full w-full hover:bg-red-600">
               <AboutColumniconshoppingbag className="flex flex-col gap-6 items-center justify-start my-[26px] w-[262px]" />
             </div>
             {/* <div className="border hover:border-0 border-black-900_4c border-solid hover:cursor-pointer flex flex-1 flex-col items-center justify-end p-[27px] sm:px-5 rounded hover:shadow-bs2 hover:w-full w-full">
@@ -225,6 +228,7 @@ const AboutPage = () => {
               </div>
             </div>
           </List>
+
           <Img
             className="h-4 mt-10 w-28"
             src="images/img_frame883_black_900.svg"

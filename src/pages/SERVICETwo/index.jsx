@@ -29,6 +29,7 @@ const SERVICETwoPage = () => {
                   <Text
                     className="text-base text-black-900 text-center w-auto"
                     size="txtPoppinsRegular16"
+                    onClick={() => navigate("/accountdropdownwithaccount")}
                   >
                     Home
                   </Text>

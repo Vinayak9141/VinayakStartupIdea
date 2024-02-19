@@ -1,8 +1,9 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 import { Button, Img, Text } from "components";
 
 const ECommerceHomePageColumn2 = (props) => {
+  const navigate = useNavigate();
   return (
     <>
       <div className={props.className}>
@@ -55,6 +56,15 @@ const ECommerceHomePageColumn2 = (props) => {
               alt="sammoghadamkh"
             />
           </div>
+        </div>
+        <div className="bg-black-900 flex flex-col items-center justify-start p-2 rounded-bl rounded-br w-full hover:bg-red-600 border hover:border-0 hover:cursor-pointer">
+          <Text
+            className="text-base text-white-A700"
+            size="txtPoppinsMedium16WhiteA700"
+            onClick={() => navigate("/cart")}
+          >
+            {props?.addtocarttext}
+          </Text>
         </div>
         <div className="flex flex-col gap-2 items-start justify-start w-auto">
           <Text
@@ -119,6 +129,7 @@ const ECommerceHomePageColumn2 = (props) => {
 };
 
 ECommerceHomePageColumn2.defaultProps = {
+  addtocarttext: "Add To Cart",
   p25: "-25%",
   language: "S-Series Comfort Chair ",
   price: "$375",

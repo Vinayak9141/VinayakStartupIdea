@@ -1,8 +1,9 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 import { Button, Img, Text } from "components";
 
 const ECommerceHomePageColumn1 = (props) => {
+  const navigate = useNavigate();
   return (
     <>
       <div className={props.className}>
@@ -48,6 +49,7 @@ const ECommerceHomePageColumn1 = (props) => {
               </div>
             </div>
           </div>
+
           <div className="flex flex-col items-center justify-start mb-auto mt-[-53px] mx-auto p-2.5 w-[71%] z-[1]">
             <Img
               className="h-[129px] md:h-auto my-[15px] object-cover w-full"
@@ -55,6 +57,15 @@ const ECommerceHomePageColumn1 = (props) => {
               alt="g27cq4500x5001"
             />
           </div>
+        </div>
+        <div className="bg-black-900 flex flex-col items-center justify-start p-2 rounded-bl rounded-br w-full hover:bg-red-600 border hover:border-0 hover:cursor-pointer">
+          <Text
+            className="text-base text-white-A700"
+            size="txtPoppinsMedium16WhiteA700"
+            onClick={() => navigate("/cart")}
+          >
+            {props?.addtocarttext}
+          </Text>
         </div>
         <div className="flex flex-col gap-2 items-start justify-start w-auto">
           <Text
@@ -97,6 +108,7 @@ const ECommerceHomePageColumn1 = (props) => {
 };
 
 ECommerceHomePageColumn1.defaultProps = {
+  addtocarttext: "Add To Cart",
   p30: "-30%",
   ipslcdgamingmonOne: "IPS LCD Gaming Monitor",
   price: "$370",

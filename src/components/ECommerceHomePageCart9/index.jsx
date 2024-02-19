@@ -1,8 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import { Button, Img, Text } from "components";
 
 const ECommerceHomePageCart9 = (props) => {
+  const navigate = useNavigate();
   return (
     <>
       <div className={props.className}>
@@ -48,13 +50,23 @@ const ECommerceHomePageCart9 = (props) => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-start mb-auto mt-[-53px] mx-auto p-1.5 w-[71%] z-[1]">
+
+          <div className="flex flex-col items-center justify-start mb-auto mt-[-53px] mx-auto p-[5px] w-[71%] z-[1]">
             <Img
-              className="h-[150px] md:h-auto my-[9px] object-cover w-full"
-              src="images/img_gp11prd31.png"
-              alt="gp11prdThirtyOne"
+              className="h-[180px] md:h-auto object-cover w-full"
+              src="images/img_71rdoexxtrl1.png"
+              alt="71rdoexxtrlOne"
             />
           </div>
+        </div>
+        <div className="bg-black-900 flex flex-col items-center justify-start p-2 rounded-bl rounded-br w-full hover:bg-red-600 border hover:border-0 hover:cursor-pointer">
+          <Text
+            className="text-base text-white-A700"
+            size="txtPoppinsMedium16WhiteA700"
+            onClick={() => navigate("/cart")}
+          >
+            {props?.addtocarttext}
+          </Text>
         </div>
         <div className="flex flex-col gap-2 items-start justify-start w-auto">
           <Text
@@ -73,42 +85,24 @@ const ECommerceHomePageCart9 = (props) => {
               </Text>
             </div>
             <div className="flex flex-row gap-2 items-start justify-start w-auto">
-              <div className="flex flex-row items-start justify-start w-auto">
-                <Img
-                  className="h-5 rounded-[1px] w-5"
-                  src="images/img_signal_orange_a200.svg"
-                  alt="signal"
-                />
-                <Img
-                  className="h-5 rounded-[1px] w-5"
-                  src="images/img_signal_orange_a200.svg"
-                  alt="signal_One"
-                />
-                <Img
-                  className="h-5 rounded-[1px] w-5"
-                  src="images/img_signal_orange_a200.svg"
-                  alt="signal_Two"
-                />
-                <Img
-                  className="h-5 rounded-[1px] w-5"
-                  src="images/img_signal_orange_a200.svg"
-                  alt="signal_Three"
-                />
-                <Img
-                  className="h-5 w-5"
-                  src="images/img_starhalffilled.svg"
-                  alt="starhalffilled"
-                />
-              </div>
+              <Img
+                className="h-5 w-[100px]"
+                src="images/img_signal.svg"
+                alt="signal"
+              />
               <Text
-                className="text-black-900_87 text-sm w-[31px]"
+                className="text-black-900_87 text-sm w-[30px]"
                 size="txtPoppinsSemiBold14"
               >
-                {props?.fiftyfive}
+                {props?.signaltext}
               </Text>
             </div>
           </div>
-          <Img className="h-5 w-12" src="images/img_user.svg" alt="user" />
+          <Img
+            className="h-5 w-12"
+            src="images/img_colourchnage.svg"
+            alt="colourchnage"
+          />
         </div>
       </div>
     </>
@@ -116,6 +110,7 @@ const ECommerceHomePageCart9 = (props) => {
 };
 
 ECommerceHomePageCart9.defaultProps = {
+  addtocarttext: "Add To Cart",
   new: "NEW",
   gp11shooterusb: "GP11 Shooter USB Gamepad",
   pricetext: "$660",

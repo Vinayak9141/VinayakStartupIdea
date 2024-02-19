@@ -45,12 +45,12 @@ const AccountDropdownWithaccountPage = () => {
       <div className="bg-white-A700 flex flex-col font-poppins items-center justify-start mx-auto w-full">
         <ECommerceHomePageTopheader className="bg-black-900 flex flex-col items-end justify-start p-3 w-full" />
         <SignUpHeader
-          className="flex md:flex-col flex-row font-inter md:gap-10 gap-[80px] items-center justify-between max-w-[1170px] mt-10 mx-auto md:px-5 w-full"
+          className="flex md:flex-col flex-row font-inter md:gap-10 gap-[60px] items-center justify-between max-w-[1170px] mt-10 mx-auto md:px-5 w-full"
           exclusive="STARTUP IDEA"
           hometext="Home"
           servicestext="Services"
           abouttext="About"
-          cartimage="images/img_cart1_black_900.svg"
+          cartimage="images/img_cart1.svg"
           userimage="images/img_user_red_600_32x32.svg"
         />
         <div className="font-poppins md:h-96 h-[400px] md:px-5 relative w-full">
@@ -118,13 +118,13 @@ const AccountDropdownWithaccountPage = () => {
                                 />
                               </div>
                             </div>
-                            <div className="h-[328px] relative w-3/5 md:w-full">
+                            <div className="h-[328px] relative w-2/5 md:w-full">
                               <Img
                                 className="h-[328px] m-auto object-cover w-full"
                                 src="images/img_heroendframe.png"
                                 alt="heroendframe"
                               />
-                              <div className="absolute bg-red-600 bottom-[4%] h-2.5 left-[1%] rounded-[50%] w-2.5"></div>
+                              {/* <div className="absolute bg-red-600 bottom-[4%] h-2.5 left-[1%] rounded-[50%] w-2.5"></div> */}
                             </div>
                           </div>
                         </div>
@@ -147,9 +147,9 @@ const AccountDropdownWithaccountPage = () => {
                   }}
                 />
                 <PagerIndicator
-                  className="absolute bottom-[3%] flex gap-[11px] h-3.5 items-center justify-center left-[31%] w-[106px]"
+                  className="absolute bottom-[3%] flex gap-[11px] h-3.5 items-center justify-center left-[31%] w-[106px] sm:hidden"
                   count={5}
-                  activeCss="inline-block cursor-pointer rounded-[50%] h-3.5 border-white-A700 border-2 border-solid w-3.5 relative"
+                  activeCss="bg-red-600 inline-block cursor-pointer rounded-[50%] h-3.5 border-white-A700 border-2 border-solid w-3.5 relative"
                   activeIndex={sliderState}
                   inactiveCss="inline-block cursor-pointer rounded-[50%] h-3 bg-white-A700_87 w-3 relative"
                   sliderRef={sliderRef}
@@ -159,9 +159,9 @@ const AccountDropdownWithaccountPage = () => {
               </div>
             </div>
           </div>
-          <AccountDropdownWithAccountColumnTwo className="absolute flex flex-col items-center justify-start right-[9%] top-[0] w-[16%]" />
+          {/* <AccountDropdownWithAccountColumnTwo className="absolute flex flex-col items-center justify-start right-[9%] top-[0] w-[16%]" /> */}
         </div>
-        <div className="flex flex-col font-poppins gap-10 items-start justify-start max-w-[1170px] mt-[140px] mx-auto md:px-5 w-full">
+        <div className="flex flex-col font-poppins gap-10 items-start justify-start max-w-[1170px] mt-[140px] mx-auto md:px-5 w-full pt-12">
           <div className="flex md:flex-col flex-row md:gap-10 gap-[470px] items-end justify-between w-auto md:w-full">
             <div className="flex sm:flex-col flex-row sm:gap-10 gap-[87px] items-end justify-start w-auto md:w-full">
               <div className="flex flex-col gap-6 h-[109px] md:h-auto items-start justify-start w-auto">
@@ -289,7 +289,8 @@ const AccountDropdownWithaccountPage = () => {
             orientation="horizontal"
           >
             <ECommerceHomePageColumn className="flex flex-col gap-4 items-start justify-start w-auto" />
-            <ECommerceHomePageColumnOne className="flex flex-col gap-4 items-start justify-start w-auto" />
+            <ECommerceHomePageColumn2 className="flex flex-col gap-4 items-start justify-start w-auto" />
+            {/* <ECommerceHomePageColumnOne className="flex flex-col gap-4 items-start justify-start w-auto" /> */}
             <ECommerceHomePageColumn1 className="flex flex-col gap-4 items-start justify-start w-auto" />
             <ECommerceHomePageColumn2 className="flex flex-col gap-4 items-start justify-start w-auto" />
           </List>
@@ -356,7 +357,7 @@ const AccountDropdownWithaccountPage = () => {
             className="sm:flex-col flex-row gap-[30px] grid sm:grid-cols-1 md:grid-cols-3 grid-cols-6 justify-start w-auto md:w-full"
             orientation="horizontal"
           >
-            <div className="border border-black-900_4c border-solid flex flex-col gap-4 items-center justify-end p-[23px] sm:px-5 rounded w-full">
+            <div className="border border-black-900_4c border-solid flex flex-col gap-4 items-center justify-end p-[23px] sm:px-5 rounded w-full hover:bg-red-600">
               <Img
                 className="h-14 w-14"
                 src="images/img_categorycellphone.svg"
@@ -369,7 +370,7 @@ const AccountDropdownWithaccountPage = () => {
                 Phones
               </Text>
             </div>
-            <div className="border border-black-900_4c border-solid flex flex-col gap-[18px] items-center justify-end p-[21px] sm:px-5 rounded w-full">
+            <div className="border border-black-900_4c border-solid flex flex-col gap-[18px] items-center justify-end p-[21px] sm:px-5 rounded w-full hover:bg-red-600">
               <Img
                 className="h-14 mt-[3px] w-14"
                 src="images/img_categorycomputer.svg"
@@ -382,7 +383,7 @@ const AccountDropdownWithaccountPage = () => {
                 Computers
               </Text>
             </div>
-            <div className="border border-black-900_4c border-solid flex flex-col gap-4 items-center justify-end p-[23px] sm:px-5 rounded w-full">
+            <div className="border border-black-900_4c border-solid flex flex-col gap-4 items-center justify-end p-[23px] sm:px-5 rounded w-full hover:bg-red-600 ">
               <Img
                 className="h-14 w-14"
                 src="images/img_categorysmartwatch.svg"
@@ -395,7 +396,7 @@ const AccountDropdownWithaccountPage = () => {
                 SmartWatch
               </Text>
             </div>
-            <div className="border border-black-900_4c border-solid flex flex-col gap-4 items-center justify-end p-[23px] sm:px-5 rounded w-full">
+            <div className="border border-black-900_4c border-solid flex flex-col gap-4 items-center justify-end p-[23px] sm:px-5 rounded w-full hover:bg-red-600">
               <Img
                 className="h-14 w-14"
                 src="images/img_categorycamera_black_900.svg"
@@ -408,7 +409,7 @@ const AccountDropdownWithaccountPage = () => {
                 Camera
               </Text>
             </div>
-            <div className="border border-black-900_4c border-solid flex flex-col gap-4 items-center justify-end p-[23px] sm:px-5 rounded w-full">
+            <div className="border border-black-900_4c border-solid flex flex-col gap-4 items-center justify-end p-[23px] sm:px-5 rounded w-full hover:bg-red-600">
               <Img
                 className="h-14 w-14"
                 src="images/img_categoryheadphone.svg"
@@ -421,7 +422,7 @@ const AccountDropdownWithaccountPage = () => {
                 HeadPhones
               </Text>
             </div>
-            <div className="border border-black-900_4c border-solid flex flex-col gap-[18px] items-center justify-end p-[21px] sm:px-5 rounded w-full">
+            <div className="border border-black-900_4c border-solid flex flex-col gap-[18px] items-center justify-end p-[21px] sm:px-5 rounded w-full hover:bg-red-600">
               <Img
                 className="h-14 mt-[3px] w-14"
                 src="images/img_categorygamepad.svg"
@@ -470,11 +471,17 @@ const AccountDropdownWithaccountPage = () => {
             className="sm:flex-col flex-row gap-[30px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 justify-start w-auto md:w-full"
             orientation="horizontal"
           >
-            <ECommerceHomePageCart
+            {/* <ECommerceHomePageCart
               className="flex flex-col gap-4 items-start justify-start w-auto"
               hearticon="images/img_wishlist.svg"
               quickviewicon="images/img_quickview.svg"
               productimage="images/img_672462zah9d56.png"
+            /> */}
+            <ECommerceHomePageCart2
+              className="flex flex-col gap-4 items-start justify-start w-auto"
+              hearticon="images/img_wishlist.svg"
+              quickviewicon="images/img_quickview.svg"
+              productimage="images/img_gammaxxl240argb1500x500.png"
             />
             <ECommerceHomePageCart1
               className="flex flex-col gap-4 items-start justify-start w-auto"
@@ -487,11 +494,16 @@ const AccountDropdownWithaccountPage = () => {
               quickviewicon="images/img_quickview.svg"
               productimage="images/img_gammaxxl240argb1500x500.png"
             />
-            <ECommerceHomePageCart3
+            {/* <ECommerceHomePageCart3
               className="flex flex-col gap-4 items-start justify-start w-auto"
               hearticon="images/img_wishlist.svg"
               quickviewicon="images/img_quickview.svg"
               productimage="images/img_sammoghadamkh_176x140.png"
+            /> */}
+            <ECommerceHomePageCart1
+              className="flex flex-col gap-4 items-start justify-start w-auto"
+              hearticon="images/img_wishlist.svg"
+              quickviewicon="images/img_quickview.svg"
             />
           </List>
         </div>
@@ -597,19 +609,22 @@ const AccountDropdownWithaccountPage = () => {
               >
                 <ECommerceHomePageCart4 className="flex flex-col gap-4 items-start justify-start w-auto" />
                 <ECommerceHomePageCart5 className="flex flex-col gap-4 items-start justify-start w-auto" />
+
                 <ECommerceHomePageCart6 className="flex flex-col gap-4 items-start justify-start w-auto" />
                 <AccountDropdownWithAccountColumncurologyj7pkvqr className="flex flex-col gap-4 items-start justify-start w-auto" />
               </List>
               <div className="flex md:flex-col flex-row gap-[30px] items-start justify-start w-auto md:w-full">
                 <List
-                  className="sm:flex-col flex-row gap-[30px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 w-3/4 md:w-full"
+                  className="sm:flex-col flex-row gap-[30px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 w-4/4 md:w-full"
                   orientation="horizontal"
                 >
                   <ECommerceHomePageCart7 className="flex flex-col gap-4 items-start justify-start w-auto" />
                   <ECommerceHomePageCart8 className="flex flex-col gap-4 items-start justify-start w-auto" />
+
                   <ECommerceHomePageCart9 className="flex flex-col gap-4 items-start justify-start w-auto" />
+                  <ECommerceHomePageCart10 className="flex flex-col gap-4 items-start justify-start w-auto" />
                 </List>
-                <ECommerceHomePageCart10 className="flex flex-col gap-4 items-start justify-start w-auto" />
+                {/* <ECommerceHomePageCart10 className="flex flex-col gap-4 items-start justify-start w-auto" /> */}
               </div>
             </div>
           </div>
@@ -644,7 +659,7 @@ const AccountDropdownWithaccountPage = () => {
           <div className="flex md:flex-col flex-row gap-[30px] items-start justify-start w-auto md:w-full">
             <div className="bg-black-900 flex md:h-[511px] h-[600px] justify-end pt-[29px] sm:px-5 px-[29px] relative rounded w-[49%] md:w-full">
               <Img
-                className="h-[511px] mt-auto mx-auto object-cover w-[511px]"
+                className="h-[411px] mt-auto mx-auto object-cover w-[511px]"
                 src="images/img_ps5slimgoedko.png"
                 alt="ps5slimgoedko"
               />
@@ -724,7 +739,7 @@ const AccountDropdownWithaccountPage = () => {
                     <div className="backdrop-opacity-[0.5] bg-blue_gray-100_e5 blur-[300.00px] h-[196px] m-auto rounded-[50%] w-[196px]"></div>
                     <div className="absolute flex flex-col h-full inset-[0] items-center justify-center m-auto w-full">
                       <Img
-                        className="h-[221px] md:h-auto object-cover w-[91%]"
+                        className="absolute h-[180px] my-auto object-cover right-[0] w-[76%] "
                         src="images/img_69694768amazo.png"
                         alt="69694768amazo"
                       />
@@ -762,10 +777,10 @@ const AccountDropdownWithaccountPage = () => {
                 </div>
                 <div className="bg-black-900 md:h-[238px] h-[284px] p-4 relative rounded w-full">
                   <div className="h-[238px] m-auto w-[238px]">
-                    <div className="backdrop-opacity-[0.5] bg-blue_gray-100_e5 blur-[300.00px] h-[238px] m-auto rounded-[50%] w-[238px]"></div>
+                    {/* <div className="backdrop-opacity-[0.5] bg-blue_gray-100_e5 blur-[300.00px] h-[238px] m-auto rounded-[50%] w-[238px]"></div> */}
                     <div className="absolute flex flex-col h-max inset-[0] items-center justify-center m-auto p-1 w-[89%]">
                       <Img
-                        className="h-[203px] md:h-auto mb-[7px] mt-1 object-cover w-full"
+                        className="absolute h-[181px] my-auto object-cover right-[0] w-[76%]"
                         src="images/img_652e82cd70aa652.png"
                         alt="652e82cd70aa652"
                       />

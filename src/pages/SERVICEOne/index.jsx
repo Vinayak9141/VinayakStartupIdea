@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Button, Img, Input, Line, Text } from "components";
 import ECommerceHomePageColumnwhatareyoulookiOne from "components/ECommerceHomePageColumnwhatareyoulookiOne";
 import ECommerceHomePageTopheader from "components/ECommerceHomePageTopheader";
-import Footer2 from "components/Footer2";
+import Footer from "components/Footer";
 
 const SERVICEOnePage = () => {
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ const SERVICEOnePage = () => {
       <div className="bg-white-A700 flex flex-col font-poppins items-center justify-end mx-auto w-full">
         <ECommerceHomePageTopheader className="bg-black-900 flex flex-col items-end justify-start p-3 w-full" />
         <div className="flex md:flex-col flex-row font-inter md:gap-10 gap-[148px] items-center justify-start max-w-[1179px] mt-10 mx-auto md:px-5 w-full">
-          <div className="flex md:flex-1 sm:flex-col flex-row sm:gap-10 gap-[190px] items-start justify-between w-auto md:w-full">
+          <div className="flex md:flex-1 sm:flex-col flex-row sm:gap-10 gap-[80px] items-start justify-between w-auto md:w-full">
             <div className="flex flex-col items-center justify-start">
               <Text
                 className="text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.72px]"
@@ -29,14 +29,10 @@ const SERVICEOnePage = () => {
                 <Text
                   className="text-base text-black-900 text-center w-auto"
                   size="txtPoppinsRegular16"
+                  onClick={() => navigate("/accountdropdownwithaccount")}
                 >
                   Home
                 </Text>
-                <Img
-                  className="h-px w-12"
-                  src="images/img_underline.svg"
-                  alt="underline"
-                />
               </div>
               <div className="flex flex-col items-center justify-start">
                 <Text
@@ -1015,8 +1011,8 @@ const SERVICEOnePage = () => {
             </div>
           </div>
         </div>
-        <Footer2 className="bg-black-900 flex font-poppins items-center justify-center mt-[120px] md:px-5 w-full" />
-        <div className="flex flex-col font-poppins md:gap-10 gap-[355px] items-end mt-[1118px] md:px-10 sm:px-5 px-[89px] w-full">
+        <Footer className="bg-black-900 flex font-poppins items-center justify-center mt-[120px] md:px-5 w-full" />
+        {/* <div className="flex flex-col font-poppins md:gap-10 gap-[355px] items-end mt-[1118px] md:px-10 sm:px-5 px-[89px] w-full">
           <Button
             className="flex h-[46px] items-center justify-center rotate-[90deg] w-[46px]"
             shape="circle"
@@ -1036,7 +1032,7 @@ const SERVICEOnePage = () => {
           >
             Become a Seller{" "}
           </Text>
-        </div>
+        </div> */}
       </div>
     </>
   );

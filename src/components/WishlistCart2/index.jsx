@@ -1,8 +1,10 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
 import { Button, Img, Text } from "components";
 
 const WishlistCart2 = (props) => {
+  const navigate = useNavigate();
   return (
     <>
       <div className={props.className}>
@@ -41,6 +43,7 @@ const WishlistCart2 = (props) => {
               <Text
                 className="text-white-A700 text-xs w-auto"
                 size="txtPoppinsRegular12WhiteA700"
+                onClick={() => navigate("/productdetailspage")}
               >
                 {props?.addtocarttext}
               </Text>
@@ -70,8 +73,8 @@ const WishlistCart2 = (props) => {
 
 WishlistCart2.defaultProps = {
   addtocarttext: "Add To Cart",
-  productname: "GP11 Shooter USB Gamepad",
-  productprice: "$550",
+  productname: "Havic HV G-92 Gamepad",
+  productprice: "$192",
 };
 
 export default WishlistCart2;

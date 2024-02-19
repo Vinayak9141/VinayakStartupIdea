@@ -7,7 +7,7 @@ const Home = () => {
       <p className="headline"></p>
       <ul>
         <li>
-          <Link to="/ecommercehomepage">ECommerceHomePage</Link>
+          <Link to="/accountdropdownwithaccount">ECommerceHomePage</Link>
         </li>
         <li>
           <Link to="/signup">SignUp</Link>
@@ -16,9 +16,7 @@ const Home = () => {
           <Link to="/login">LogIn</Link>
         </li>
         <li>
-          <Link to="/accountdropdownwithaccount">
-            AccountDropdownWithaccount
-          </Link>
+          <Link to="/ecommercehomepage">AccountDropdownWithaccount</Link>
         </li>
         <li>
           <Link to="/categorydropdown">CategoryDropdown</Link>

@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import { Button, Img, Input, Line, List, Text } from "components";
 import CartRoadmap from "components/CartRoadmap";
@@ -11,6 +12,7 @@ import Footer from "components/Footer";
 import SignUpHeader from "components/SignUpHeader";
 
 const ProductDetailspagePage = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="bg-white-A700 flex flex-col font-poppins items-center justify-start mx-auto w-full">
@@ -145,7 +147,7 @@ const ProductDetailspagePage = () => {
                   </Text>
                   <div className="flex flex-row font-poppins gap-4 items-start justify-start w-auto">
                     <Button
-                      className="cursor-pointer font-medium h-8 text-center text-sm w-8"
+                      className="hover:bg-red-600 cursor-pointer font-medium h-8 text-center text-sm w-8"
                       shape="round"
                       color="black_900_7f"
                       size="sm"
@@ -154,7 +156,7 @@ const ProductDetailspagePage = () => {
                       XS
                     </Button>
                     <Button
-                      className="cursor-pointer font-medium h-8 text-center text-sm w-8"
+                      className="hover:bg-red-600 cursor-pointer font-medium h-8 text-center text-sm w-8"
                       shape="round"
                       color="black_900_7f"
                       size="sm"
@@ -163,16 +165,25 @@ const ProductDetailspagePage = () => {
                       S
                     </Button>
                     <Button
-                      className="cursor-pointer font-medium h-8 text-center text-sm w-8"
+                      className="hover:bg-red-600 cursor-pointer font-medium h-8 text-center text-sm w-8"
                       shape="round"
-                      color="red_600"
+                      color="black_900_7f"
+                      size="sm"
+                      variant="outline"
+                    >
+                      M
+                    </Button>
+                    {/* <Button
+                      className="hover:bg-red-600 cursor-pointer font-medium h-8 text-center text-sm w-8"
+                      shape="round"
+                      color="black_900"
                       size="sm"
                       variant="fill"
                     >
                       M
-                    </Button>
+                    </Button> */}
                     <Button
-                      className="cursor-pointer font-medium h-8 text-center text-sm w-8"
+                      className="hover:bg-red-600 cursor-pointer font-medium h-8 text-center text-sm w-8"
                       shape="round"
                       color="black_900_7f"
                       size="sm"
@@ -181,7 +192,7 @@ const ProductDetailspagePage = () => {
                       L
                     </Button>
                     <Button
-                      className="cursor-pointer font-medium h-8 text-center text-sm w-8"
+                      className="hover:bg-red-600 cursor-pointer font-medium h-8 text-center text-sm w-8"
                       shape="round"
                       color="black_900_7f"
                       size="sm"
@@ -223,15 +234,17 @@ const ProductDetailspagePage = () => {
                     color="red_600"
                     size="md"
                     variant="fill"
+                    onClick={() => navigate("/cart")}
                   >
                     Buy Now
                   </Button>
                   <Button
                     className="flex h-10 items-center justify-center w-10"
                     shape="round"
-                    color="black_900_7f"
+                    color="red_600"
                     size="sm"
                     variant="outline"
+                    type="radio"
                   >
                     <Img
                       className="h-8"

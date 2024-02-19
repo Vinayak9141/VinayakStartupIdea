@@ -34,7 +34,7 @@ const SERVICEPage = () => {
                     className="text-base text-black-900 text-center w-auto"
                     size="txtPoppinsRegular16"
                   >
-                    <Link to="/ecommercehomepage"> Home</Link>
+                    <Link to="/accountdropdownwithaccount"> Home</Link>
                   </Text>
                   {/* <Img
                     className="h-px w-12"
@@ -143,6 +143,7 @@ const SERVICEPage = () => {
               >
                 Photos and Videos
               </Text>
+
               <div className="flex md:flex-col flex-row gap-[59px] items-center justify-start mt-[26px] w-[94%] md:w-full">
                 <div className="bg-gray-200 border border-gray-400 border-solid flex flex-col items-center justify-start p-[50px] md:px-10 sm:px-5 rounded-lg w-[47%] md:w-full">
                   <Img
@@ -154,7 +155,13 @@ const SERVICEPage = () => {
                     className="mb-[22px] text-center text-gray-900 text-lg"
                     size="txtNunitoMedium18"
                   >
-                    Upload Photos
+                    <label for="photoInput">Select a photo:</label>
+                    <input
+                      type="file"
+                      id="photoInput"
+                      name="photoInput"
+                      accept="image/*"
+                    ></input>
                   </Text>
                 </div>
                 <div className="bg-gray-200 border border-gray-400 border-solid flex flex-col gap-6 items-center justify-end p-[72px] md:px-10 sm:px-5 rounded-lg w-[47%] md:w-full">
@@ -167,7 +174,13 @@ const SERVICEPage = () => {
                     className="text-center text-gray-900 text-lg"
                     size="txtNunitoMedium18"
                   >
-                    Upload Videos
+                    <label for="photoInput">Select a Video</label>
+                    <input
+                      type="file"
+                      id="photoInput"
+                      name="photoInput"
+                      accept="image/*"
+                    ></input>
                   </Text>
                 </div>
               </div>

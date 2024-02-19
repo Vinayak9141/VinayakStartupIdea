@@ -1,8 +1,10 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
 import { Button, Img, Text } from "components";
 
 const ECommerceHomePageCart = (props) => {
+  const navigate = useNavigate();
   return (
     <>
       <div className={props.className}>
@@ -38,12 +40,21 @@ const ECommerceHomePageCart = (props) => {
           <div className="absolute flex flex-col h-max inset-[0] items-center justify-center m-auto p-[17px] w-[71%]">
             {!!props?.productimage ? (
               <Img
-                className="h-[146px] md:h-auto object-cover w-[90%]"
+                className="h-[129px] md:h-auto my-[19px] object-cover w-full"
                 alt="672462zah9dFiftySix"
                 src={props?.productimage}
               />
             ) : null}
           </div>
+        </div>
+        <div className="bg-black-900 flex flex-col items-center justify-start p-2 rounded-bl rounded-br w-full hover:bg-red-600 border hover:border-0 hover:cursor-pointer">
+          <Text
+            className="text-base text-white-A700"
+            size="txtPoppinsMedium16WhiteA700"
+            onClick={() => navigate("/cart")}
+          >
+            {props?.addtocarttext}
+          </Text>
         </div>
         <div className="flex flex-col gap-2 items-start justify-start w-auto">
           <Text
@@ -67,16 +78,38 @@ const ECommerceHomePageCart = (props) => {
             </Text>
           </div>
           <div className="flex flex-row gap-2 items-start justify-start w-auto">
-            <Img
-              className="h-5 w-[100px]"
-              src="images/img_signal.svg"
-              alt="signal"
-            />
+            <div className="flex flex-row items-start justify-start w-auto">
+              <Img
+                className="h-5 rounded-[1px] w-5"
+                src="images/img_signal_orange_a200.svg"
+                alt="signal"
+              />
+              <Img
+                className="h-5 rounded-[1px] w-5"
+                src="images/img_signal_orange_a200.svg"
+                alt="signal_One"
+              />
+              <Img
+                className="h-5 rounded-[1px] w-5"
+                src="images/img_signal_orange_a200.svg"
+                alt="signal_Two"
+              />
+              <Img
+                className="h-5 rounded-[1px] w-5"
+                src="images/img_signal_orange_a200.svg"
+                alt="signal_Three"
+              />
+              <Img
+                className="h-5 w-5"
+                src="images/img_starhalffilled.svg"
+                alt="starhalffilled"
+              />
+            </div>
             <Text
               className="text-black-900_87 text-sm w-[30px]"
               size="txtPoppinsSemiBold14"
             >
-              {props?.signaltext}
+              {props?.ratingcount}
             </Text>
           </div>
         </div>
@@ -87,6 +120,7 @@ const ECommerceHomePageCart = (props) => {
 
 ECommerceHomePageCart.defaultProps = {
   productname: "The north coat",
+  addtocarttext: "Add To Cart",
   price: "$260",
   discountedprice: "$360",
   signaltext: "(65)",

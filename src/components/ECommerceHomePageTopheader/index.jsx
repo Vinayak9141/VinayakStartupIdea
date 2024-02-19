@@ -1,12 +1,15 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
+
 import { Img, Text } from "components";
 
 const ECommerceHomePageTopheader = (props) => {
+  const navigate = useNavigate();
   return (
     <>
       <div className={props.className}>
-        <div className="flex md:flex-col flex-row md:gap-10 gap-[231px] items-start justify-between mr-[130px] w-auto md:w-full">
+        <div className="flex md:flex-col flex-row md:gap-10 gap-[231px] items-center justify-around mr-[130px] w-auto md:w-full sm:hidden">
           <div className="flex sm:flex-col flex-row gap-2 items-center justify-start w-auto sm:w-full">
             <Text
               className="text-gray-50 text-sm w-[492px]"
@@ -17,6 +20,7 @@ const ECommerceHomePageTopheader = (props) => {
             <Text
               className="text-center text-gray-50 text-sm underline w-auto"
               size="txtPoppinsSemiBold14Gray50"
+              onClick={() => navigate("/signup")}
             >
               {props?.shopnow}
             </Text>

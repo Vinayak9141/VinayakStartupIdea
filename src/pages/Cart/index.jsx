@@ -1,6 +1,7 @@
 import React from "react";
 
 import { createColumnHelper } from "@tanstack/react-table";
+import { useNavigate } from "react-router-dom";
 
 import { Button, Img, Input, Line, List, ReactTable, Text } from "components";
 import CartColumncarttotal from "components/CartColumncarttotal";
@@ -10,6 +11,7 @@ import Footer from "components/Footer";
 import SignUpHeader from "components/SignUpHeader";
 
 const CartPage = () => {
+  const navigate = useNavigate();
   const tableData = React.useRef([
     {
       product: "LCD Monitor",
@@ -83,11 +85,9 @@ const CartPage = () => {
             <Text
               className="mt-[67px] text-base text-black-900"
               size="txtPoppinsRegular16"
-            >
-              01
-            </Text>
+            ></Text>
             <div className="flex flex-col items-center justify-start mb-[46px] mt-[63px] w-[5%]">
-              <Img
+              {/* <Img
                 className="h-4 w-4"
                 src="images/img_dropupsmall.svg"
                 alt="dropupsmall"
@@ -96,7 +96,15 @@ const CartPage = () => {
                 className="h-4 w-4"
                 alt="dropdownsmall"
                 src={info?.getValue()}
-              />
+              /> */}
+              <div>
+                <input
+                  className="h-10 w-20"
+                  type="number"
+                  placeholder="1"
+                  min="1"
+                />
+              </div>
             </div>
           </div>
         ),
@@ -174,6 +182,7 @@ const CartPage = () => {
                   color="black_900_7f"
                   size="lg"
                   variant="outline"
+                  onClick={() => navigate("/ecommercehomepage")}
                 >
                   Return To Shop
                 </Button>

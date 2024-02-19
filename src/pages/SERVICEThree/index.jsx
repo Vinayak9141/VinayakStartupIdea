@@ -17,6 +17,7 @@ import ECommerceHomePageListicondelivery from "components/ECommerceHomePageListi
 import ECommerceHomePageTopheader from "components/ECommerceHomePageTopheader";
 // import Footer2 from "components/Footer2";
 import Footer from "components/Footer";
+import SignUpHeader from "components/SignUpHeader";
 
 const SERVICEThreePage = () => {
   const navigate = useNavigate();
@@ -25,77 +26,15 @@ const SERVICEThreePage = () => {
     <>
       <div className="bg-white-A700 flex flex-col font-poppins items-center justify-end mx-auto w-full">
         <ECommerceHomePageTopheader className="bg-black-900 flex flex-col items-end justify-start p-3 w-full" />
-        <div className="flex md:flex-col flex-row font-inter md:gap-10 gap-[148px] items-center justify-start max-w-[1179px] mt-10 mx-auto md:px-5 w-full">
-          <div className="flex md:flex-1 sm:flex-col flex-row sm:gap-10 gap-[80px] items-start justify-between w-auto md:w-full">
-            <div className="flex flex-col items-center justify-start">
-              <Text
-                className="text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.72px]"
-                size="txtInterBold24"
-              >
-                STARTUP IDEA
-              </Text>
-            </div>
-            <div className="flex flex-row font-poppins gap-12 items-start justify-start w-auto">
-              <div className="flex flex-col items-center justify-start w-auto">
-                <Text
-                  className="text-base text-black-900 text-center w-auto"
-                  size="txtPoppinsRegular16"
-                >
-                  <Link to="/ecommercehomepage"> Home</Link>
-                </Text>
-                {/* <Img
-                  className="h-px w-12"
-                  src="images/img_underline.svg"
-                  alt="underline"
-                /> */}
-              </div>
-              <div className="flex flex-col items-center justify-start">
-                <Text
-                  className="text-base text-black-900 text-center"
-                  size="txtPoppinsRegular16"
-                  onClick={() => navigate("/service")}
-                >
-                  Services
-                </Text>
-              </div>
-              <div className="flex flex-col items-center justify-start">
-                <Text
-                  className="text-base text-black-900 text-center"
-                  size="txtPoppinsRegular16"
-                  onClick={() => navigate("/about")}
-                >
-                  About
-                </Text>
-              </div>
-              <Button
-                className="common-pointer bg-transparent cursor-pointer min-w-[61px] text-base text-black-900 text-center"
-                onClick={() => navigate("/signup")}
-                size="xs"
-              >
-                Sign Up
-              </Button>
-            </div>
-          </div>
-          <div className="flex flex-row font-poppins gap-6 items-center justify-start w-auto">
-            <ECommerceHomePageColumnwhatareyoulookiOne className="bg-gray-100 flex flex-col gap-2.5 items-center justify-center pl-5 pr-3 py-[7px] rounded w-auto" />
-            <div className="flex flex-row gap-4 items-center justify-center w-auto">
-              <Img
-                className="h-8 w-8"
-                src="images/img_wishlist.svg"
-                alt="wishlist"
-                onClick={() => navigate("/wishlist")}
-              />
-              <div className="flex flex-col h-8 items-center justify-start w-8">
-                <Img
-                  className="common-pointer h-8 w-8"
-                  src="images/img_cart1.svg"
-                  alt="cartOne"
-                  onClick={() => navigate("/cart")}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        <SignUpHeader
+          className="flex md:flex-col flex-row font-inter md:gap-10 gap-[60px] items-center justify-between max-w-[1170px] mt-10 mx-auto md:px-5 w-full"
+          exclusive="STARTUP IDEA"
+          hometext="Home"
+          servicestext="Services"
+          abouttext="About"
+          userimage="images/img_user_red_600_32x32.svg"
+          cartimage="images/img_cart1.svg"
+        />
         <Img className="h-px mt-4" src="images/img_line3.svg" alt="lineThree" />
         <div className="flex flex-col items-end mt-10 md:px-10 sm:px-5 px-[65px] w-full">
           <div className="bg-black-900 flex flex-col items-start justify-start p-4 md:px-5 w-[96%] md:w-full">
@@ -199,9 +138,9 @@ const SERVICEThreePage = () => {
             </div>
           </div>
           <div className="gap-[30px] grid sm:grid-cols-1 md:grid-cols-3 grid-cols-6 items-start justify-start w-auto md:w-full">
-            <div className="border border-black-900_4c border-solid flex flex-col gap-[18px] items-center justify-end p-[21px] sm:px-5 rounded w-full">
+            <div className="hover:bg-red-600 border border-black-900_4c border-solid flex flex-col gap-[18px] items-center justify-end p-[21px] sm:px-5 rounded w-full">
               <Img
-                className="h-[34px] md:h-auto mt-[25px] object-cover w-[68px] sm:w-full"
+                className=" h-[34px] md:h-auto mt-[25px] object-cover w-[68px] sm:w-full"
                 src="images/img_image64.png"
                 alt="imageSixtyFour"
               />
@@ -212,7 +151,7 @@ const SERVICEThreePage = () => {
                 Repairing
               </Text>
             </div>
-            <div className="border border-black-900_4c border-solid flex flex-col gap-[11px] items-center justify-end p-[21px] sm:px-5 rounded w-full">
+            <div className="hover:bg-red-600 border border-black-900_4c border-solid flex flex-col gap-[11px] items-center justify-end p-[21px] sm:px-5 rounded w-full">
               <Img
                 className="h-12 md:h-auto mt-[18px] object-cover w-[45%] sm:w-full"
                 src="images/img_image65.png"
@@ -225,7 +164,7 @@ const SERVICEThreePage = () => {
                 Painting{" "}
               </Text>
             </div>
-            <div className="border border-black-900_4c border-solid flex flex-col gap-[17px] items-center justify-end p-6 sm:px-5 rounded w-full">
+            <div className="hover:bg-red-600 border border-black-900_4c border-solid flex flex-col gap-[17px] items-center justify-end p-6 sm:px-5 rounded w-full">
               <Img
                 className="h-[45px] md:h-auto mt-[9px] object-cover w-[58px] sm:w-full"
                 src="images/img_image66.png"
@@ -238,7 +177,7 @@ const SERVICEThreePage = () => {
                 Electrician{" "}
               </Text>
             </div>
-            <div className="bg-red-600 flex flex-col gap-[21px] items-center justify-end p-[23px] sm:px-5 rounded shadow-bs1 w-full">
+            {/* <div className="bg-red-600 flex flex-col gap-[21px] items-center justify-end p-[23px] sm:px-5 rounded shadow-bs1 w-full">
               <Img
                 className="h-[50px] md:h-auto mt-0.5 object-cover w-[53px] sm:w-full"
                 src="images/img_image67.png"
@@ -250,8 +189,8 @@ const SERVICEThreePage = () => {
               >
                 Pest Control
               </Text>
-            </div>
-            <div className="border border-black-900_4c border-solid flex flex-col gap-[11px] items-center justify-start p-[15px] rounded w-full">
+            </div> */}
+            <div className="hover:bg-red-600 border border-black-900_4c border-solid flex flex-col gap-[11px] items-center justify-start p-[15px] rounded w-full">
               <Img
                 className="h-[73px] md:h-auto object-cover w-[50px] sm:w-full"
                 src="images/img_image68.png"
@@ -264,7 +203,20 @@ const SERVICEThreePage = () => {
                 Makeup
               </Text>
             </div>
-            <div className="border border-black-900_4c border-solid flex flex-col gap-[23px] items-start justify-end p-[21px] sm:px-5 rounded w-full">
+            <div className="hover:bg-red-600 border border-black-900_4c border-solid flex flex-col gap-[11px] items-center justify-start p-[15px] rounded w-full">
+              <Img
+                className="h-[73px] md:h-auto object-cover w-[50px] sm:w-full"
+                src="images/img_image68.png"
+                alt="imageSixtyEight"
+              />
+              <Text
+                className="mb-1.5 text-base text-black-900 text-center"
+                size="txtPoppinsRegular16"
+              >
+                Makeup
+              </Text>
+            </div>
+            <div className="hover:bg-red-600 border border-black-900_4c border-solid flex flex-col gap-[23px] items-start justify-end p-[21px] sm:px-5 rounded w-full">
               <Img
                 className="h-11 md:h-auto md:ml-[0] ml-[31px] mt-2.5 object-cover w-[51px] sm:w-full"
                 src="images/img_image69.png"
@@ -279,28 +231,151 @@ const SERVICEThreePage = () => {
             </div>
           </div>
         </div>
-        <div className="flex font-poppins md:h-[1204px] sm:h-[1280px] h-[518px] justify-end max-w-[1170px] mt-[50px] mx-auto md:px-5 relative w-full">
-          <Line className="bg-black-900_75 h-px mb-[170px] mt-auto mx-auto rotate-[-180deg] w-full" />
-          <div className="absolute flex flex-col md:gap-10 gap-[60px] h-full inset-[0] items-start justify-start m-auto w-auto">
-            <div className="flex sm:flex-col flex-row md:gap-10 gap-[611px] items-end justify-between w-auto md:w-full">
-              <div className="flex flex-col gap-5 items-start justify-start w-auto">
-                <div className="flex flex-row font-poppins gap-4 items-center justify-start w-auto">
-                  <div className="bg-red-600 h-10 rounded w-[16%]"></div>
-                  <Text
+        <Line className="bg-black-900_75 h-px max-w-[1170px] mt-[75px] mx-auto rotate-[-180deg] w-full" />
+        <div className="flex flex-col font-poppins md:gap-10 gap-[60px] items-start justify-start max-w-[1170px] mt-[69px] mx-auto md:px-5 w-full">
+          <div className="flex sm:flex-col flex-row md:gap-10 gap-[611px] items-end justify-between w-auto md:w-full">
+            <div className="flex flex-col gap-5 items-start justify-start w-auto sm:w-full">
+              <div className="flex flex-row font-poppins gap-4 items-center justify-start w-auto">
+                <div className="bg-red-600 h-10 rounded w-[16%]"></div>
+                <Text
+                  className="text-base text-red-600 w-auto"
+                  size="txtPoppinsSemiBold16"
+                >
+                  This Month
+                </Text>
+              </div>
+              <Text
+                className="text-4xl sm:text-[32px] md:text-[34px] text-black-900 tracking-[1.44px] w-auto"
+                size="txtInterSemiBold36"
+              >
+                Best Selling Products
+              </Text>
+            </div>
+            <Button
+              className="cursor-pointer font-medium min-w-[159px] text-base text-center"
+              shape="round"
+              color="red_600"
+              size="lg"
+              variant="fill"
+            >
+              View All
+            </Button>
+          </div>
+          <List
+            className="sm:flex-col flex-row gap-[30px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 justify-start w-auto md:w-full"
+            orientation="horizontal"
+          >
+            <ECommerceHomePageCart
+              className="flex flex-col gap-4 items-start justify-start w-auto"
+              hearticon="images/img_wishlist.svg"
+              quickviewicon="images/img_quickview.svg"
+              productimage="images/img_672462zah9d56.png"
+            />
+            <ECommerceHomePageCart1
+              className="flex flex-col gap-4 items-start justify-start w-auto"
+              hearticon="images/img_wishlist.svg"
+              quickviewicon="images/img_quickview.svg"
+            />
+            <ECommerceHomePageCart1
+              className="flex flex-col gap-4 items-start justify-start w-auto"
+              hearticon="images/img_wishlist.svg"
+              quickviewicon="images/img_quickview.svg"
+            />
+            <ECommerceHomePageCart2
+              className="flex flex-col gap-4 items-start justify-start w-auto"
+              hearticon="images/img_wishlist.svg"
+              quickviewicon="images/img_quickview.svg"
+              productimage="images/img_gammaxxl240argb1500x500.png"
+            />
+            <ECommerceHomePageCart3
+              className="flex flex-col gap-4 items-start justify-start w-auto"
+              hearticon="images/img_wishlist.svg"
+              quickviewicon="images/img_quickview.svg"
+              productimage="images/img_sammoghadamkh_176x140.png"
+            />
+          </List>
+        </div>
+        <Line className="bg-black-900_75 h-px max-w-[1170px] mt-[75px] mx-auto rotate-[-180deg] w-full" />
+        <div className="flex flex-col font-poppins md:gap-10 gap-[60px] items-start justify-start max-w-[1170px] mt-[69px] mx-auto md:px-5 w-full">
+          <div className="flex sm:flex-col flex-row md:gap-10 gap-[611px] items-end justify-between w-auto md:w-full">
+            <div className="flex flex-col gap-5 items-start justify-start w-auto sm:w-full">
+              <div className="flex flex-row font-poppins gap-4 items-center justify-start w-auto">
+                <div className="bg-red-600 h-10 rounded w-[16%]"></div>
+                <Text
+                  className="text-base text-red-600 w-auto"
+                  size="txtPoppinsSemiBold16"
+                >
+                  This Month
+                </Text>
+              </div>
+              <Text
+                className="text-4xl sm:text-[32px] md:text-[34px] text-black-900 tracking-[1.44px] w-auto"
+                size="txtInterSemiBold36"
+              >
+                Best Selling Products
+              </Text>
+            </div>
+            <Button
+              className="cursor-pointer font-medium min-w-[159px] text-base text-center"
+              shape="round"
+              color="red_600"
+              size="lg"
+              variant="fill"
+            >
+              View All
+            </Button>
+          </div>
+          <List
+            className="sm:flex-col flex-row gap-[30px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 justify-start w-auto md:w-full"
+            orientation="horizontal"
+          >
+            <ECommerceHomePageCart
+              className="flex flex-col gap-4 items-start justify-start w-auto"
+              hearticon="images/img_wishlist.svg"
+              quickviewicon="images/img_quickview.svg"
+              productimage="images/img_672462zah9d56.png"
+            />
+            <ECommerceHomePageCart1
+              className="flex flex-col gap-4 items-start justify-start w-auto"
+              hearticon="images/img_wishlist.svg"
+              quickviewicon="images/img_quickview.svg"
+            />
+            <ECommerceHomePageCart2
+              className="flex flex-col gap-4 items-start justify-start w-auto"
+              hearticon="images/img_wishlist.svg"
+              quickviewicon="images/img_quickview.svg"
+              productimage="images/img_gammaxxl240argb1500x500.png"
+            />
+            <ECommerceHomePageCart3
+              className="flex flex-col gap-4 items-start justify-start w-auto"
+              hearticon="images/img_wishlist.svg"
+              quickviewicon="images/img_quickview.svg"
+              productimage="images/img_sammoghadamkh_176x140.png"
+            />
+          </List>
+        </div>
+        {/* <div className="flex font-poppins md:h-[1204px] sm:h-[1280px] h-[518px] justify-end max-w-[1170px] mt-[50px] mx-auto md:px-5 relative w-full p-6"/> */}
+        {/* <Line className="bg-black-900_75 h-px mb-[170px] mt-auto mx-auto rotate-[-180deg] w-full" /> */}
+        {/* <div className="absolute flex flex-col md:gap-10 gap-[60px] h-full inset-[0] items-start justify  -start m-auto w-auto"/> */}
+        {/* <div className="flex sm:flex-col flex-row md:gap-10 gap-[611px] items-end justify-between w-auto md:w-full"/> */}
+        {/* <div className="flex flex-col gap-5 items-start justify-start w-auto"/> */}
+        {/* <div className="flex flex-row font-poppins gap-4 items-center justify-start w-auto"/> */}
+        {/* <div className="bg-red-600 h-10 rounded w-[16%]"></div> */}
+        {/* <Text
                     className="text-base text-red-600 w-auto"
                     size="txtPoppinsSemiBold16"
                   >
                     This Month
-                  </Text>
-                </div>
-                <Text
+                  </Text> */}
+        {/* </div> */}
+        {/* <Text
                   className="text-4xl sm:text-[32px] md:text-[34px] text-black-900 tracking-[1.44px] w-auto"
                   size="txtInterSemiBold36"
                 >
                   Repairing Sevice{" "}
-                </Text>
-              </div>
-              <Button
+                </Text> */}
+        {/* </div> */}
+        {/* <Button
                 className="cursor-pointer font-medium min-w-[159px] text-base text-center"
                 shape="round"
                 color="red_600"
@@ -308,25 +383,25 @@ const SERVICEThreePage = () => {
                 variant="fill"
               >
                 View All
-              </Button>
-            </div>
-            <div className="flex md:flex-col flex-row gap-[30px] items-start justify-start w-auto md:w-full">
-              <div className="relative w-[24%] md:w-full">
-                <ECommerceHomePageCart
+              </Button> */}
+        {/* </div> */}
+        {/* <div className="flex md:flex-col flex-row gap-[30px] items-start justify-start w-auto md:w-full"/> */}
+        {/* <div className="relative w-[24%] md:w-full"/> */}
+        {/* <ECommerceHomePageCart
                   className="flex flex-col gap-4 items-start justify-start mt-auto mx-auto w-auto"
                   hearticon="images/img_wishlist.svg"
                   quickviewicon="images/img_quickview.svg"
                   productimage="images/img_672462zah9d56.png"
                   productname="Ac Service &  Repair  "
-                />
-                <Img
+                /> */}
+        {/* <Img
                   className="absolute h-[315px] inset-x-[0] mx-auto object-cover top-[0] w-[270px]"
                   src="images/img_image70.png"
                   alt="imageSeventy"
-                />
-              </div>
-              <List
-                className="sm:flex-col flex-row gap-px grid sm:grid-cols-1 grid-cols-2 w-[49%] md:w-full"
+                /> */}
+        {/* </div> */}
+        {/* <List
+                className="sm:flex-col flex-row gap-px grid sm:grid-cols-1 grid-cols-2 w-[90%] md:w-full"
                 orientation="horizontal"
               >
                 <ECommerceHomePageCart1
@@ -344,28 +419,27 @@ const SERVICEThreePage = () => {
                     alt="imageSeventyTwo"
                   />
                 </div>
-              </List>
-              <ECommerceHomePageCart3
+              </List> */}
+        {/* <ECommerceHomePageCart3
                 className="flex flex-col gap-4 items-start justify-start w-auto"
                 productname="Chimney Repair"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="font-poppins md:h-[1193px] h-[466px] sm:h-[661px] max-w-[1212px] mt-[54px] mx-auto md:px-5 relative w-full">
-          <Line className="bg-black-900_75 h-px m-auto rotate-[-180deg] w-[97%]" />
-          <div className="absolute flex flex-col md:gap-10 gap-[60px] h-full inset-[0] items-start justify-start m-auto w-auto">
-            <div className="flex sm:flex-col flex-row sm:gap-10 gap-[611px] items-end justify-between w-auto md:w-full">
-              <div className="flex flex-col font-inter items-start justify-start w-auto">
+              /> */}
+
+        {/* </div>
+        </div> */}
+        {/* <div className="font-poppins md:h-[1193px] h-[466px] sm:h-[661px] max-w-[1212px] mt-[140px] mx-auto md:px-5 relative w-full"/> */}
+        {/* <Line className="bg-black-900_75 h-px m-auto rotate-[-180deg] w-[97%]" /> */}
+        {/* <div className="absolute flex flex-col md:gap-10 gap-[60px] h-full inset-[0] items-start justify-start m-auto w-auto"/> */}
+        {/* <div className="flex sm:flex-col flex-row sm:gap-10 gap-[611px] items-end justify-between w-auto md:w-full"/> */}
+        {/* <div className="flex flex-col font-inter items-start justify-start w-auto">
                 <Text
                   className="text-4xl sm:text-[32px] md:text-[34px] text-black-900 tracking-[1.44px] w-auto"
                   size="txtInterSemiBold36"
                 >
-                  {" "}
-                  Service List{" "}
+                  Service List
                 </Text>
-              </div>
-              <Button
+              </div> */}
+        {/* <Button
                 className="cursor-pointer font-medium font-poppins min-w-[159px] text-base text-center"
                 shape="round"
                 color="red_600"
@@ -373,10 +447,10 @@ const SERVICEThreePage = () => {
                 variant="fill"
               >
                 View All
-              </Button>
-            </div>
-            <div className="flex md:flex-col flex-row gap-[30px] items-start justify-start w-auto md:w-full">
-              <div className="relative w-[23%] md:w-full">
+              </Button> */}
+        {/* </div> */}
+        {/* <div className="flex md:flex-col flex-row gap-[30px] items-start justify-start w-auto md:w-full"/> */}
+        {/* <div className="relative w-[23%] md:w-full">
                 <ECommerceHomePageCart
                   className="flex flex-col gap-4 items-start justify-start mt-auto mx-auto w-auto"
                   productname="Water Purifier Sales "
@@ -386,8 +460,8 @@ const SERVICEThreePage = () => {
                   src="images/img_image70_315x270.png"
                   alt="imageSeventy_One"
                 />
-              </div>
-              <List
+              </div> */}
+        {/* <List
                 className="sm:flex-col flex-row gap-[30px] grid sm:grid-cols-1 grid-cols-2 w-[48%] md:w-full"
                 orientation="horizontal"
               >
@@ -399,9 +473,9 @@ const SERVICEThreePage = () => {
                   className="flex flex-col gap-4 items-start justify-start w-auto"
                   productname="Travels &Tourism Services"
                 />
-              </List>
-              <div className="relative w-[26%] md:w-full">
-                <ECommerceHomePageCart3
+              </List> */}
+        <div className="relative w-[26%] md:w-full" />
+        {/* <ECommerceHomePageCart3
                   className="flex flex-col gap-4 items-start justify-start mt-auto w-auto"
                   productname="Travels &Tourism Services"
                 />
@@ -409,12 +483,12 @@ const SERVICEThreePage = () => {
                   className="absolute h-[315px] inset-x-[0] mx-auto object-cover top-[0] w-[312px]"
                   src="images/img_image73_315x312.png"
                   alt="imageSeventyThree_One"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="bg-black-900 flex flex-col items-center justify-start max-w-[1170px] mt-[74px] mx-auto px-11 md:px-5 w-full">
+                /> */}
+        {/* </div> */}
+        {/* </div> */}
+        {/* </div> */}
+        {/* </div> */}
+        <div className="bg-black-900 flex flex-col items-center justify-start max-w-[1170px] mt-[140px] mx-auto px-11 md:px-5 w-full">
           <div className="flex md:flex-col flex-row gap-[27px] items-center justify-start w-[99%] md:w-full">
             <div className="flex flex-col items-start justify-start w-[42%] md:w-full">
               <Text
@@ -481,7 +555,7 @@ const SERVICEThreePage = () => {
           <div className="flex md:flex-col flex-row gap-[30px] items-start justify-start w-auto md:w-full">
             <div className="bg-black-900 flex md:h-[511px] h-[600px] justify-end pt-[29px] sm:px-5 px-[29px] relative rounded w-[49%] md:w-full">
               <Img
-                className="h-[511px] mt-auto mx-auto object-cover w-[511px]"
+                className="h-[411px] mt-auto mx-auto object-cover w-[511px]"
                 src="images/img_ps5slimgoedko.png"
                 alt="ps5slimgoedko"
               />
@@ -561,7 +635,7 @@ const SERVICEThreePage = () => {
                     <div className="backdrop-opacity-[0.5] bg-blue_gray-100_e5 blur-[300.00px] h-[196px] m-auto rounded-[50%] w-[196px]"></div>
                     <div className="absolute flex flex-col h-full inset-[0] items-center justify-center m-auto w-full">
                       <Img
-                        className="h-[221px] md:h-auto object-cover w-[91%]"
+                        className="absolute h-[180px] my-auto object-cover right-[0] w-[76%]"
                         src="images/img_69694768amazo.png"
                         alt="69694768amazo"
                       />
@@ -599,10 +673,10 @@ const SERVICEThreePage = () => {
                 </div>
                 <div className="bg-black-900 md:h-[238px] h-[284px] p-4 relative rounded w-full">
                   <div className="h-[238px] m-auto w-[238px]">
-                    <div className="backdrop-opacity-[0.5] bg-blue_gray-100_e5 blur-[300.00px] h-[238px] m-auto rounded-[50%] w-[238px]"></div>
+                    {/* <div className="backdrop-opacity-[0.5] bg-blue_gray-100_e5 blur-[300.00px] h-[238px] m-auto rounded-[50%] w-[238px]"></div> */}
                     <div className="absolute flex flex-col h-max inset-[0] items-center justify-center m-auto p-1 w-[89%]">
                       <Img
-                        className="h-[203px] md:h-auto mb-[7px] mt-1 object-cover w-full"
+                        className="absolute h-[181px] my-auto object-cover right-[0] w-[76%]"
                         src="images/img_652e82cd70aa652.png"
                         alt="652e82cd70aa652"
                       />

@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Button, Img, Input, Line, Text } from "components";
 import ECommerceHomePageColumnwhatareyoulookiOne from "components/ECommerceHomePageColumnwhatareyoulookiOne";
 import ECommerceHomePageTopheader from "components/ECommerceHomePageTopheader";
-import Footer3 from "components/Footer3";
+import Footer from "components/Footer";
 
 const SERVICEFourPage = () => {
   const navigate = useNavigate();
@@ -30,6 +30,7 @@ const SERVICEFourPage = () => {
                   <Text
                     className="text-base text-black-900 text-center w-auto"
                     size="txtPoppinsRegular16"
+                    onClick={() => navigate("/accountdropdownwithaccount")}
                   >
                     Home
                   </Text>
@@ -133,14 +134,14 @@ const SERVICEFourPage = () => {
             <>Seller&#39;s Registration Form</>
           </Text>
           <div className="bg-gray-50_01 flex flex-col font-nunito items-center justify-end max-w-[1212px] mx-auto p-[43px] md:px-5 rounded-[10px] shadow-bs3 w-full">
-            <div className="flex flex-col items-start justify-start mt-4 w-[97%] md:w-full">
+            <div className="flex flex-col items-start justify-start mt-4 w-[80%] md:w-full">
               <Text
                 className="text-deep_orange-600 text-xl"
                 size="txtNunitoBold20"
               >
                 Personal Information
               </Text>
-              <div className="flex flex-row sm:gap-10 items-center justify-between ml-0.5 md:ml-[0] mt-10 w-[62%] md:w-full">
+              <div className="flex flex-row sm:gap-10 items-center justify-between ml-0.5 md:ml-[0] mt-10 w-[83%] md:w-full">
                 <Text className="text-gray-900 text-lg" size="txtNunitoBold18">
                   First name
                 </Text>
@@ -168,7 +169,7 @@ const SERVICEFourPage = () => {
                   variant="fill"
                 ></Input>
               </div>
-              <div className="flex flex-row sm:gap-10 items-start justify-between ml-0.5 md:ml-[0] mt-10 w-[61%] md:w-full">
+              <div className="flex flex-row sm:gap-10 items-start justify-between ml-0.5 md:ml-[0] mt-10 w-[80%] md:w-full">
                 <Text className="text-gray-900 text-lg" size="txtNunitoBold18">
                   Business /Startup Name{" "}
                 </Text>
@@ -196,7 +197,7 @@ const SERVICEFourPage = () => {
                   variant="fill"
                 ></Input>
               </div>
-              <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start ml-0.5 md:ml-[0] mt-10 w-[81%] md:w-full">
+              <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start ml-0.5 md:ml-[0] mt-10 w-[50%] md:w-full">
                 <Text className="text-gray-900 text-lg" size="txtNunitoBold18">
                   City
                 </Text>
@@ -210,7 +211,7 @@ const SERVICEFourPage = () => {
                   className="md:ml-[0] ml-[371px] text-gray-900 text-lg"
                   size="txtNunitoBold18"
                 >
-                  Zip Code
+                  Zip
                 </Text>
               </div>
               <div className="flex sm:flex-col flex-row sm:gap-10 items-center justify-between ml-0.5 md:ml-[0] mt-[25px] w-full">
@@ -242,7 +243,7 @@ const SERVICEFourPage = () => {
                   variant="fill"
                 ></Input>
               </div>
-              <div className="flex flex-row sm:gap-10 items-center justify-between ml-0.5 md:ml-[0] mt-[45px] w-3/5 md:w-full">
+              <div className="flex flex-row sm:gap-10 items-center justify-between ml-0.5 md:ml-[0] mt-[45px] w-[86%] md:w-full">
                 <Text className="text-gray-900 text-lg" size="txtNunitoBold18">
                   Mobile Number{" "}
                 </Text>
@@ -276,97 +277,7 @@ const SERVICEFourPage = () => {
                   >
                     Business Timings
                   </Text>
-                  <div className="flex flex-row items-start justify-start w-full">
-                    <Img
-                      className="h-[33px]"
-                      src="images/img_checkboxoutline.svg"
-                      alt="checkboxoutline"
-                    />
-                    <Text
-                      className="ml-4 mt-[3px] text-black-900 text-lg"
-                      size="txtNunitoBold18Black900"
-                    >
-                      Mon
-                    </Text>
-                    <Img
-                      className="h-[33px] ml-[66px]"
-                      src="images/img_checkboxoutline.svg"
-                      alt="checkboxoutline_One"
-                    />
-                    <Text
-                      className="ml-[15px] mt-[3px] text-black-900 text-lg"
-                      size="txtNunitoBold18Black900"
-                    >
-                      Tue
-                    </Text>
-                  </div>
                 </div>
-                <Img
-                  className="h-[33px] md:ml-[0] ml-[70px] md:mt-0 mt-[81px]"
-                  src="images/img_checkboxoutline.svg"
-                  alt="checkboxoutline_Two"
-                />
-                <Text
-                  className="mb-1 ml-4 md:ml-[0] md:mt-0 mt-[84px] text-black-900 text-lg"
-                  size="txtNunitoBold18Black900"
-                >
-                  Wed
-                </Text>
-                <div className="md:h-24 h-[114px] md:ml-[0] ml-[49px] relative w-[13%] md:w-full">
-                  <div className="absolute bottom-[0] flex flex-col items-center justify-start left-[0] w-[77%]">
-                    <div className="flex flex-row gap-[15px] items-start justify-between w-full">
-                      <Img
-                        className="h-[33px]"
-                        src="images/img_checkboxoutline.svg"
-                        alt="checkboxoutline_Three"
-                      />
-                      <Text
-                        className="mt-[3px] text-black-900 text-lg"
-                        size="txtNunitoBold18Black900"
-                      >
-                        Thur
-                      </Text>
-                    </div>
-                  </div>
-                  <Img
-                    className="absolute h-24 right-[0] top-[0] w-24"
-                    src="images/img_cropsquare.svg"
-                    alt="cropsquare"
-                  />
-                </div>
-                <Img
-                  className="h-[33px] md:ml-[0] ml-[19px] md:mt-0 mt-[81px]"
-                  src="images/img_checkboxoutline.svg"
-                  alt="checkboxoutline_Four"
-                />
-                <Text
-                  className="mb-1 ml-4 md:ml-[0] md:mt-0 mt-[84px] text-black-900 text-lg"
-                  size="txtNunitoBold18Black900"
-                >
-                  Fri
-                </Text>
-                <Img
-                  className="h-[33px] md:ml-[0] ml-[57px] md:mt-0 mt-[81px]"
-                  src="images/img_checkboxoutline.svg"
-                  alt="checkboxoutline_Five"
-                />
-                <Text
-                  className="mb-1 ml-4 md:ml-[0] md:mt-0 mt-[84px] text-black-900 text-lg"
-                  size="txtNunitoBold18Black900"
-                >
-                  Sat
-                </Text>
-                <Img
-                  className="h-[33px] md:ml-[0] ml-[60px] md:mt-0 mt-[81px]"
-                  src="images/img_checkboxoutline.svg"
-                  alt="checkboxoutline_Six"
-                />
-                <Text
-                  className="mb-1 ml-4 md:ml-[0] md:mt-0 mt-[84px] text-black-900 text-lg"
-                  size="txtNunitoBold18Black900"
-                >
-                  Sun
-                </Text>
               </div>
               <div className="flex flex-row sm:gap-10 items-start justify-between md:ml-[0] ml-[5px] mt-[21px] w-[61%] md:w-full">
                 <Text className="text-gray-900 text-lg" size="txtNunitoBold18">
@@ -408,7 +319,16 @@ const SERVICEFourPage = () => {
                   >
                     Month
                   </Text>
-                  <div className="h-[57px] relative w-full">
+                  <Input
+                    name="frame562"
+                    placeholder=""
+                    className="p-0 w-full"
+                    wrapClassName="border border-gray-400 border-solid flex h-[49px] ml-0.5 md:ml-[0] mt-[18px] rounded-lg w-full"
+                    color="gray_200"
+                    variant="fill"
+                    type="month"
+                  ></Input>
+                  {/* <div className="h-[57px] relative w-full">
                     <div className="absolute bg-gray-200 border border-gray-400 border-solid flex flex-col h-max inset-[0] items-start justify-start m-auto p-3 rounded-lg w-[498px] sm:w-full">
                       <Text
                         className="text-gray-900 text-lg w-auto"
@@ -422,20 +342,29 @@ const SERVICEFourPage = () => {
                       src="images/img_evaarrowiosbackfill.svg"
                       alt="evaarrowiosback"
                     />
-                  </div>
+                  </div> */}
                   <Text
                     className="md:ml-[0] ml-[7px] mt-[13px] text-deep_orange-600 text-xl"
                     size="txtNunitoBold20"
                   >
                     Business Category
                   </Text>
+
                   <Text
                     className="md:ml-[0] ml-[3px] mt-1 text-gray-800 text-lg"
                     size="txtNunitoSemiBold18"
                   >
                     Select Business Category{" "}
                   </Text>
-                  <div className="h-[57px] md:h-[70px] mt-[13px] relative w-full">
+                  <Input
+                    name="frame562"
+                    placeholder=""
+                    className="p-0 w-full"
+                    wrapClassName="border border-gray-400 border-solid flex h-[49px] ml-0.5 md:ml-[0] mt-[18px] rounded-lg w-full"
+                    color="gray_200"
+                    variant="fill"
+                  ></Input>
+                  {/* <div className="h-[57px] md:h-[70px] mt-[13px] relative w-full">
                     <div className="absolute bg-gray-200 border border-gray-400 border-solid flex flex-col h-max inset-[0] items-start justify-end m-auto p-3 rounded-lg w-[498px] sm:w-full">
                       <Text
                         className="text-gray-900 text-lg w-auto"
@@ -449,7 +378,7 @@ const SERVICEFourPage = () => {
                       src="images/img_evaarrowiosbackfill.svg"
                       alt="evaarrowiosback_One"
                     />
-                  </div>
+                  </div> */}
                   <Text
                     className="md:ml-[0] ml-[9px] mt-5 text-deep_orange-600 text-xl"
                     size="txtNunitoBold20"
@@ -478,7 +407,16 @@ const SERVICEFourPage = () => {
                   >
                     Year
                   </Text>
-                  <div className="h-[57px] relative w-full">
+
+                  <Input
+                    name="frame562"
+                    placeholder=""
+                    className="p-0 w-full"
+                    wrapClassName="border border-gray-400 border-solid flex h-[49px] ml-0.5 md:ml-[0] mt-[18px] rounded-lg w-full"
+                    color="gray_200"
+                    variant="fill"
+                  ></Input>
+                  {/* <div className="h-[57px] relative w-full">
                     <div className="absolute bg-gray-200 border border-gray-400 border-solid flex flex-col h-max inset-[0] items-start justify-start m-auto p-3 rounded-lg w-[498px] sm:w-full">
                       <Text
                         className="text-gray-900 text-lg w-auto"
@@ -492,12 +430,13 @@ const SERVICEFourPage = () => {
                       src="images/img_evaarrowiosbackfill.svg"
                       alt="evaarrowiosback_Two"
                     />
-                  </div>
+                  </div> */}
                   <Button
                     className="cursor-pointer font-semibold h-[59px] leading-[normal] md:ml-[0] ml-[163px] mt-[316px] rounded-[10px] text-center text-lg w-[326px]"
                     color="purple_A700"
                     size="lg"
                     variant="fill"
+                    onClick={() => navigate("/service")}
                   >
                     Next session
                   </Button>
@@ -505,9 +444,9 @@ const SERVICEFourPage = () => {
               </div>
             </div>
           </div>
-          <Footer3 className="bg-black-900 flex font-poppins items-center justify-center md:px-5 w-full" />
+          {/* <Footer className="bg-black-900 flex font-poppins items-center justify-center md:px-5 w-full" /> */}
         </div>
-        <div className="flex flex-col font-poppins md:gap-10 gap-[355px] items-end mt-[2666px] md:px-10 sm:px-5 px-[89px] w-full">
+        {/* <div className="flex flex-col font-poppins md:gap-10 gap-[355px] items-end mt-[2666px] md:px-10 sm:px-5 px-[89px] w-full">
           <Button
             className="flex h-[46px] items-center justify-center rotate-[90deg] w-[46px]"
             shape="circle"
@@ -527,6 +466,9 @@ const SERVICEFourPage = () => {
           >
             Become a Seller{" "}
           </Text>
+        </div> */}
+        <div className="flex flex-col items-center mt-[140px] w-full">
+          <Footer className="bg-black-900 flex items-center justify-center md:px-5 w-full" />
         </div>
       </div>
     </>

@@ -16,6 +16,12 @@ import Footer from "components/Footer";
 import SignUpHeader from "components/SignUpHeader";
 
 const CheckOutPage = () => {
+  const handleClick = () => {
+    alert("Your Order is Successfully Placed.");
+  };
+  const handlClick = () => {
+    alert("Coupon Applied Sucessfully");
+  };
   return (
     <>
       <div className="bg-white-A700 flex flex-col font-poppins items-center justify-start mx-auto w-full">
@@ -68,7 +74,7 @@ const CheckOutPage = () => {
                   <Input
                     name="frame803"
                     placeholder=""
-                    className="p-0 w-full"
+                    className="p-5 w-full"
                     wrapClassName="flex h-[55px] w-[470px]"
                     shape="round"
                     color="gray_100"
@@ -85,7 +91,7 @@ const CheckOutPage = () => {
                   <Input
                     name="frame803_One"
                     placeholder=""
-                    className="p-0 w-full"
+                    className="p-5 w-full"
                     wrapClassName="flex h-[50px] w-[470px]"
                     shape="round"
                     color="gray_100"
@@ -107,7 +113,7 @@ const CheckOutPage = () => {
                   <Input
                     name="frame804"
                     placeholder=""
-                    className="p-0 w-full"
+                    className="p-5 w-full"
                     wrapClassName="flex h-[50px] w-[470px]"
                     shape="round"
                     color="gray_100"
@@ -124,7 +130,7 @@ const CheckOutPage = () => {
                   <Input
                     name="frame805"
                     placeholder=""
-                    className="p-0 w-full"
+                    className="p-5 w-full"
                     wrapClassName="flex h-[50px] w-[470px]"
                     shape="round"
                     color="gray_100"
@@ -146,7 +152,7 @@ const CheckOutPage = () => {
                   <Input
                     name="frame806"
                     placeholder=""
-                    className="p-0 w-full"
+                    className="p-5 w-full"
                     wrapClassName="flex h-[50px] w-[470px]"
                     shape="round"
                     color="gray_100"
@@ -168,7 +174,7 @@ const CheckOutPage = () => {
                   <Input
                     name="frame807"
                     placeholder=""
-                    className="p-0 w-full"
+                    className="p-5 w-full"
                     wrapClassName="flex h-[50px] w-[470px]"
                     shape="round"
                     color="gray_100"
@@ -190,11 +196,12 @@ const CheckOutPage = () => {
                   <Input
                     name="frame808"
                     placeholder=""
-                    className="p-0 w-full"
+                    className="p-5 w-full"
                     wrapClassName="flex h-[50px] w-[470px]"
                     shape="round"
                     color="gray_100"
                     variant="fill"
+                    type="email"
                   ></Input>
                 </div>
               </div>
@@ -360,7 +367,7 @@ const CheckOutPage = () => {
                 value="Cashondelivery"
                 className="text-base text-black-900 text-left"
                 inputClassName="border border-black-900 border-solid h-6 mr-[5px] rounded-[12px] w-6"
-                checked={true}
+                checked={false}
                 name="cashondelivery"
                 label="Cash on delivery"
                 id="Cashondelivery"
@@ -382,6 +389,7 @@ const CheckOutPage = () => {
                   color="red_600"
                   size="lg"
                   variant="fill"
+                  onClick={handlClick}
                 >
                   Apply Coupon
                 </Button>
@@ -392,6 +400,7 @@ const CheckOutPage = () => {
                 color="red_600"
                 size="lg"
                 variant="fill"
+                onClick={handleClick}
               >
                 Place Order
               </Button>

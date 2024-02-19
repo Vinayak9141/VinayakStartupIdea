@@ -1,8 +1,9 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 import { Button, Img, Text } from "components";
 
 const ECommerceHomePageColumn = (props) => {
+  const navigate = useNavigate();
   return (
     <>
       <div className={props.className}>
@@ -56,6 +57,15 @@ const ECommerceHomePageColumn = (props) => {
             />
           </div>
         </div>
+        <div className="bg-black-900 flex flex-col items-center justify-start p-2 rounded-bl rounded-br w-full hover:bg-red-600 border hover:border-0 hover:cursor-pointer">
+          <Text
+            className="text-base text-white-A700"
+            size="txtPoppinsMedium16WhiteA700"
+            onClick={() => navigate("/productdetailspage")}
+          >
+            {props?.addtocarttext}
+          </Text>
+        </div>
         <div className="flex flex-col gap-2 items-start justify-start w-auto">
           <Text
             className="text-base text-black-900 w-auto"
@@ -97,6 +107,7 @@ const ECommerceHomePageColumn = (props) => {
 };
 
 ECommerceHomePageColumn.defaultProps = {
+  addtocarttext: "Add To Cart",
   p40: "-40%",
   havithvg92gamepone: "HAVIT HV-G92 Gamepad",
   price: "$120",
