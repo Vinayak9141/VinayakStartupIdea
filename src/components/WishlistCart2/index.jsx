@@ -33,7 +33,7 @@ const WishlistCart2 = (props) => {
               />
             </div>
           </div>
-          <div className="bg-black-900 flex flex-col items-center justify-start p-2 rounded-bl rounded-br w-full">
+          <div className="bg-black-900 flex flex-col items-center justify-start p-2 rounded-bl rounded-br w-full hover:bg-red-600">
             <div className="flex flex-row gap-2 items-center justify-start w-auto">
               <Img
                 className="h-6 w-6"

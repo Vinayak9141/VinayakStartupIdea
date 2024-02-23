@@ -44,7 +44,7 @@ const CategoryDropdownPage = () => {
       <div className="bg-white-A700 flex flex-col font-poppins items-center justify-start mx-auto overflow-auto w-full">
         <ECommerceHomePageTopheader className="bg-black-900 flex flex-col items-end justify-start p-3 w-full" />
         <SignUpHeader
-          className="flex md:flex-col flex-row font-inter md:gap-10 gap-[148px] items-center justify-between max-w-[1170px] mt-10 mx-auto md:px-5 w-full"
+          className="flex md:flex-row sm:flex-col flex-row font-inter md:gap-10 gap-[148px] items-center justify-between max-w-[1170px] mt-10 mx-auto md:px-5 w-full"
           exclusive="STARTUP IDEA"
           hometext="Home"
           servicestext="Services"

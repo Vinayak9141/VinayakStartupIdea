@@ -144,7 +144,7 @@ const CartPage = () => {
         <div className="flex flex-col items-center w-full">
           <ECommerceHomePageTopheader className="bg-black-900 flex flex-col items-end justify-start p-3 w-full" />
           <SignUpHeader
-            className="flex md:flex-col flex-row font-inter md:gap-10 gap-[130px] items-center justify-between max-w-[1170px] mt-10 mx-auto md:px-5 w-full"
+            className="flex md:flex-row sm:flex-col flex-row font-inter md:gap-10 gap-[110px] items-center justify-between max-w-[1170px] mt-10 mx-auto md:px-5 w-full"
             exclusive="Startup Idea"
             hometext="Home"
             servicestext="Services"
@@ -219,7 +219,7 @@ const CartPage = () => {
                   Apply Coupon
                 </Button>
               </div>
-              <CartColumncarttotal className="border border-black-900 border-solid flex flex-col items-start justify-center p-6 sm:px-5 rounded w-[41%] md:w-full" />
+              <CartColumncarttotal className="border border-black-900 border-solid flex flex-col items-start justify-center p-6 sm:px-5 rounded w-[41%] md:w-auto" />
             </div>
           </div>
           <Footer className="bg-black-900 flex items-center justify-center md:px-5 w-full" />

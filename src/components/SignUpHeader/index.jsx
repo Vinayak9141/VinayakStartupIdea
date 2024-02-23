@@ -9,7 +9,7 @@ const SignUpHeader = (props) => {
   return (
     <>
       <div className={props.className}>
-        <div className="flex sm:flex-col flex-row sm:gap-10 gap-40 items-start justify-between w-auto md:w-full">
+        <div className="flex sm:flex-col  flex-row sm:gap-10 gap-40 items-start justify-between w-auto md:w-full ">
           <div className="flex flex-col items-center justify-start">
             {!!props?.exclusive ? (
               <Text
@@ -20,7 +20,8 @@ const SignUpHeader = (props) => {
               </Text>
             ) : null}
           </div>
-          <div className="sm:hidden flex flex-row gap-8 items-start justify-start w-auto">
+          {/* sm:hidden */}
+          <div className=" flex flex-row gap-8 items-start justify-start w-auto">
             <div className="hover:underline flex flex-col items-center justify-start">
               {!!props?.hometext ? (
                 <Text
@@ -65,7 +66,8 @@ const SignUpHeader = (props) => {
             </div>
           </div>
         </div>
-        <div className="sm:hidden flex sm:flex-col flex-row gap-6 items-center justify-start w-auto sm:w-full">
+        {/* sm:hidden */}
+        <div className=" flex sm:flex-row flex-row gap-6 items-center justify-start w-auto sm:w-full ">
           {/* <div className="bg-gray-100 flex flex-col items-center justify-center pl-5 pr-3 py-[7px] rounded w-auto"> */}
           {/* <div className="flex flex-row gap-[34px] items-center justify-center w-auto"> */}
           {/* <Text
@@ -91,7 +93,7 @@ const SignUpHeader = (props) => {
           ></Input>
           {/* </div> */}
           {/* </div> */}
-          <div className="flex flex-row gap-4 items-center justify-center w-auto">
+          <div className="flex flex-row gap-4 items-center justify-center w-auto sm:flex-row">
             <List
               className="sm:flex-col flex-row gap-4 grid grid-cols-2 w-[63%]"
               orientation="horizontal"
@@ -100,6 +102,7 @@ const SignUpHeader = (props) => {
                 {!!props?.favoriteimage ? (
                   <Img
                     className="absolute h-[18px] inset-[0] justify-center m-auto"
+                    onClick={() => navigate("/wishlist")}
                     alt="favorite"
                     src={props?.favoriteimage}
                   />
@@ -122,6 +125,7 @@ const SignUpHeader = (props) => {
                 {!!props?.cartimage ? (
                   <Img
                     className="common-pointer h-8 w-8"
+                    onClick={() => navigate("/cart")}
                     alt="cartOne"
                     src={props?.cartimage}
                   />
@@ -142,16 +146,21 @@ const SignUpHeader = (props) => {
               </div>
             </List>
             {!!props?.userimage ? (
-              <Img className="h-8 w-8" alt="user" src={props?.userimage} />
+              <Img
+                className="h-8 w-8"
+                alt="user"
+                onClick={() => navigate("/account")}
+                src={props?.userimage}
+              />
             ) : null}
           </div>
         </div>
       </div>
-      <div className="sm:flex hidden">
-        <a className="text-4xl" href="">
+      {/* <div className="sm:flex hidden">
+        <a className="text-4xl" href="./Home.jsx">
           &#8801;
         </a>
-      </div>
+      </div> */}
     </>
   );
 };

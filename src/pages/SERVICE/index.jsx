@@ -18,7 +18,7 @@ const SERVICEPage = () => {
       <div className="bg-white-A700 flex flex-col font-poppins justify-end mx-auto w-full">
         <div className="flex flex-col items-center w-full">
           <ECommerceHomePageTopheader className="bg-black-900 flex flex-col items-end justify-start p-3 w-full" />
-          <div className="flex md:flex-col flex-row font-inter md:gap-10 gap-[148px] items-center justify-start max-w-[1179px] mt-10 mx-auto md:px-5 w-full">
+          <div className="flex sm:flex-col md:flex-row flex-row font-inter md:gap-10 gap-[148px] items-center justify-start max-w-[1179px] mt-10 mx-auto md:px-5 w-full">
             <div className="flex md:flex-1 sm:flex-col flex-row sm:gap-10 gap-[80px] items-start justify-between w-auto md:w-full">
               <div className="flex flex-col items-center justify-start">
                 <Text
@@ -28,7 +28,7 @@ const SERVICEPage = () => {
                   STARTUP IDEA
                 </Text>
               </div>
-              <div className="flex flex-row font-poppins gap-12 items-start justify-start w-auto">
+              <div className="flex flex-row font-poppins gap-6 items-start justify-start w-auto">
                 <div className="flex flex-col items-center justify-start w-auto">
                   <Text
                     className="text-base text-black-900 text-center w-auto"
@@ -92,7 +92,7 @@ const SERVICEPage = () => {
             alt="lineThree"
           />
         </div>
-        <div className="flex flex-col font-inter items-end mt-10 md:px-10 sm:px-5 px-[65px] w-full">
+        {/* <div className="flex flex-col font-inter items-end mt-10 md:px-10 sm:px-5 px-[65px] w-full">
           <div className="bg-black-900 h-96 md:h-[352px] p-4 md:px-5 relative w-[96%] md:w-full">
             <Img
               className="absolute h-[352px] inset-y-[0] my-auto object-cover right-[14%] w-2/5"
@@ -126,6 +126,59 @@ const SERVICEPage = () => {
               src="images/img_frame883.svg"
               alt="frame883"
             />
+          </div>
+        </div> */}
+        <div className="flex flex-col items-end mt-10 md:px-10 sm:px-5 px-[65px] w-full">
+          <div className="bg-black-900 flex flex-col items-start justify-start p-4 md:px-5 w-[96%] md:w-full">
+            <div className="flex sm:flex-col md:flex-row flex-row md:gap-10 items-center justify-between ml-12 md:ml-[0] w-[83%] md:w-full">
+              <div className="flex flex-col gap-5 items-start justify-start">
+                {/* <div className="flex flex-row font-poppins gap-6 items-center justify-start w-auto">
+                  <Img
+                    className="h-[49px] md:h-auto object-cover w-10"
+                    src="images/img_1200pxapplegraylogo.png"
+                    alt="1200pxapplegray"
+                  />
+                  <Text
+                    className="text-base text-center text-gray-50 w-[126px]"
+                    size="txtPoppinsRegular16Gray50"
+                  >
+                    iPhone 14 Series
+                  </Text>
+                </div> */}
+                <Text
+                  className="leading-[60.00px] text-5xl sm:text-[38px] md:text-[44px] text-gray-50 tracking-[1.92px] w-[80%] md:w-[100%] sm:w-full"
+                  size="txtInterSemiBold48"
+                >
+                  Sell Your Product Easily with STARTUP IDEA
+                </Text>
+                <div className="flex flex-row font-poppins gap-2 items-center justify-start md:ml-[0] ml-[3px] w-auto">
+                  <div className="flex flex-col gap-1 items-start justify-start w-auto">
+                    <Text
+                      className="text-base text-center text-gray-50 w-auto"
+                      size="txtPoppinsMedium16"
+                    >
+                      Shop Now
+                    </Text>
+                    <Line className="bg-gray-50 h-px w-full" />
+                  </div>
+                  <Img
+                    className="h-6 w-6"
+                    src="images/img_arrowright_gray_50.svg"
+                    alt="arrowright"
+                  />
+                </div>
+                <Img
+                  className="h-3.5 md:ml-[0] ml-[289px] w-[110px]"
+                  src="images/img_frame883.svg"
+                  alt="frame883"
+                />
+              </div>
+              <Img
+                className="h-[352px] md:h-[352px]  object-cover"
+                src="images/img_heroendframe.png"
+                alt="heroendframe"
+              />
+            </div>
           </div>
         </div>
         <div className="flex flex-col font-poppins items-center mt-[91px] sm:pl-5 pl-[27px] w-full">

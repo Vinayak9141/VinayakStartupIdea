@@ -15,8 +15,8 @@ const SERVICEFourPage = () => {
       <div className="bg-white-A700 flex flex-col font-poppins justify-end mx-auto w-full">
         <div className="flex flex-col items-center w-full">
           <ECommerceHomePageTopheader className="bg-black-900 flex flex-col items-end justify-start p-3 w-full" />
-          <div className="flex md:flex-col flex-row font-inter md:gap-10 gap-[148px] items-center justify-start max-w-[1179px] mt-10 mx-auto md:px-5 w-full">
-            <div className="flex md:flex-1 sm:flex-col flex-row sm:gap-10 gap-[190px] items-start justify-between w-auto md:w-full">
+          <div className="flex md:flex-row sm:flex-col flex-row font-inter md:gap-10 gap-[148px] items-center justify-start max-w-[1179px] mt-10 mx-auto md:px-5 w-full">
+            <div className="flex md:flex-1 sm:flex-col flex-row  sm:gap-10  gap-[100px] items-start justify-between w-auto md:w-full">
               <div className="flex flex-col items-center justify-start">
                 <Text
                   className="text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.72px]"
@@ -25,39 +25,41 @@ const SERVICEFourPage = () => {
                   STARTUP IDEA
                 </Text>
               </div>
-              <div className="flex flex-row font-poppins gap-12 items-start justify-start w-auto">
-                <div className="flex flex-col items-center justify-start w-auto">
+              <div className="flex flex-row  font-poppins gap-7 items-start justify-start w-auto   ">
+                <div className="hover:underline flex flex-col items-center justify-start w-auto">
                   <Text
                     className="text-base text-black-900 text-center w-auto"
                     size="txtPoppinsRegular16"
                     onClick={() => navigate("/accountdropdownwithaccount")}
                   >
-                    Home
+                    <a href="">Home</a>
                   </Text>
-                  <Img
-                    className="h-px w-12"
-                    src="images/img_underline.svg"
-                    alt="underline"
-                  />
+                  {/* <Img
+                  className="h-px w-12"
+                  src="images/img_underline.svg"
+                  alt="underline"
+                /> */}
                 </div>
-                <div className="flex flex-col items-center justify-start">
+                <div className="hover:underline flex flex-col items-center justify-start">
                   <Text
                     className="text-base text-black-900 text-center"
+                    onClick={() => navigate("/servicethree")}
                     size="txtPoppinsRegular16"
                   >
-                    Services
+                    <a href="">Services</a>
                   </Text>
                 </div>
-                <div className="flex flex-col items-center justify-start">
+                <div className="hover:underline flex flex-col items-center justify-start">
                   <Text
                     className="text-base text-black-900 text-center"
+                    onClick={() => navigate("/about")}
                     size="txtPoppinsRegular16"
                   >
-                    About
+                    <a href="">About</a>
                   </Text>
                 </div>
                 <Button
-                  className="common-pointer bg-transparent cursor-pointer min-w-[61px] text-base text-black-900 text-center"
+                  className="hover:underline common-pointer bg-transparent cursor-pointer min-w-[61px] text-base text-black-900 text-center"
                   onClick={() => navigate("/signup")}
                   size="xs"
                 >
@@ -66,12 +68,13 @@ const SERVICEFourPage = () => {
               </div>
             </div>
             <div className="flex flex-row font-poppins gap-6 items-center justify-start w-auto">
-              <ECommerceHomePageColumnwhatareyoulookiOne className="bg-gray-100 flex flex-col gap-2.5 items-center justify-center pl-5 pr-3 py-[7px] rounded w-auto" />
+              <ECommerceHomePageColumnwhatareyoulookiOne className="bg-gray-100 flex flex-col gap-2.5 items-center justify-center pl-0 pr-0 py-[0px] rounded w-auto" />
               <div className="flex flex-row gap-4 items-center justify-center w-auto">
                 <Img
                   className="h-8 w-8"
                   src="images/img_wishlist.svg"
                   alt="wishlist"
+                  onClick={() => navigate("/wishlist")}
                 />
                 <div className="flex flex-col h-8 items-center justify-start w-8">
                   <Img
@@ -90,40 +93,57 @@ const SERVICEFourPage = () => {
             alt="lineThree"
           />
         </div>
-        <div className="flex flex-col font-inter items-end mt-10 md:px-10 sm:px-5 px-[65px] w-full">
-          <div className="bg-black-900 h-96 md:h-[352px] p-4 md:px-5 relative w-[96%] md:w-full">
-            <Img
-              className="absolute h-[352px] inset-y-[0] my-auto object-cover right-[14%] w-2/5"
-              src="images/img_heroendframe.png"
-              alt="heroendframe"
-            />
-            <Text
-              className="absolute leading-[60.00px] left-[5%] text-5xl sm:text-[38px] md:text-[44px] text-gray-50 top-[23%] tracking-[1.92px] w-[44%] sm:w-full"
-              size="txtInterSemiBold48"
-            >
-              Sell Your Product Easily with STARTUP IDEA{" "}
-            </Text>
-            <div className="absolute bottom-[23%] flex flex-row font-poppins gap-2 items-center justify-center left-[5%] w-auto">
-              <div className="flex flex-col gap-1 items-start justify-start w-auto">
+        <div className="flex flex-col items-end mt-10 md:px-10 sm:px-5 px-[65px] w-full">
+          <div className="bg-black-900 flex flex-col items-start justify-start p-4 md:px-5 w-[96%] md:w-full">
+            <div className="flex sm:flex-col md:flex-row flex-row md:gap-10 items-center justify-between ml-12 md:ml-[0] w-[83%] md:w-full">
+              <div className="flex flex-col gap-5 items-start justify-start">
+                {/* <div className="flex flex-row font-poppins gap-6 items-center justify-start w-auto">
+                  <Img
+                    className="h-[49px] md:h-auto object-cover w-10"
+                    src="images/img_1200pxapplegraylogo.png"
+                    alt="1200pxapplegray"
+                  />
+                  <Text
+                    className="text-base text-center text-gray-50 w-[126px]"
+                    size="txtPoppinsRegular16Gray50"
+                  >
+                    iPhone 14 Series
+                  </Text>
+                </div> */}
                 <Text
-                  className="text-base text-center text-gray-50 w-auto"
-                  size="txtPoppinsMedium16"
+                  className="leading-[60.00px] text-5xl sm:text-[38px] md:text-[44px] text-gray-50 tracking-[1.92px] w-[80%] md:w-[100%] sm:w-full"
+                  size="txtInterSemiBold48"
                 >
-                  Shop Now
+                  Sell Your Product Easily with STARTUP IDEA
                 </Text>
-                <Line className="bg-gray-50 h-px w-full" />
+                <div className="flex flex-row font-poppins gap-2 items-center justify-start md:ml-[0] ml-[3px] w-auto">
+                  <div className="flex flex-col gap-1 items-start justify-start w-auto">
+                    <Text
+                      className="text-base text-center text-gray-50 w-auto"
+                      size="txtPoppinsMedium16"
+                    >
+                      Shop Now
+                    </Text>
+                    <Line className="bg-gray-50 h-px w-full" />
+                  </div>
+                  <Img
+                    className="h-6 w-6"
+                    src="images/img_arrowright_gray_50.svg"
+                    alt="arrowright"
+                  />
+                </div>
+                <Img
+                  className="h-3.5 md:ml-[0] ml-[289px] w-[110px]"
+                  src="images/img_frame883.svg"
+                  alt="frame883"
+                />
               </div>
               <Img
-                className="h-6 w-6"
-                src="images/img_arrowright_gray_50.svg"
-                alt="arrowright"
+                className="h-[352px] md:h-[352px]  object-cover"
+                src="images/img_heroendframe.png"
+                alt="heroendframe"
               />
             </div>
-            <Img
-              className="absolute bottom-[13%] h-3.5 left-[28%] w-[110px]"
-              src="images/img_frame883.svg"
-              alt="frame883"
-            />
           </div>
         </div>
         <div className="flex flex-col font-poppins md:gap-10 gap-[68px] items-center mt-[91px] sm:pl-5 pl-[27px] w-full">
@@ -145,7 +165,7 @@ const SERVICEFourPage = () => {
                 <Text className="text-gray-900 text-lg" size="txtNunitoBold18">
                   First name
                 </Text>
-                <Text className="text-gray-900 text-lg" size="txtNunitoBold18">
+                <Text className="text-gray-900 text-lg " size="txtNunitoBold18">
                   Last name
                 </Text>
               </div>
@@ -159,6 +179,7 @@ const SERVICEFourPage = () => {
                   size="sm"
                   variant="fill"
                 ></Input>
+
                 <Input
                   name="groupSixtyFour"
                   placeholder="Doe"

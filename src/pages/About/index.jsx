@@ -17,7 +17,7 @@ const AboutPage = () => {
         <div className="flex flex-col items-center justify-start w-full">
           <ECommerceHomePageTopheader className="bg-black-900 flex flex-col items-end justify-start p-3 w-full" />
           <SignUpHeader
-            className="flex md:flex-col flex-row font-inter md:gap-10 gap-[130px] items-center justify-between max-w-[1170px] mt-10 mx-auto md:px-5 w-full"
+            className="flex md:flex-row sm:flex-col flex-row font-inter md:gap-10 gap-[130px] items-center justify-between max-w-[1170px] mt-10 mx-auto md:px-5 w-full"
             exclusive="Exclusive"
             hometext="Home"
             abouttext="About"
@@ -30,7 +30,7 @@ const AboutPage = () => {
             alt="lineThree"
           />
 
-          <div className="flex md:flex-col flex-row font-inter md:gap-10 gap-[75px] items-center justify-end mt-[42px] md:px-5 w-[91%] md:w-full">
+          <div className="flex sm:flex-col md:flex-row flex-row font-inter md:gap-10 gap-[75px] items-center justify-end mt-[42px] md:px-5 w-[91%] md:w-full">
             <div className="flex flex-col gap-10 items-start justify-start w-auto sm:w-full">
               <Text
                 className="sm:text-[40px] md:text-[46px] text-[54px] text-black-900 text-justify tracking-[3.24px] w-auto"
@@ -40,7 +40,7 @@ const AboutPage = () => {
               </Text>
               <div className="flex flex-col font-poppins gap-6 items-start justify-start w-auto sm:w-full">
                 <Text
-                  className="leading-[26.00px] max-w-[525px] md:max-w-full text-base text-black-900"
+                  className="leading-[26.00px] max-w-[525px] md:max-w-auto text-base text-black-900"
                   size="txtPoppinsRegular16"
                 >
                   Launced in 2015, Exclusive is South Asia’s premier online
@@ -68,7 +68,7 @@ const AboutPage = () => {
             </div>
           </div>
           <List
-            className="sm:flex-col flex-row gap-[30px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 justify-start max-w-[1170px] mt-[140px] mx-auto md:px-5 w-full"
+            className="sm:flex-col flex-row gap-[30px] grid sm:grid-cols-1 md:grid-cols-4 grid-cols-4 justify-start max-w-[1170px] mt-[140px] mx-auto md:px-5 w-full"
             orientation="horizontal"
           >
             <div className="border hover:border-0 border-black-900_4c border-solid hover:cursor-pointer flex flex-1 flex-col items-center justify-start p-[30px] sm:px-5 rounded hover:shadow-bs2 hover:w-full w-full hover:bg-red-600">
@@ -98,7 +98,7 @@ const AboutPage = () => {
             </div> */}
           </List>
           <List
-            className="sm:flex-col flex-row gap-[30px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-start max-w-[1170px] mt-[140px] mx-auto md:px-5 w-full"
+            className="sm:flex-col flex-row gap-[30px] grid sm:grid-cols-1 md:grid-cols-3 grid-cols-3 justify-start max-w-[1170px] mt-[140px] mx-auto md:px-5 w-full"
             orientation="horizontal"
           >
             <div className="flex flex-col gap-8 items-start justify-start w-auto">
@@ -234,7 +234,7 @@ const AboutPage = () => {
             src="images/img_frame883_black_900.svg"
             alt="frame883"
           />
-          <ECommerceHomePageListicondelivery className="sm:flex-col flex-row font-poppins md:gap-10 gap-[88px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center max-w-[943px] mt-[140px] mx-auto md:px-5 w-full" />
+          <ECommerceHomePageListicondelivery className="sm:flex-col flex-row font-poppins md:gap-10 gap-[88px] grid sm:grid-cols-1 md:grid-cols-3 grid-cols-3 justify-center max-w-[943px] mt-[140px] mx-auto md:px-5 w-full" />
           <Footer className="bg-black-900 flex font-poppins items-center justify-center mt-[139px] md:px-5 w-full" />
         </div>
       </div>

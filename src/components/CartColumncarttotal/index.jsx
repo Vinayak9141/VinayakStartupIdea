@@ -14,7 +14,7 @@ const CartColumncarttotal = (props) => {
         >
           {props?.carttotal}
         </Text>
-        <div className="flex flex-row gap-[307px] items-start justify-between mt-[23px] w-auto sm:w-full">
+        <div className="flex flex-row gap-[207px] items-start justify-between mt-[23px] w-auto sm:w-full">
           <Text
             className="text-base text-black-900 w-auto"
             size="txtPoppinsRegular16"
@@ -33,7 +33,7 @@ const CartColumncarttotal = (props) => {
           src="images/img_underline_black_900.svg"
           alt="underline"
         />
-        <div className="flex flex-row gap-[314px] items-start justify-between mt-4 w-auto sm:w-full">
+        <div className="flex flex-row gap-[214px] items-start justify-between mt-4 w-auto sm:w-full">
           <Text
             className="text-base text-black-900 w-auto"
             size="txtPoppinsRegular16"
@@ -52,7 +52,7 @@ const CartColumncarttotal = (props) => {
           src="images/img_underline_black_900.svg"
           alt="underline_One"
         />
-        <div className="flex flex-row gap-[335px] items-start justify-between mt-4 w-auto sm:w-full">
+        <div className="flex flex-row gap-[235px] items-start justify-between mt-4 w-auto sm:w-full">
           <Text
             className="text-base text-black-900 w-auto"
             size="txtPoppinsRegular16"

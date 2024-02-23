@@ -2,7 +2,10 @@ import React from "react";
 
 import { Button, Img, Text } from "components";
 
+import { useNavigate } from "react-router-dom";
+
 const WishlistCart = (props) => {
+  const navigate = useNavigate();
   return (
     <>
       <div className={props.className}>
@@ -44,7 +47,7 @@ const WishlistCart = (props) => {
               />
             </div>
           </div>
-          <div className="bg-black-900 flex flex-col items-center justify-start p-2 rounded-bl rounded-br w-full">
+          <div className="bg-black-900 flex flex-col items-center justify-start p-2 rounded-bl rounded-br w-full hover:bg-red-600">
             <div className="flex flex-row gap-2 items-center justify-start w-auto">
               <Img
                 className="h-6 w-6"
@@ -54,6 +57,7 @@ const WishlistCart = (props) => {
               <Text
                 className="text-white-A700 text-xs w-auto"
                 size="txtPoppinsRegular12WhiteA700"
+                onClick={() => navigate("/cart")}
               >
                 {props?.addtocart}
               </Text>

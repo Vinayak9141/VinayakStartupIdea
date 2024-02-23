@@ -35,8 +35,8 @@ const ECommerceHomePagePage = () => {
     <>
       <div className="bg-white-A700 flex flex-col font-poppins items-center justify-start mx-auto overflow-auto w-full">
         <ECommerceHomePageTopheader className="bg-black-900 flex flex-col items-end justify-start p-3 w-full" />
-        <div className="flex md:flex-col flex-row font-inter md:gap-10 gap-[148px] items-center justify-start max-w-[1179px] mt-10 mx-auto md:px-5 w-full">
-          <div className="flex md:flex-1 sm:flex-col flex-row  sm:gap-10 gap-[100px] items-start justify-between w-auto md:w-full">
+        <div className="flex md:flex-row sm:flex-col flex-row font-inter md:gap-10 gap-[148px] items-center justify-start max-w-[1179px] mt-10 mx-auto md:px-5 w-full">
+          <div className="flex md:flex-1 sm:flex-col flex-row  sm:gap-10  gap-[100px] items-start justify-between w-auto md:w-full">
             <div className="flex flex-col items-center justify-start">
               <Text
                 className="text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.72px]"

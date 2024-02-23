@@ -24,7 +24,7 @@ const SignUpPage = () => {
         <div className="flex flex-col items-center w-full">
           <ECommerceHomePageTopheader className="bg-black-900 flex flex-col items-end justify-start p-3 w-full" />
           <SignUpHeader
-            className="flex md:flex-col flex-row font-inter md:gap-10 gap-[150px] items-center justify-between max-w-[1170px] mt-[38px] mx-auto md:px-5 w-full"
+            className="flex md:flex-row sm:flex-col flex-row font-inter md:gap-10 gap-[150px] items-center justify-between max-w-[1170px] mt-[38px] mx-auto md:px-5 w-full"
             exclusive="STARTUP IDEA"
             servicestext="Services"
             abouttext="About"
@@ -35,7 +35,7 @@ const SignUpPage = () => {
             alt="lineThree"
           />
         </div>
-        <div className="flex md:flex-col flex-row md:gap-10 gap-[129px] items-center justify-between max-w-[1305px] mt-[60px] mx-auto md:px-5 w-full">
+        <div className="flex sm:flex-col md:flex-row flex-row md:gap-10 gap-[129px] items-center justify-between max-w-[1305px] mt-[60px] mx-auto md:px-5 w-full">
           <div className="bg-blue_gray-100 flex md:flex-1 flex-col items-center justify-end pt-[75px] rounded-br rounded-tr w-[62%] md:w-full">
             <Img
               className="h-[706px] md:h-auto object-cover rounded-tr w-full"

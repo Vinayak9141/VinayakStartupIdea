@@ -19,7 +19,7 @@ const WishlistPage = () => {
       <div className="bg-white-A700 flex flex-col font-poppins items-center justify-start mx-auto w-full">
         <ECommerceHomePageTopheader className="bg-black-900 flex flex-col items-end justify-start p-3 w-full" />
         <SignUpHeader
-          className="flex md:flex-col flex-row font-inter md:gap-10 gap-[110px] items-center justify-between max-w-[1170px] mt-10 mx-auto md:px-5 w-full"
+          className="flex md:flex-row sm:flex-col flex-row font-inter md:gap-11  gap-[110px] items-center justify-between max-w-[1170px] mt-10 mx-auto md:px-5 w-full"
           exclusive="STARTUP IDEA"
           servicestext="Services"
           abouttext="About"
@@ -50,7 +50,7 @@ const WishlistPage = () => {
                 Move All To Bag
               </Button>
             </div>
-            <div className="gap-[30px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 items-start justify-start w-auto md:w-full">
+            <div className="gap-[30px] grid sm:grid-cols-1 md:grid-cols-4 grid-cols-4 items-start justify-start w-auto md:w-full">
               <WishlistCart className="flex flex-col gap-4 items-start justify-start w-full" />
               <WishlistCart1 className="flex flex-col gap-4 items-start justify-start w-full" />
               <WishlistCart2 className="flex flex-col gap-4 items-start justify-start w-full" />
@@ -78,7 +78,7 @@ const WishlistPage = () => {
                 See All
               </Button>
             </div>
-            <div className="gap-[30px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 items-start justify-start w-auto md:w-full">
+            <div className="gap-[30px] grid sm:grid-cols-1 md:grid-cols-4 grid-cols-4 items-start justify-start w-auto md:w-full">
               <WishlistCart4 className="flex flex-col gap-4 items-start justify-start w-full" />
               <WishlistCart5 className="flex flex-col gap-4 items-start justify-start w-full" />
               <WishlistCart6 className="flex flex-col gap-4 items-start justify-start w-full" />

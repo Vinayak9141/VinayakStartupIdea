@@ -45,7 +45,7 @@ const AccountDropdownWithaccountPage = () => {
       <div className="bg-white-A700 flex flex-col font-poppins items-center justify-start mx-auto w-full">
         <ECommerceHomePageTopheader className="bg-black-900 flex flex-col items-end justify-start p-3 w-full" />
         <SignUpHeader
-          className="flex md:flex-col flex-row font-inter md:gap-10 gap-[60px] items-center justify-between max-w-[1170px] mt-10 mx-auto md:px-5 w-full"
+          className="flex md:flex-row sm:flex-col flex-row font-inter md:gap-10  gap-[60px] items-center justify-between max-w-[1170px] mt-10 mx-auto md:px-5 w-full "
           exclusive="STARTUP IDEA"
           hometext="Home"
           servicestext="Services"
@@ -78,9 +78,9 @@ const AccountDropdownWithaccountPage = () => {
                   className="m-auto w-full"
                   items={[...Array(5)].map(() => (
                     <React.Fragment key={Math.random()}>
-                      <div className="bg-black-900 flex flex-col items-start justify-end mx-2.5 pt-4 px-4">
+                      <div className="bg-black-900 flex flex-col items-start justify-end mx-2.5 pt-4 px-4 sm:pb-0 sm:pt-0">
                         <div className="flex flex-col items-center justify-start ml-12 md:ml-[0] w-3/4 md:w-full">
-                          <div className="flex md:flex-col flex-row gap-[38px] items-center justify-between w-full">
+                          <div className="flex sm:flex-col md:flex-row flex-row gap-[38px] items-center justify-between w-full">
                             <div className="flex md:flex-1 flex-col gap-5 items-start justify-start w-[36%] md:w-full">
                               <div className="flex flex-row font-poppins gap-6 items-center justify-start w-auto">
                                 <Img
@@ -120,7 +120,7 @@ const AccountDropdownWithaccountPage = () => {
                             </div>
                             <div className="h-[328px] relative w-2/5 md:w-full">
                               <Img
-                                className="h-[328px] m-auto object-cover w-full"
+                                className="h-[328px] md:p-10 md:h-[380px] m-auto object-cover w-full"
                                 src="images/img_heroendframe.png"
                                 alt="heroendframe"
                               />
@@ -161,10 +161,10 @@ const AccountDropdownWithaccountPage = () => {
           </div>
           {/* <AccountDropdownWithAccountColumnTwo className="absolute flex flex-col items-center justify-start right-[9%] top-[0] w-[16%]" /> */}
         </div>
-        <div className="flex flex-col font-poppins gap-10 items-start justify-start max-w-[1170px] mt-[140px] mx-auto md:px-5 w-full pt-12">
+        <div className="flex flex-col font-poppins gap-10 items-start justify-start max-w-[1170px] mt-[140px] mx-auto md:px-5 w-full  sm:pt-20">
           <div className="flex md:flex-col flex-row md:gap-10 gap-[470px] items-end justify-between w-auto md:w-full">
             <div className="flex sm:flex-col flex-row sm:gap-10 gap-[87px] items-end justify-start w-auto md:w-full">
-              <div className="flex flex-col gap-6 h-[109px] md:h-auto items-start justify-start w-auto">
+              <div className="flex flex-col gap-6 h-[109px] md:h-auto items-start justify-start w-auto sm:w-full sm:pt-10 md:w-full md:pt-10">
                 <div className="flex flex-row font-poppins gap-4 items-center justify-start w-auto">
                   <div className="bg-red-600 h-10 rounded w-1/5"></div>
                   <Text
@@ -508,7 +508,7 @@ const AccountDropdownWithaccountPage = () => {
           </List>
         </div>
         <div className="bg-black-900 flex flex-col items-center justify-start max-w-[1170px] mt-[139px] mx-auto px-11 md:px-5 w-full">
-          <div className="flex md:flex-col flex-row gap-[27px] items-center justify-start w-[99%] md:w-full">
+          <div className="flex sm:flex-col md:flex-row flex-row gap-[27px] items-center justify-start w-[99%] md:w-full">
             <div className="flex flex-col items-start justify-start w-[42%] md:w-full">
               <Text
                 className="text-base text-green-A400"
@@ -545,7 +545,7 @@ const AccountDropdownWithaccountPage = () => {
               <div className="absolute backdrop-opacity-[0.5] bg-blue_gray-100_75 blur-[200.00px] h-[500px] inset-y-[0] left-[4%] my-auto rounded-[252px] w-[84%]"></div>
               <div className="absolute flex flex-col h-max inset-[0] items-center justify-center m-auto p-4 w-full">
                 <Img
-                  className="h-[330px] md:h-auto my-[29px] object-cover w-full"
+                  className="h-[330px] sm:h-auto md:h-auto my-[29px] object-cover w-full"
                   src="images/img_jblboombox2hero020x1.png"
                   alt="jblboombox2hero"
                 />
@@ -638,6 +638,7 @@ const AccountDropdownWithaccountPage = () => {
             View All Products
           </Button>
         </div>
+
         <div className="flex flex-col font-poppins md:gap-10 gap-[60px] items-start justify-start max-w-[1170px] mt-[140px] mx-auto md:px-5 w-full">
           <div className="flex flex-col gap-5 items-start justify-start w-auto">
             <div className="flex flex-row font-poppins gap-4 items-center justify-start w-auto">
@@ -656,8 +657,8 @@ const AccountDropdownWithaccountPage = () => {
               New Arrival
             </Text>
           </div>
-          <div className="flex md:flex-col flex-row gap-[30px] items-start justify-start w-auto md:w-full">
-            <div className="bg-black-900 flex md:h-[511px] h-[600px] justify-end pt-[29px] sm:px-5 px-[29px] relative rounded w-[49%] md:w-full">
+          <div className="flex sm:flex-col md:flex-row flex-row gap-[30px] items-start justify-start w-auto md:w-full">
+            <div className="bg-black-900 flex md:h-[550px] h-[600px] justify-end pt-[29px] sm:px-5 px-[29px] relative rounded w-[49%] md:w-[49%] sm:w-full">
               <Img
                 className="h-[411px] mt-auto mx-auto object-cover w-[511px]"
                 src="images/img_ps5slimgoedko.png"
@@ -821,7 +822,7 @@ const AccountDropdownWithaccountPage = () => {
           </div>
         </div>
         <ECommerceHomePageListicondelivery
-          className="sm:flex-col flex-row font-poppins md:gap-10 gap-[88px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center max-w-[943px] mt-[140px] mx-auto md:px-5 w-full"
+          className="sm:flex-col flex-row font-poppins md:gap-10 gap-[88px] grid sm:grid-cols-1 md:grid-cols-3 grid-cols-3 justify-center max-w-[943px] mt-[140px] mx-auto md:px-5 w-full"
           checkmark="images/img_checkmark.svg"
           moneybacktext="MONEY BACK GUARANTEE"
           moneybacksubtext="We reurn money within 30 days"

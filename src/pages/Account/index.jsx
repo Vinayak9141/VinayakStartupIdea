@@ -13,7 +13,7 @@ const AccountPage = () => {
         <div className="flex flex-col items-center justify-start w-full">
           <ECommerceHomePageTopheader className="bg-black-900 flex flex-col items-end justify-start p-3 w-full" />
           <SignUpHeader
-            className="flex md:flex-col flex-row font-inter md:gap-10 gap-[100px] items-center justify-between max-w-[1170px] mt-10 mx-auto md:px-5 w-full"
+            className="flex md:flex-row sm:flex-col flex-row font-inter md:gap-10 gap-[100px] items-center justify-between max-w-[1170px] mt-10 mx-auto md:px-5 w-full"
             exclusive="STARTUP IDEA"
             hometext="Home"
             servicestext="Services"
@@ -42,7 +42,7 @@ const AccountPage = () => {
               </span>
             </Text>
           </div>
-          <div className="flex md:flex-col flex-row font-poppins md:gap-10 gap-[100px] items-start justify-start max-w-[1170px] mt-[78px] mx-auto md:px-5 w-full">
+          <div className="flex sm:flex-col md:flex-row flex-row font-poppins md:gap-0 gap-[100px] items-start justify-start max-w-[1170px] mt-[78px] mx-auto md:px-5 w-full">
             <div className="flex md:flex-1 flex-col items-start justify-start md:mt-0 mt-0.5 w-[18%] md:w-full">
               <Text
                 className="text-base text-black-900"
@@ -97,14 +97,14 @@ const AccountPage = () => {
                 My WishList
               </Text>
             </div>
-            <div className="bg-white-A700 flex md:flex-1 flex-col items-start justify-start p-[38px] sm:px-5 rounded shadow-bs1 w-3/4 md:w-full">
+            <div className="bg-white-A700 flex md:flex-1 flex-col  items-start justify-start p-[38px] sm:px-5 rounded shadow-bs1 w-3/4 md:w-full">
               <Text
                 className="md:ml-[0] ml-[41px] text-red-600 text-xl"
                 size="txtPoppinsMedium20Red600"
               >
                 Edit Your Profile
               </Text>
-              <div className="flex md:flex-col flex-row gap-[50px] items-start justify-start md:ml-[0] ml-[41px] mt-[15px] w-auto md:w-full">
+              <div className="flex sm:flex-col md:flex-row flex-row gap-[50px] items-start justify-start md:ml-[0] ml-[41px] mt-[15px] w-auto  md:w-full">
                 <div className="flex flex-col gap-2 items-start justify-start w-auto">
                   <Text
                     className="text-base text-black-900 w-auto"
@@ -142,7 +142,7 @@ const AccountPage = () => {
                   ></Input>
                 </div>
               </div>
-              <div className="flex md:flex-col flex-row gap-[50px] items-start justify-start md:ml-[0] ml-[41px] mt-[23px] w-auto md:w-full">
+              <div className="flex sm:flex-col md:flex-row flex-row gap-[50px] items-start justify-start md:ml-[0] ml-[41px] mt-[23px] w-auto  md:w-full">
                 <div className="flex flex-col gap-2 items-start justify-start w-auto">
                   <Text
                     className="text-base text-black-900 w-auto"

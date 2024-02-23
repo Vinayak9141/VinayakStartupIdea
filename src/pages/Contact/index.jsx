@@ -20,7 +20,7 @@ const ContactPage = () => {
         <div className="flex flex-col items-start justify-start w-full">
           <ECommerceHomePageTopheader className="bg-black-900 flex flex-col items-end justify-start p-3 w-full" />
           <SignUpHeader
-            className="flex md:flex-col flex-row font-inter md:gap-10 gap-[130px] items-center justify-between max-w-[1170px] mt-10 mx-auto md:px-5 w-full"
+            className="flex md:flex-row sm:flex-col flex-row font-inter md:gap-10 gap-[130px] items-center justify-between max-w-[1170px] mt-10 mx-auto md:px-5 w-full"
             exclusive="Exclusive"
             servicestext="Contact"
             abouttext="About"
@@ -37,7 +37,7 @@ const ContactPage = () => {
             account="Home"
             myaccount="Cantact"
           />
-          <div className="flex md:flex-col flex-row font-poppins gap-[30px] items-center justify-start max-w-[1170px] mt-20 mx-auto md:px-5 w-full">
+          <div className="flex sm:flex-col md:flex-row flex-row font-poppins gap-[30px] items-center justify-start max-w-[1170px] mt-20 mx-auto md:px-5 w-full">
             <div className="bg-white-A700 flex md:flex-1 flex-col items-center justify-start p-[35px] sm:px-5 rounded shadow-bs1 w-[30%] md:w-full">
               <div className="flex flex-col gap-8 items-start justify-start mb-[15px] mt-[5px] w-auto">
                 <div className="flex flex-col gap-6 items-start justify-start w-auto">

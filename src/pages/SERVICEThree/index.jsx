@@ -27,7 +27,7 @@ const SERVICEThreePage = () => {
       <div className="bg-white-A700 flex flex-col font-poppins items-center justify-end mx-auto w-full">
         <ECommerceHomePageTopheader className="bg-black-900 flex flex-col items-end justify-start p-3 w-full" />
         <SignUpHeader
-          className="flex md:flex-col flex-row font-inter md:gap-10 gap-[60px] items-center justify-between max-w-[1170px] mt-10 mx-auto md:px-5 w-full"
+          className="flex md:flex-row sm:flex-col flex-row font-inter md:gap-10 gap-[60px] items-center justify-between max-w-[1170px] mt-10 mx-auto md:px-5 w-full"
           exclusive="STARTUP IDEA"
           hometext="Home"
           servicestext="Services"
@@ -38,7 +38,7 @@ const SERVICEThreePage = () => {
         <Img className="h-px mt-4" src="images/img_line3.svg" alt="lineThree" />
         <div className="flex flex-col items-end mt-10 md:px-10 sm:px-5 px-[65px] w-full">
           <div className="bg-black-900 flex flex-col items-start justify-start p-4 md:px-5 w-[96%] md:w-full">
-            <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between ml-12 md:ml-[0] w-[83%] md:w-full">
+            <div className="flex sm:flex-col md:flex-row flex-row md:gap-10 items-center justify-between ml-12 md:ml-[0] w-[83%] md:w-full">
               <div className="flex flex-col gap-5 items-start justify-start">
                 <div className="flex flex-row font-poppins gap-6 items-center justify-start w-auto">
                   <Img
@@ -82,14 +82,14 @@ const SERVICEThreePage = () => {
                 />
               </div>
               <Img
-                className="h-[352px] md:h-auto object-cover"
+                className="h-[352px] md:h-[352px] object-cover"
                 src="images/img_heroendframe.png"
                 alt="heroendframe"
               />
             </div>
           </div>
         </div>
-        <div className="flex flex-col font-poppins md:gap-10 gap-[60px] items-start justify-start max-w-[1170px] mt-[59px] mx-auto md:px-5 w-full">
+        <div className="flex  flex-col font-poppins md:gap-10 gap-[60px] items-start justify-start max-w-[1170px] mt-[59px] mx-auto md:px-5 w-full">
           <div className="flex sm:flex-col flex-row md:gap-10 gap-[691px] items-end justify-between w-auto md:w-full">
             <div className="flex flex-col gap-5 items-start justify-start w-auto sm:w-full">
               <div className="flex flex-row font-poppins gap-4 items-center justify-start w-auto">
@@ -137,10 +137,10 @@ const SERVICEThreePage = () => {
               </Button>
             </div>
           </div>
-          <div className="gap-[30px] grid sm:grid-cols-1 md:grid-cols-3 grid-cols-6 items-start justify-start w-auto md:w-full">
+          <div className="gap-[30px] grid sm:grid-cols-1 md:grid-cols-6 grid-cols-6 items-start justify-start w-auto md:w-full">
             <div className="hover:bg-red-600 border border-black-900_4c border-solid flex flex-col gap-[18px] items-center justify-end p-[21px] sm:px-5 rounded w-full">
               <Img
-                className=" h-[34px] md:h-auto mt-[25px] object-cover w-[68px] sm:w-full"
+                className=" h-[34px] md:h-auto mt-[25px] object-cover w-[68px] sm:w-auto"
                 src="images/img_image64.png"
                 alt="imageSixtyFour"
               />
@@ -153,7 +153,7 @@ const SERVICEThreePage = () => {
             </div>
             <div className="hover:bg-red-600 border border-black-900_4c border-solid flex flex-col gap-[11px] items-center justify-end p-[21px] sm:px-5 rounded w-full">
               <Img
-                className="h-12 md:h-auto mt-[18px] object-cover w-[45%] sm:w-full"
+                className="h-12 md:h-auto mt-[18px] object-cover w-[45%] sm:w-auto"
                 src="images/img_image65.png"
                 alt="imageSixtyFive"
               />
@@ -166,7 +166,7 @@ const SERVICEThreePage = () => {
             </div>
             <div className="hover:bg-red-600 border border-black-900_4c border-solid flex flex-col gap-[17px] items-center justify-end p-6 sm:px-5 rounded w-full">
               <Img
-                className="h-[45px] md:h-auto mt-[9px] object-cover w-[58px] sm:w-full"
+                className="h-[45px] md:h-auto mt-[9px] object-cover w-[58px] sm:w-auto"
                 src="images/img_image66.png"
                 alt="imageSixtySix"
               />
@@ -192,7 +192,7 @@ const SERVICEThreePage = () => {
             </div> */}
             <div className="hover:bg-red-600 border border-black-900_4c border-solid flex flex-col gap-[11px] items-center justify-start p-[15px] rounded w-full">
               <Img
-                className="h-[73px] md:h-auto object-cover w-[50px] sm:w-full"
+                className="h-[73px] md:h-auto object-cover w-[50px] sm:w-auto"
                 src="images/img_image68.png"
                 alt="imageSixtyEight"
               />
@@ -205,7 +205,7 @@ const SERVICEThreePage = () => {
             </div>
             <div className="hover:bg-red-600 border border-black-900_4c border-solid flex flex-col gap-[11px] items-center justify-start p-[15px] rounded w-full">
               <Img
-                className="h-[73px] md:h-auto object-cover w-[50px] sm:w-full"
+                className="h-[73px] md:h-auto object-cover w-[50px] sm:w-auto"
                 src="images/img_image68.png"
                 alt="imageSixtyEight"
               />
@@ -218,7 +218,7 @@ const SERVICEThreePage = () => {
             </div>
             <div className="hover:bg-red-600 border border-black-900_4c border-solid flex flex-col gap-[23px] items-start justify-end p-[21px] sm:px-5 rounded w-full">
               <Img
-                className="h-11 md:h-auto md:ml-[0] ml-[31px] mt-2.5 object-cover w-[51px] sm:w-full"
+                className="h-11 md:h-auto md:ml-[0] ml-[31px] mt-2.5 object-cover w-[51px] sm:w-auto"
                 src="images/img_image69.png"
                 alt="imageSixtyNine"
               />
@@ -262,7 +262,7 @@ const SERVICEThreePage = () => {
             </Button>
           </div>
           <List
-            className="sm:flex-col flex-row gap-[30px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 justify-start w-auto md:w-full"
+            className="sm:flex-col flex-row gap-[30px] grid sm:grid-cols-1 md:grid-cols-4 grid-cols-4 justify-start w-auto md:w-full"
             orientation="horizontal"
           >
             <ECommerceHomePageCart
@@ -326,7 +326,7 @@ const SERVICEThreePage = () => {
             </Button>
           </div>
           <List
-            className="sm:flex-col flex-row gap-[30px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 justify-start w-auto md:w-full"
+            className="sm:flex-col flex-row gap-[30px] grid sm:grid-cols-1 md:grid-cols-4 grid-cols-4 justify-start w-auto md:w-full"
             orientation="horizontal"
           >
             <ECommerceHomePageCart
@@ -489,7 +489,7 @@ const SERVICEThreePage = () => {
         {/* </div> */}
         {/* </div> */}
         <div className="bg-black-900 flex flex-col items-center justify-start max-w-[1170px] mt-[140px] mx-auto px-11 md:px-5 w-full">
-          <div className="flex md:flex-col flex-row gap-[27px] items-center justify-start w-[99%] md:w-full">
+          <div className="flex sm:flex-col md:flex-row flex-row gap-[27px] items-center justify-start w-[99%] md:w-full">
             <div className="flex flex-col items-start justify-start w-[42%] md:w-full">
               <Text
                 className="text-base text-green-A400"
@@ -526,7 +526,7 @@ const SERVICEThreePage = () => {
               <div className="absolute backdrop-opacity-[0.5] bg-blue_gray-100_75 blur-[200.00px] h-[500px] inset-y-[0] left-[4%] my-auto rounded-[252px] w-[84%]"></div>
               <div className="absolute flex flex-col h-max inset-[0] items-center justify-center m-auto p-4 w-full">
                 <Img
-                  className="h-[330px] md:h-auto my-[29px] object-cover w-full"
+                  className="h-[330px] sm:h-auto md:h-auto my-[29px] object-cover w-full"
                   src="images/img_jblboombox2hero020x1.png"
                   alt="jblboombox2hero"
                 />
@@ -534,7 +534,8 @@ const SERVICEThreePage = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col font-poppins md:gap-10 gap-[60px] items-start justify-start max-w-[1170px] mt-[105px] mx-auto md:px-5 w-full">
+
+        <div className="flex flex-col font-poppins md:gap-10 gap-[60px] items-start justify-start max-w-[1170px] mt-[140px] mx-auto md:px-5 w-full">
           <div className="flex flex-col gap-5 items-start justify-start w-auto">
             <div className="flex flex-row font-poppins gap-4 items-center justify-start w-auto">
               <div className="bg-red-600 h-10 rounded w-[19%]"></div>
@@ -552,8 +553,8 @@ const SERVICEThreePage = () => {
               New Arrival
             </Text>
           </div>
-          <div className="flex md:flex-col flex-row gap-[30px] items-start justify-start w-auto md:w-full">
-            <div className="bg-black-900 flex md:h-[511px] h-[600px] justify-end pt-[29px] sm:px-5 px-[29px] relative rounded w-[49%] md:w-full">
+          <div className="flex sm:flex-col md:flex-row flex-row gap-[30px] items-start justify-start w-auto md:w-full">
+            <div className="bg-black-900 flex md:h-[550px] h-[600px] justify-end pt-[29px] sm:px-5 px-[29px] relative rounded w-[49%] md:w-[49%] sm:w-full">
               <Img
                 className="h-[411px] mt-auto mx-auto object-cover w-[511px]"
                 src="images/img_ps5slimgoedko.png"
@@ -635,7 +636,7 @@ const SERVICEThreePage = () => {
                     <div className="backdrop-opacity-[0.5] bg-blue_gray-100_e5 blur-[300.00px] h-[196px] m-auto rounded-[50%] w-[196px]"></div>
                     <div className="absolute flex flex-col h-full inset-[0] items-center justify-center m-auto w-full">
                       <Img
-                        className="absolute h-[180px] my-auto object-cover right-[0] w-[76%]"
+                        className="absolute h-[180px] my-auto object-cover right-[0] w-[76%] "
                         src="images/img_69694768amazo.png"
                         alt="69694768amazo"
                       />
@@ -682,7 +683,7 @@ const SERVICEThreePage = () => {
                       />
                     </div>
                   </div>
-                  <div className="absolute bottom-[8%] flex flex-col gap-2 items-start justify-start left-[9%] w-auto">
+                  <div className="absolute bottom-[23%] flex flex-col gap-2 items-start justify-start left-[9%] w-auto">
                     <div className="flex flex-col gap-2 items-start justify-start w-auto">
                       <Text
                         className="text-2xl md:text-[22px] text-gray-50 sm:text-xl tracking-[0.72px] w-auto"
@@ -717,7 +718,7 @@ const SERVICEThreePage = () => {
           </div>
         </div>
         <ECommerceHomePageListicondelivery
-          className="sm:flex-col flex-row font-poppins md:gap-10 gap-[88px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center max-w-[935px] mt-[140px] mx-auto md:px-5 w-full"
+          className="sm:flex-col flex-row font-poppins md:gap-10 gap-[88px] grid sm:grid-cols-1 md:grid-cols-3 grid-cols-3 justify-center max-w-[935px] mt-[140px] mx-auto md:px-5 w-full"
           checkmark="images/img_checkmark.svg"
           moneybacktext="VERIFIED PROFESSIONALS "
           moneybacksubtext="We reurn money within 30 days"

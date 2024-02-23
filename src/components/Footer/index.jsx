@@ -11,8 +11,9 @@ const Footer = (props) => {
     <>
       <footer className={props.className}>
         <div className="flex flex-col items-center justify-center mb-[23px] mt-[77px] w-full">
-          <div className="flex sm:flex-col  flex-row md:gap-10 gap-[87px] items-start justify-center w-auto md:w-full">
-            <div className="flex flex-col gap-4 items-start justify-start w-auto">
+          <div className="sm:flex-col md:flex-col flex-row gap-[45px] grid sm:grid-cols-2 md:grid-cols-5 grid-cols-5  items-start justify-center w-auto md:w-full">
+            {/* flex sm:flex-col   flex-row md:gap-10 gap-[87px] items-start justify-center w-auto md:w-full */}
+            <div className="flex   flex-col gap-4 items-start justify-start w-auto">
               <div className="flex flex-col gap-6 items-start justify-start w-auto">
                 <div className="flex flex-col gap-6 items-start justify-start w-auto">
                   <div className="flex flex-col items-center justify-start w-full">
@@ -40,7 +41,7 @@ const Footer = (props) => {
               <Input
                 name="sendmail"
                 placeholder="Enter your email"
-                className="font-poppins p-0 placeholder:text-gray-50_7e text-base text-left w-full"
+                className="font-poppins p-0 placeholder:text-gray-50_7e text-base text-left w-full sm:w-1/2"
                 wrapClassName="flex w-[217px]"
                 suffix={
                   <Img
@@ -83,7 +84,7 @@ const Footer = (props) => {
                 </Text>
               </div>
             </div>
-            <div className="flex flex-col gap-6 items-start justify-start w-auto">
+            <div className="flex  flex-col gap-6 items-start justify-start w-auto">
               <Text
                 className="text-gray-50 text-xl w-auto"
                 size="txtPoppinsMedium20"
