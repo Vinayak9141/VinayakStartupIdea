@@ -164,9 +164,7 @@ const SERVICETwoPage = () => {
               <Text
                 className="text-black-900 text-sm w-auto"
                 size="txtPoppinsSemiBold14Black900"
-              >
-                (
-              </Text>
+              ></Text>
             </div>
             <Text
               className="absolute bottom-[0] left-[13%] text-2xl md:text-[22px] text-black-900 sm:text-xl"

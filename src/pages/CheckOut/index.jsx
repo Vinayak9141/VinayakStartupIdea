@@ -56,7 +56,7 @@ const CheckOutPage = () => {
               Billing Details
             </Text>
           </div>
-          <div className="flex md:flex-col flex-row font-poppins md:gap-10 items-start justify-between max-w-[1170px] mt-[37px] mx-auto md:px-5 w-full">
+          <div className="flex sm:flex-col md:flex-row flex-row font-poppins md:gap-10 items-start justify-between max-w-[1170px] mt-[37px] mx-auto md:px-5 w-full">
             <div className="flex sm:flex-1 flex-col gap-6 items-start justify-start w-auto sm:w-full">
               <div className="flex flex-col gap-8 items-start justify-start w-auto sm:w-full">
                 <div className="flex flex-col gap-2 items-start justify-start w-auto sm:w-full">
@@ -75,7 +75,7 @@ const CheckOutPage = () => {
                     name="frame803"
                     placeholder=""
                     className="p-5 w-full"
-                    wrapClassName="flex h-[55px] w-[470px]"
+                    wrapClassName="flex h-[55px] w-[470px] sm:w-[350px] md:w-auto "
                     shape="round"
                     color="gray_100"
                     variant="fill"
@@ -92,7 +92,7 @@ const CheckOutPage = () => {
                     name="frame803_One"
                     placeholder=""
                     className="p-5 w-full"
-                    wrapClassName="flex h-[50px] w-[470px]"
+                    wrapClassName="flex h-[50px] w-[470px] sm:w-[350px] md:w-auto"
                     shape="round"
                     color="gray_100"
                     variant="fill"
@@ -114,7 +114,7 @@ const CheckOutPage = () => {
                     name="frame804"
                     placeholder=""
                     className="p-5 w-full"
-                    wrapClassName="flex h-[50px] w-[470px]"
+                    wrapClassName="flex h-[50px] w-[470px] sm:w-[350px] md:w-auto"
                     shape="round"
                     color="gray_100"
                     variant="fill"
@@ -131,7 +131,7 @@ const CheckOutPage = () => {
                     name="frame805"
                     placeholder=""
                     className="p-5 w-full"
-                    wrapClassName="flex h-[50px] w-[470px]"
+                    wrapClassName="flex h-[50px] w-[470px] sm:w-[350px] md:w-auto"
                     shape="round"
                     color="gray_100"
                     variant="fill"
@@ -153,7 +153,7 @@ const CheckOutPage = () => {
                     name="frame806"
                     placeholder=""
                     className="p-5 w-full"
-                    wrapClassName="flex h-[50px] w-[470px]"
+                    wrapClassName="flex h-[50px] w-[470px] sm:w-[350px] md:w-auto"
                     shape="round"
                     color="gray_100"
                     variant="fill"
@@ -175,7 +175,7 @@ const CheckOutPage = () => {
                     name="frame807"
                     placeholder=""
                     className="p-5 w-full"
-                    wrapClassName="flex h-[50px] w-[470px]"
+                    wrapClassName="flex h-[50px] w-[470px] sm:w-[350px] md:w-auto"
                     shape="round"
                     color="gray_100"
                     variant="fill"
@@ -197,7 +197,7 @@ const CheckOutPage = () => {
                     name="frame808"
                     placeholder=""
                     className="p-5 w-full"
-                    wrapClassName="flex h-[50px] w-[470px]"
+                    wrapClassName="flex h-[50px] w-[470px] sm:w-[350px] md:w-auto "
                     shape="round"
                     color="gray_100"
                     variant="fill"
@@ -262,11 +262,11 @@ const CheckOutPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col gap-4 items-start justify-start w-auto sm:w-full">
+              <div className="flex flex-col gap-4 items-start justify-start w-auto md:w-full sm:w-full">
                 <div className="flex flex-col gap-4 items-start justify-start w-auto sm:w-full">
                   <div className="flex flex-col gap-4 items-start justify-start w-auto sm:w-full">
                     <div className="flex flex-col gap-4 items-start justify-start w-auto sm:w-full">
-                      <div className="flex flex-row gap-[307px] items-start justify-between w-auto sm:w-full">
+                      <div className="flex flex-row gap-[307px] sm:gap-[37px] items-start justify-between w-auto sm:w-full">
                         <Text
                           className="text-base text-black-900 w-auto"
                           size="txtPoppinsRegular16"
@@ -286,7 +286,7 @@ const CheckOutPage = () => {
                         alt="underline"
                       />
                     </div>
-                    <div className="flex flex-row gap-[314px] items-start justify-between w-auto sm:w-full">
+                    <div className="flex flex-row gap-[314px] sm:gap-[37px] items-start justify-between w-auto sm:w-full">
                       <Text
                         className="text-base text-black-900 w-auto"
                         size="txtPoppinsRegular16"
@@ -307,7 +307,7 @@ const CheckOutPage = () => {
                     alt="underline_One"
                   />
                 </div>
-                <div className="flex flex-row gap-[335px] items-start justify-between w-auto sm:w-full">
+                <div className="flex flex-row gap-[335px] sm:gap-[0px] items-start justify-between w-auto sm:w-full">
                   <Text
                     className="text-base text-black-900 w-auto"
                     size="txtPoppinsRegular16"
@@ -315,14 +315,14 @@ const CheckOutPage = () => {
                     Total:
                   </Text>
                   <Text
-                    className="text-base text-black-900 w-auto"
+                    className="text-base text-black-900 w-auto "
                     size="txtPoppinsRegular16"
                   >
                     $1750
                   </Text>
                 </div>
               </div>
-              <div className="flex flex-row gap-[155px] items-center justify-between w-auto sm:w-full">
+              <div className="flex flex-row gap-[135px] items-center justify-between w-auto sm:w-full">
                 <Radio
                   value="Bank"
                   className="text-base text-black-900 text-left"
@@ -332,8 +332,8 @@ const CheckOutPage = () => {
                   label="Bank"
                   id="Bank"
                 ></Radio>
-                <div className="flex flex-row gap-2 items-start justify-start w-auto">
-                  <div className="flex flex-col items-center justify-start p-0.5 w-[22%]">
+                <div className="flex flex-row gap-2 items-start justify-start w-full">
+                  <div className="flex flex-col items-center justify-start p-0.5 w-[20%]">
                     <Img
                       className="h-4 md:h-auto my-[3px] object-cover w-[98%]"
                       src="images/img_image32.png"

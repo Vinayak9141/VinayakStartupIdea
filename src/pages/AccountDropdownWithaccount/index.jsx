@@ -147,7 +147,7 @@ const AccountDropdownWithaccountPage = () => {
                   }}
                 />
                 <PagerIndicator
-                  className="absolute bottom-[3%] flex gap-[11px] h-3.5 items-center justify-center left-[31%] w-[106px] sm:hidden"
+                  className="absolute bottom-[3%] flex gap-[11px] h-3.5 items-center justify-center left-[31%] w-[106px] sm:bottom-[24%]"
                   count={5}
                   activeCss="bg-red-600 inline-block cursor-pointer rounded-[50%] h-3.5 border-white-A700 border-2 border-solid w-3.5 relative"
                   activeIndex={sliderState}

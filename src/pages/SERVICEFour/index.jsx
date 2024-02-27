@@ -165,7 +165,7 @@ const SERVICEFourPage = () => {
                 <Text className="text-gray-900 text-lg" size="txtNunitoBold18">
                   First name
                 </Text>
-                <Text className="text-gray-900 text-lg " size="txtNunitoBold18">
+                <Text className="text-gray-900 text-lg" size="txtNunitoBold18">
                   Last name
                 </Text>
               </div>
@@ -190,6 +190,7 @@ const SERVICEFourPage = () => {
                   variant="fill"
                 ></Input>
               </div>
+
               <div className="flex flex-row sm:gap-10 items-start justify-between ml-0.5 md:ml-[0] mt-10 w-[80%] md:w-full">
                 <Text className="text-gray-900 text-lg" size="txtNunitoBold18">
                   Business /Startup Name{" "}
@@ -276,7 +277,7 @@ const SERVICEFourPage = () => {
                 <Input
                   name="frameSixtyFive"
                   placeholder=""
-                  className="p-0 w-full"
+                  className="p-5 w-full"
                   wrapClassName="border border-gray-400 border-solid flex sm:flex-1 h-[49px] rounded-lg sm:w-full"
                   color="gray_200"
                   variant="fill"
@@ -284,7 +285,7 @@ const SERVICEFourPage = () => {
                 <Input
                   name="frameSeventyThree"
                   placeholder=""
-                  className="p-0 w-full"
+                  className="p-5 w-full"
                   wrapClassName="border border-gray-400 border-solid flex sm:flex-1 h-[49px] rounded-lg sm:w-full"
                   color="gray_200"
                   variant="fill"
@@ -312,7 +313,7 @@ const SERVICEFourPage = () => {
                 <Input
                   name="frameSeventyFive"
                   placeholder=""
-                  className="p-0 w-full"
+                  className="p-5 w-full"
                   wrapClassName="border border-gray-400 border-solid flex sm:flex-1 h-[49px] rounded-lg sm:w-full"
                   color="gray_200"
                   variant="fill"
@@ -320,7 +321,7 @@ const SERVICEFourPage = () => {
                 <Input
                   name="frameSeventySix"
                   placeholder=""
-                  className="p-0 w-full"
+                  className="p-5 w-full"
                   wrapClassName="border border-gray-400 border-solid flex sm:flex-1 h-[49px] rounded-lg sm:w-full"
                   color="gray_200"
                   variant="fill"
@@ -343,7 +344,7 @@ const SERVICEFourPage = () => {
                   <Input
                     name="frame562"
                     placeholder=""
-                    className="p-0 w-full"
+                    className="p-5 w-full"
                     wrapClassName="border border-gray-400 border-solid flex h-[49px] ml-0.5 md:ml-[0] mt-[18px] rounded-lg w-full"
                     color="gray_200"
                     variant="fill"
@@ -380,7 +381,7 @@ const SERVICEFourPage = () => {
                   <Input
                     name="frame562"
                     placeholder=""
-                    className="p-0 w-full"
+                    className="p-5 w-full"
                     wrapClassName="border border-gray-400 border-solid flex h-[49px] ml-0.5 md:ml-[0] mt-[18px] rounded-lg w-full"
                     color="gray_200"
                     variant="fill"
@@ -415,7 +416,7 @@ const SERVICEFourPage = () => {
                   <Input
                     name="frame562"
                     placeholder=""
-                    className="p-0 w-full"
+                    className="p-5 w-full"
                     wrapClassName="border border-gray-400 border-solid flex h-[49px] ml-0.5 md:ml-[0] mt-[18px] rounded-lg w-full"
                     color="gray_200"
                     variant="fill"
@@ -432,7 +433,7 @@ const SERVICEFourPage = () => {
                   <Input
                     name="frame562"
                     placeholder=""
-                    className="p-0 w-full"
+                    className="p-5 w-full"
                     wrapClassName="border border-gray-400 border-solid flex h-[49px] ml-0.5 md:ml-[0] mt-[18px] rounded-lg w-full"
                     color="gray_200"
                     variant="fill"

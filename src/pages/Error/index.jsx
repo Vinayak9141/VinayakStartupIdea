@@ -55,7 +55,7 @@ const ErrorPage = () => {
         >
           Back to home page
         </Button>
-        <Footer className="bg-black-900 flex font-poppins items-center justify-center mt-[140px] md:px-5 w-full" />
+        <Footer className="bg-black-900 flex font-poppins items-center justify-center mt-[350px] md:px-5 w-full" />
       </div>
     </>
   );

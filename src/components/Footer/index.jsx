@@ -11,7 +11,7 @@ const Footer = (props) => {
     <>
       <footer className={props.className}>
         <div className="flex flex-col items-center justify-center mb-[23px] mt-[77px] w-full">
-          <div className="sm:flex-col md:flex-col flex-row gap-[45px] grid sm:grid-cols-2 md:grid-cols-5 grid-cols-5  items-start justify-center w-auto md:w-full">
+          <div className="sm:flex-col md:flex-col flex-row gap-[30px] grid sm:grid-cols-2 md:grid-cols-5 grid-cols-5  items-start justify-center w-auto md:w-full">
             {/* flex sm:flex-col   flex-row md:gap-10 gap-[87px] items-start justify-center w-auto md:w-full */}
             <div className="flex   flex-col gap-4 items-start justify-start w-auto">
               <div className="flex flex-col gap-6 items-start justify-start w-auto">
@@ -42,7 +42,7 @@ const Footer = (props) => {
                 name="sendmail"
                 placeholder="Enter your email"
                 className="font-poppins p-0 placeholder:text-gray-50_7e text-base text-left w-full sm:w-1/2"
-                wrapClassName="flex w-[217px]"
+                wrapClassName="flex sm:w-[150px] md:w-[180px] w-[180px]"
                 suffix={
                   <Img
                     className="mt-auto mb-px h-6 ml-8"
@@ -63,24 +63,24 @@ const Footer = (props) => {
               >
                 Support
               </Text>
-              <div className="flex flex-col gap-4 items-start justify-start w-auto">
+              <div className="flex flex-col gap-4 items-start justify-start w-auto common-column-list">
                 <Text
                   className="leading-[24.00px] max-w-[175px] md:max-w-full text-base text-gray-50"
                   size="txtPoppinsRegular16Gray50"
                 >
-                  111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.
+                  111 Bijoy sarani, Dhaka,DH 1515, Bangladesh.
                 </Text>
                 <Text
                   className="text-base text-gray-50 w-auto"
                   size="txtPoppinsRegular16Gray50"
                 >
-                  exclusive@gmail.com
+                  excluive@gmail.com
                 </Text>
                 <Text
                   className="text-base text-gray-50 w-auto"
                   size="txtPoppinsRegular16Gray50"
                 >
-                  +88015-88888-9999
+                  +88015-8888-9999
                 </Text>
               </div>
             </div>

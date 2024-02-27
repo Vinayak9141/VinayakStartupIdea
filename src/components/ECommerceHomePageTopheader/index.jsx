@@ -13,7 +13,7 @@ const ECommerceHomePageTopheader = (props) => {
           {/* sm:hidden */}
           <div className="flex sm:flex-col flex-row gap-2 items-center justify-start w-auto sm:pl-60 sm:w-full md:pl-40 ">
             <Text
-              className="text-gray-50 text-sm w-[492px] sm:w-[500px] sm:pl-36 sm:items-center sm: justify-center"
+              className="text-gray-50 text-sm w-[492px] sm:w-[440px] sm:pl-36 sm:items-center sm: justify-center"
               size="txtPoppinsRegular14"
             >
               {props?.offer}
@@ -32,13 +32,22 @@ const ECommerceHomePageTopheader = (props) => {
               className="text-gray-50 text-sm w-auto"
               size="txtPoppinsRegular14"
             >
-              {props?.language}
+              <select className="bg-black-900  border-0">
+                <option className="text-gray-50">English</option>
+                <option value="Hindi" className="text-gray-50">
+                  Hindi
+                </option>
+                <option value="Hello" className="text-gray-50">
+                  Telugu
+                </option>
+              </select>
+              {/* {props?.language} */}
             </Text>
-            <Img
+            {/* <Img
               className="h-6 w-6"
               src="images/img_dropdown.svg"
               alt="dropdown"
-            />
+            /> */}
           </div>
         </div>
       </div>

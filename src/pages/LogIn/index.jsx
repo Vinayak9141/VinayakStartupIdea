@@ -94,7 +94,7 @@ const LogInPage = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center mt-[140px] w-full">
+        <div className="flex flex-col items-center mt-[175px] w-full">
           <Footer className="bg-black-900 flex items-center justify-center md:px-5 w-full" />
         </div>
       </div>
