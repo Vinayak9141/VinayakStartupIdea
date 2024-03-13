@@ -63,7 +63,7 @@ const Footer = (props) => {
               >
                 Support
               </Text>
-              <div className="flex flex-col gap-4 items-start justify-start w-auto common-column-list">
+              <div className="flex flex-col gap-4 items-start justify-start sm:w-[120px] w-auto common-column-list">
                 <Text
                   className="leading-[24.00px] max-w-[175px] md:max-w-full text-base text-gray-50"
                   size="txtPoppinsRegular16Gray50"
@@ -74,7 +74,7 @@ const Footer = (props) => {
                   className="text-base text-gray-50 w-auto"
                   size="txtPoppinsRegular16Gray50"
                 >
-                  excluive@gmail.com
+                  excv@gmail.com
                 </Text>
                 <Text
                   className="text-base text-gray-50 w-auto"
@@ -159,7 +159,7 @@ const Footer = (props) => {
                   <Text
                     className="text-base text-gray-50"
                     size="txtPoppinsRegular16Gray50"
-                    onClick={() => navigate("/error")}
+                    onClick={() => navigate("/servicetwo")}
                   >
                     Terms Of Use
                   </Text>

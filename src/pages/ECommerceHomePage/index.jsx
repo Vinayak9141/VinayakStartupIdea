@@ -110,7 +110,7 @@ const ECommerceHomePagePage = () => {
         <Img className="h-px mt-4" src="images/img_line3.svg" alt="lineThree" />
         <div className="flex flex-col items-end mt-10 md:px-10 sm:px-5 px-[65px] w-full">
           <div className="bg-black-900 flex flex-col items-start justify-start p-4 md:px-5 w-[96%] md:w-full">
-            <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between ml-12 md:ml-[0] w-[83%] md:w-full">
+            <div className="flex sm:flex-col md:flex-row flex-row md:gap-10 items-center justify-between ml-12 md:ml-[0] w-[83%] md:w-full">
               <div className="flex flex-col gap-5 items-start justify-start">
                 <div className="flex flex-row font-poppins gap-6 items-center justify-start w-auto">
                   <Img
@@ -154,7 +154,7 @@ const ECommerceHomePagePage = () => {
                 />
               </div>
               <Img
-                className="h-[352px] md:h-auto object-cover"
+                className="h-[352px] md:h-[352px] object-cover"
                 src="images/img_heroendframe.png"
                 alt="heroendframe"
               />

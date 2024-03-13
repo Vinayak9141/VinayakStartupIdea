@@ -21,7 +21,7 @@ const SignUpHeader = (props) => {
             ) : null}
           </div>
           {/* sm:hidden */}
-          <div className=" flex flex-row gap-8 items-start justify-start w-auto">
+          <div className=" flex flex-row gap-4  items-start justify-start w-auto">
             <div className="hover:underline flex flex-col items-center justify-start">
               {!!props?.hometext ? (
                 <Text

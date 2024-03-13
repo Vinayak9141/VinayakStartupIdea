@@ -128,6 +128,7 @@ const SERVICEThreePage = () => {
                 color="gray_100"
                 size="md"
                 variant="fill"
+                onClick={() => navigate("/serviceone")}
               >
                 <Img
                   className="h-6"

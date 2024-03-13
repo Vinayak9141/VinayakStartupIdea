@@ -660,7 +660,7 @@ const AccountDropdownWithaccountPage = () => {
           <div className="flex sm:flex-col md:flex-row flex-row gap-[30px] items-start justify-start w-auto md:w-full">
             <div className="bg-black-900 flex md:h-[550px] h-[600px] justify-end pt-[29px] sm:px-5 px-[29px] relative rounded w-[49%] md:w-[49%] sm:w-full">
               <Img
-                className="h-[411px] mt-auto mx-auto object-cover w-[511px]"
+                className="h-[411px] mt-auto mx-auto object-cover w-auto" /*w-[511px]*/
                 src="images/img_ps5slimgoedko.png"
                 alt="ps5slimgoedko"
               />
@@ -737,7 +737,7 @@ const AccountDropdownWithaccountPage = () => {
               >
                 <div className="bg-black-900 md:h-[221px] h-[284px] p-6 sm:px-5 relative rounded w-full">
                   <div className="absolute md:h-[221px] h-[222px] inset-[0] justify-center m-auto w-[78%]">
-                    <div className="backdrop-opacity-[0.5] bg-blue_gray-100_e5 blur-[300.00px] h-[196px] m-auto rounded-[50%] w-[196px]"></div>
+                    {/* <div className="backdrop-opacity-[0.5] bg-blue_gray-100_e5 blur-[300.00px] h-[196px] m-auto rounded-[50%] w-[196px]"></div> */}
                     <div className="absolute flex flex-col h-full inset-[0] items-center justify-center m-auto w-full">
                       <Img
                         className="absolute h-[180px] my-auto object-cover right-[0] w-[76%] "
@@ -777,7 +777,7 @@ const AccountDropdownWithaccountPage = () => {
                   </div>
                 </div>
                 <div className="bg-black-900 md:h-[238px] h-[284px] p-4 relative rounded w-full">
-                  <div className="h-[238px] m-auto w-[238px]">
+                  <div className="h-[238px] m-auto w-[238px] md:w-[180px]">
                     {/* <div className="backdrop-opacity-[0.5] bg-blue_gray-100_e5 blur-[300.00px] h-[238px] m-auto rounded-[50%] w-[238px]"></div> */}
                     <div className="absolute flex flex-col h-max inset-[0] items-center justify-center m-auto p-1 w-[89%]">
                       <Img

@@ -14,8 +14,8 @@ const SERVICEOnePage = () => {
     <>
       <div className="bg-white-A700 flex flex-col font-poppins items-center justify-end mx-auto w-full">
         <ECommerceHomePageTopheader className="bg-black-900 flex flex-col items-end justify-start p-3 w-full" />
-        <div className="flex md:flex-col flex-row font-inter md:gap-10 gap-[148px] items-center justify-start max-w-[1179px] mt-10 mx-auto md:px-5 w-full">
-          <div className="flex md:flex-1 sm:flex-col flex-row sm:gap-10 gap-[80px] items-start justify-between w-auto md:w-full">
+        <div className="flex md:flex-row sm:flex-col flex-row font-inter md:gap-10 gap-[148px] items-center justify-start max-w-[1179px] mt-10 mx-auto md:px-5 w-full">
+          <div className="flex md:flex-1 sm:flex-col flex-row sm:gap-10 gap-[80px]  items-start justify-between w-auto md:w-full">
             <div className="flex flex-col items-center justify-start">
               <Text
                 className="text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.72px]"
@@ -79,9 +79,9 @@ const SERVICEOnePage = () => {
           </div>
         </div>
         <Img className="h-px mt-4" src="images/img_line3.svg" alt="lineThree" />
-        <div className="flex flex-col items-end mt-10 md:px-10 sm:px-5 px-[65px] w-full">
+        <div className="flex flex-col items-end mt-10 md:px-10 sm:px-5 px-[65px] w-full pt">
           <div className="bg-black-900 flex flex-col items-start justify-start p-4 md:px-5 w-[96%] md:w-full">
-            <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between ml-12 md:ml-[0] w-[83%] md:w-full">
+            <div className="flex sm:flex-col md:flex-row  flex-row md:gap-10 items-center justify-between ml-12 md:ml-[0] w-[83%] md:w-full">
               <div className="flex flex-col gap-5 items-start justify-start">
                 <div className="flex flex-row font-poppins gap-6 items-center justify-start w-auto">
                   <Img
@@ -125,14 +125,14 @@ const SERVICEOnePage = () => {
                 />
               </div>
               <Img
-                className="h-[352px] md:h-auto object-cover"
+                className="h-[352px] md:h-[352px] object-cover"
                 src="images/img_heroendframe.png"
                 alt="heroendframe"
               />
             </div>
           </div>
         </div>
-        <div className="font-poppins sm:h-[328px] h-[403px] md:h-[564px] max-w-[1202px] mt-[59px] mx-auto md:px-5 relative w-full">
+        <div className="font-poppins sm:h-[328px] h-[403px] md:h-[564px] max-w-[1202px] mt-[59px] sm:mt-[400px] mx-auto md:px-5 relative w-full">
           <div className="absolute flex flex-col md:gap-10 gap-[60px] inset-x-[0] items-start justify-start max-w-[1170px] mx-auto top-[0] w-full">
             <div className="flex flex-col items-end justify-start w-auto">
               <div className="flex flex-col gap-5 items-start justify-start w-auto">
