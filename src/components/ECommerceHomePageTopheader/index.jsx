@@ -32,7 +32,7 @@ const ECommerceHomePageTopheader = (props) => {
               className="text-gray-50 text-sm w-auto"
               size="txtPoppinsRegular14"
             >
-              <select className="bg-black-900  border-0">
+              {/* <select className="bg-black-900  border-0">
                 <option className="text-gray-50">English</option>
                 <option value="Hindi" className="text-gray-50">
                   Hindi
@@ -40,8 +40,8 @@ const ECommerceHomePageTopheader = (props) => {
                 <option value="Hello" className="text-gray-50">
                   Telugu
                 </option>
-              </select>
-              {/* {props?.language} */}
+              </select> */}
+              {props?.language}
             </Text>
             {/* <Img
               className="h-6 w-6"

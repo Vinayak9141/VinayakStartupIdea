@@ -8,7 +8,7 @@ import ECommerceHomePageTopheader from "components/ECommerceHomePageTopheader";
 import Footer from "components/Footer";
 import SignUpHeader from "components/SignUpHeader";
 
-const LogInPage = () => {
+const LogInPage1 = () => {
   const navigate = useNavigate();
   return (
     <>
@@ -42,66 +42,61 @@ const LogInPage = () => {
                   className="text-4xl sm:text-[32px] md:text-[34px] text-black-900 tracking-[1.44px] w-auto"
                   size="txtInterMedium36"
                 >
-                  Log in to Startup Idea
+                  Forget Password
                 </Text>
                 <Text
-                  className="text-base text-black-900 w-auto"
+                  className="text-base text-black-900 w-[381px] sm:w-[330px]"
                   size="txtPoppinsRegular16"
                 >
-                  Enter your details below
+                  Please enter the email address associated with your account.
+                  We'll send you a secure link to reset your password.
                 </Text>
               </div>
               <div className="flex flex-col gap-10 items-start justify-start w-auto">
                 <div className="flex flex-col gap-2 items-start justify-start w-auto">
-                  {/* <Text
+                  <Text
                     className="text-base text-black-900_7e w-auto"
                     size="txtPoppinsRegular16Black9007e"
-                  >
-                   
-                  </Text> */}
+                  ></Text>
                   <input
                     type="text"
-                    placeholder="Email or Phone Number"
+                    placeholder=" Email"
                     className="border-t-0 border-l-0 border-r-0 w-[381px] sm:w-[320px]"
                   />
                 </div>
-                <div className="flex flex-col gap-2 items-start justify-start w-auto">
-                  {/* <Text
+                {/* <div className="flex flex-col gap-2 items-start justify-start w-auto">
+                  <Text
                     className="text-base text-black-900_7e w-auto"
                     size="txtPoppinsRegular16Black9007e"
                   >
                     Password
-                  </Text> */}
-                  <input
-                    type="password"
-                    placeholder="Password"
-                    className="border-t-0 border-l-0 border-r-0 w-[381px] sm:w-[320px]"
-                  />
-                </div>
+                  </Text>
+                  <input type="password" />
+                </div> */}
               </div>
             </div>
             <div className="flex flex-row gap-[87px] items-center justify-start w-auto sm:w-full">
               <div className="flex flex-col items-start justify-start w-auto">
                 <Button
-                  className="cursor-pointer font-medium min-w-[143px] text-base text-center"
+                  className="cursor-pointer font-medium min-w-[143px] text-base text-center w-[381px] sm:w-[320px]"
                   shape="round"
                   color="red_600"
                   size="lg"
                   variant="fill"
+                  onClick={() => navigate("/login2")}
                 >
                   {/* Log In */}
-                  <Link to="/accountdropdownwithaccount">
-                    Log In{/* AccountDropdownWithaccount */}
+                  <Link to="/login1">
+                    Continue{/* AccountDropdownWithaccount */}
                   </Link>
                 </Button>
               </div>
-              <Text
-                className="text-base text-red-600 w-auto cursor-pointer"
+              {/* <Text
+                className="text-base text-red-600 w-auto"
                 size="txtPoppinsRegular16Red600"
-                onClick={() => navigate("/login1")}
               >
                 Forget Password?
-              </Text>
+              </Text> */}
             </div>
           </div>
         </div>
@@ -113,4 +108,4 @@ const LogInPage = () => {
   );
 };
 
-export default LogInPage;
+export default LogInPage1;

@@ -505,7 +505,7 @@ const SERVICETwoPage = () => {
             </div>
           </div>
 
-          <div className="font-poppins h-[316px] sm:h-[790px] md:h-[450px] max-w-[1212px] mt-[43px] mx-auto md:px-5 relative sm:w-[90%] md:w-[95%] w-full">
+          <div className="font-poppins h-[316px] sm:h-[1000px] md:h-[450px] max-w-[1212px] mt-[43px] mx-auto md:px-5 relative sm:w-[90%] md:w-[95%] sm:mt-32 w-full">
             <div className="absolute bg-white-A700 border border-black-900_7f border-solid flex flex-col h-full inset-[0] items-center justify-center m-auto p-8 sm:px-5 rounded-[5px] shadow-bs w-full">
               <Text
                 className="text-xl sm:text-[32px] md:text-[34px] text-black-900 tracking-[1.44px] ml-0 mt-0 mb-2 w-full"

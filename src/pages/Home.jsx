@@ -16,6 +16,15 @@ const Home = () => {
           <Link to="/login">LogIn</Link>
         </li>
         <li>
+          <Link to="/login1">LogIn1</Link>
+        </li>
+        <li>
+          <Link to="/login2">LogIn2</Link>
+        </li>
+        <li>
+          <Link to="/login3">LogIn3</Link>
+        </li>
+        <li>
           <Link to="/ecommercehomepage">AccountDropdownWithaccount</Link>
         </li>
         <li>

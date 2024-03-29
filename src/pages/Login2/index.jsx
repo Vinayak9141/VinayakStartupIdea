@@ -8,7 +8,7 @@ import ECommerceHomePageTopheader from "components/ECommerceHomePageTopheader";
 import Footer from "components/Footer";
 import SignUpHeader from "components/SignUpHeader";
 
-const LogInPage = () => {
+const LogInPage2 = () => {
   const navigate = useNavigate();
   return (
     <>
@@ -42,13 +42,13 @@ const LogInPage = () => {
                   className="text-4xl sm:text-[32px] md:text-[34px] text-black-900 tracking-[1.44px] w-auto"
                   size="txtInterMedium36"
                 >
-                  Log in to Startup Idea
+                  Reset Your Password
                 </Text>
                 <Text
                   className="text-base text-black-900 w-auto"
                   size="txtPoppinsRegular16"
                 >
-                  Enter your details below
+                  Enter new password
                 </Text>
               </div>
               <div className="flex flex-col gap-10 items-start justify-start w-auto">
@@ -57,11 +57,11 @@ const LogInPage = () => {
                     className="text-base text-black-900_7e w-auto"
                     size="txtPoppinsRegular16Black9007e"
                   >
-                   
+                    Email or Phone Number
                   </Text> */}
                   <input
                     type="text"
-                    placeholder="Email or Phone Number"
+                    placeholder="New Password"
                     className="border-t-0 border-l-0 border-r-0 w-[381px] sm:w-[320px]"
                   />
                 </div>
@@ -74,8 +74,8 @@ const LogInPage = () => {
                   </Text> */}
                   <input
                     type="password"
-                    placeholder="Password"
-                    className="border-t-0 border-l-0 border-r-0 w-[381px] sm:w-[320px]"
+                    placeholder="Re-New Password"
+                    className="border-t-0 border-l-0 border-r-0 w-[381px] sm:w-[320px] "
                   />
                 </div>
               </div>
@@ -83,25 +83,26 @@ const LogInPage = () => {
             <div className="flex flex-row gap-[87px] items-center justify-start w-auto sm:w-full">
               <div className="flex flex-col items-start justify-start w-auto">
                 <Button
-                  className="cursor-pointer font-medium min-w-[143px] text-base text-center"
+                  className="cursor-pointer font-medium min-w-[143px] text-base text-center w-[381px] sm:w-[320px]"
                   shape="round"
                   color="red_600"
                   size="lg"
                   variant="fill"
+                  onClick={() => navigate("/login3")}
                 >
                   {/* Log In */}
-                  <Link to="/accountdropdownwithaccount">
-                    Log In{/* AccountDropdownWithaccount */}
+                  <Link to="/login3">
+                    Confirm{/* AccountDropdownWithaccount */}
                   </Link>
                 </Button>
               </div>
-              <Text
+              {/* <Text
                 className="text-base text-red-600 w-auto cursor-pointer"
                 size="txtPoppinsRegular16Red600"
                 onClick={() => navigate("/login1")}
               >
                 Forget Password?
-              </Text>
+              </Text> */}
             </div>
           </div>
         </div>
@@ -113,4 +114,4 @@ const LogInPage = () => {
   );
 };
 
-export default LogInPage;
+export default LogInPage2;

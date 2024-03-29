@@ -20,6 +20,9 @@ const AccountDropdownWithaccount = React.lazy(() =>
   import("pages/AccountDropdownWithaccount")
 );
 const LogIn = React.lazy(() => import("pages/LogIn"));
+const Login1 = React.lazy(() => import("pages/Login1"));
+const Login2 = React.lazy(() => import("pages/Login2"));
+const Login3 = React.lazy(() => import("pages/Login3"));
 const SignUp = React.lazy(() => import("pages/SignUp"));
 const ECommerceHomePage = React.lazy(() => import("pages/ECommerceHomePage"));
 const ProjectRoutes = () => {
@@ -32,6 +35,9 @@ const ProjectRoutes = () => {
           <Route path="/ecommercehomepage" element={<ECommerceHomePage />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<LogIn />} />
+          <Route path="/login1" element={<Login1 />} />
+          <Route path="/login2" element={<Login2 />} />
+          <Route path="/login3" element={<Login3 />} />
           <Route
             path="/accountdropdownwithaccount"
             element={<AccountDropdownWithaccount />}
