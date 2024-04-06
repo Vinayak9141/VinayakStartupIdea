@@ -69,6 +69,9 @@ const Home = () => {
         <li>
           <Link to="/service">SERVICE</Link>
         </li>
+        <li>
+          <Link to="/myorder">Myorder</Link>
+        </li>
       </ul>
     </div>
   );

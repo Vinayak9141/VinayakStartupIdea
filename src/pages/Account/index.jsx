@@ -4,9 +4,11 @@ import { Button, Img, Input, Line, Text } from "components";
 import CartRoadmap from "components/CartRoadmap";
 import ECommerceHomePageTopheader from "components/ECommerceHomePageTopheader";
 import Footer from "components/Footer";
+import { useNavigate } from "react-router-dom";
 import SignUpHeader from "components/SignUpHeader";
 
 const AccountPage = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="bg-white-A700 flex flex-col font-poppins items-center justify-start mx-auto w-full">
@@ -71,21 +73,24 @@ const AccountPage = () => {
                 </Text>
               </div>
               <Text
-                className="mt-[26px] text-base text-black-900"
+                className="mt-[26px] text-base text-black-900 cursor-pointer"
                 size="txtPoppinsMedium16Black900"
+                onClick={() => navigate("/myorder")}
               >
                 My Orders
               </Text>
               <div className="flex flex-col gap-2 items-start justify-start md:ml-[0] ml-[35px] mt-[13px] w-auto">
                 <Text
-                  className="text-base text-black-900_87 w-auto"
+                  className="text-base text-black-900_87 w-auto cursor-pointer"
                   size="txtPoppinsRegular16Black90087"
+                  onClick={() => navigate("/myreviews")}
                 >
                   My Returns
                 </Text>
                 <Text
-                  className="text-base text-black-900_87 w-auto"
+                  className="text-base text-black-900_87 w-auto cursor-pointer"
                   size="txtPoppinsRegular16Black90087"
+                  onClick={() => navigate("/mycancellation")}
                 >
                   My Cancellations
                 </Text>

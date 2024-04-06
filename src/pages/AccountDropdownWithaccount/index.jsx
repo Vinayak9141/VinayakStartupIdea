@@ -43,7 +43,7 @@ const AccountDropdownWithaccountPage = () => {
   return (
     <>
       <div className="bg-white-A700 flex flex-col font-poppins items-center justify-start mx-auto w-full">
-        <ECommerceHomePageTopheader className="bg-black-900 flex flex-col items-end justify-start p-3 w-full" />
+        <ECommerceHomePageTopheader className="bg-black-900 flex flex-col items-end justify-start p-3 w-full " />
         <SignUpHeader
           className="flex md:flex-row sm:flex-col flex-row font-inter md:gap-10  gap-[60px] items-center justify-between max-w-[1170px] mt-10 mx-auto md:px-5 w-full "
           exclusive="STARTUP IDEA"
@@ -451,7 +451,7 @@ const AccountDropdownWithaccountPage = () => {
                 </Text>
               </div>
               <Text
-                className="text-4xl sm:text-[32px] md:text-[34px] text-black-900 tracking-[1.44px] w-auto"
+                className="text-4xl sm:text-[32px] md:text-[34px] text-black-900 tracking-[1.44px] sm:w-auto w-[410px] "
                 size="txtInterSemiBold36"
               >
                 Best Selling Products
@@ -468,7 +468,7 @@ const AccountDropdownWithaccountPage = () => {
             </Button>
           </div>
           <List
-            className="sm:flex-col flex-row gap-[30px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 justify-start w-auto md:w-full"
+            className="sm:flex-col flex-row gap-[30px] grid sm:grid-cols-1 md:grid-cols-4 grid-cols-4 justify-start w-full md:w-full"
             orientation="horizontal"
           >
             {/* <ECommerceHomePageCart

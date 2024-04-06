@@ -2,6 +2,7 @@ import React from "react";
 
 import { useNavigate } from "react-router-dom";
 import { Img, List, Text, Input } from "components";
+import App1 from "components/App1";
 
 const SignUpHeader = (props) => {
   const navigate = useNavigate();
@@ -161,6 +162,7 @@ const SignUpHeader = (props) => {
           &#8801;
         </a>
       </div> */}
+      {/* <App1></App1> */}
     </>
   );
 };

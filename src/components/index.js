@@ -9,3 +9,5 @@ export { Radio } from "./Radio";
 export { Slider } from "./Slider";
 export { ReactTable } from "./Table";
 export { Text } from "./Text";
+export { RatingBar } from "./RatingBar";
+export { Heading } from "./Heading";

@@ -24,6 +24,9 @@ const Login1 = React.lazy(() => import("pages/Login1"));
 const Login2 = React.lazy(() => import("pages/Login2"));
 const Login3 = React.lazy(() => import("pages/Login3"));
 const SignUp = React.lazy(() => import("pages/SignUp"));
+const Myorder = React.lazy(() => import("pages/Myorder"));
+const MyCancellation = React.lazy(() => import("pages/MyCancellation"));
+const Myreviews = React.lazy(() => import("pages/Myreviews"));
 const ECommerceHomePage = React.lazy(() => import("pages/ECommerceHomePage"));
 const ProjectRoutes = () => {
   return (
@@ -56,6 +59,9 @@ const ProjectRoutes = () => {
           <Route path="/servicetwo" element={<SERVICETwo />} />
           <Route path="/servicefour" element={<SERVICEFour />} />
           <Route path="/service" element={<SERVICE />} />
+          <Route path="/myorder" element={<Myorder />} />
+          <Route path="/mycancellation" element={<MyCancellation />} />
+          <Route path="/myreviews" element={<Myreviews />} />
         </Routes>
       </Router>
     </React.Suspense>
