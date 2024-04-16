@@ -35,6 +35,7 @@ import ECommerceHomePageListicondelivery from "components/ECommerceHomePageListi
 import ECommerceHomePageTopheader from "components/ECommerceHomePageTopheader";
 import Footer from "components/Footer";
 import SignUpHeader from "components/SignUpHeader";
+import App1 from "components/App1";
 
 const AccountDropdownWithaccountPage = () => {
   const sliderRef = React.useRef(null);
@@ -53,6 +54,7 @@ const AccountDropdownWithaccountPage = () => {
           cartimage="images/img_cart1.svg"
           userimage="images/img_user_red_600_32x32.svg"
         />
+        {/* <App1></App1> */}
         <div className="font-poppins md:h-96 h-[400px] md:px-5 relative w-full">
           <div className="absolute flex flex-col h-max inset-[0] items-center justify-center m-auto w-full">
             <div className="flex flex-col gap-[39px] items-center justify-start w-full">
